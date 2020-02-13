@@ -36,13 +36,14 @@
 :PROPERTIES:
 :TOC:      :include descendants :depth 1 :local depth
 :END:
+
+On applying Org to various tasks.
+
 :CONTENTS:
 - [[Blogging][Blogging]]
 - [[Project Management][Project Management]]
 - [[Writing][Writing]]
 :END:
-
-On applying Org to various tasks.
 
 ** Blogging                                                       :blogging:
 :PROPERTIES:
@@ -53,6 +54,9 @@ On applying Org to various tasks.
 -  Note taken on [2020-02-13 Thu 01:22] \\
    Originally started [2018-07-31 Tue 19:53].
 :END:
+
+Using Org to publish a blog.
+
 :CONTENTS:
 - [[Articles][Articles]]
   - [[%5B%5Bhttps://ambrevar.xyz/blog-architecture/%5D%5BPierre%20Neidhardt:%20A%20blog%20in%20pure%20Org/Lisp%5D%5D][Pierre Neidhardt: A blog in pure Org/Lisp]]
@@ -79,8 +83,6 @@ On applying Org to various tasks.
   - [[%5B%5Bhttp://aziz.tn/blog/2018-07-02-how_do_write_this_website.html%5D%5BMohamed%20Aziz%20Knani's%20blog%5D%5D][Mohamed Aziz Knani's blog]]
   - [[%5B%5Bhttps://thibaultmarin.github.io/blog/posts/2016-11-13-Personal_website_in_org.html%5D%5BThibault%20Marin:%20Personal%20website%20in%20org%5D%5D][Thibault Marin: Personal website in org]]
 :END:
-
-Using Org to publish a blog.
 
 *** TODO Articles                                                :articles:
 :LOGBOOK:
@@ -439,6 +441,9 @@ Includes:
 :PROPERTIES:
 :TOC:      :include descendants :depth 1
 :END:
+
+Information about various built-in features of Org.  (Related third-party tools may be linked to in the [[id:83d02c10-af55-4b4b-8025-de7bd7f53364][Software]] section.)
+
 :CONTENTS:
 - [[Agenda][Agenda]]
 - [[Appearance][Appearance]]
@@ -448,8 +453,6 @@ Includes:
 - [[Lists][Lists]]
 - [[Tasks][Tasks]]
 :END:
-
-Information about various built-in features of Org.  (Related third-party tools may be linked to in the [[id:83d02c10-af55-4b4b-8025-de7bd7f53364][Software]] section.)
 
 ** Agenda                                                           :agenda:
 :PROPERTIES:
