@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-02-13 Thu 02:16 -->
+<!-- 2020-02-13 Thu 02:31 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>org-almanac</title>
@@ -811,9 +811,71 @@ author: Sacha Chua
 <div id="outline-container-Exporting" class="outline-3">
 <h3 id="Exporting"><span class="section-number-3">6.5</span> Exporting&#xa0;&#xa0;&#xa0;<span class="tag"><span class="exporting">exporting</span></span></h3>
 <div class="outline-text-3" id="text-6-5">
-</div><div id="outline-container-Properties" class="outline-4">
-<h4 id="Properties"><span class="section-number-4">6.5.1</span> Properties</h4>
+<ul class="org-ul">
+<li><a href="#Headings">Headings</a>
+<ul class="org-ul">
+<li><a href="#Excluding%20and%20including">Excluding and including</a></li>
+</ul></li>
+<li><a href="#Properties">Properties</a></li>
+<li><a href="#%5B%5Bid%3A5b5140cd-00d2-4f31-8a3d-ff7e2edc9395%5D%5BThemes%5D%5D">Themes</a></li>
+</ul>
+
+<ul class="org-ul">
+<li><a href="https://orgmode.org/org.html#Export-Settings">Official documentation</a></li>
+</ul>
+</div>
+
+<div id="outline-container-Headings" class="outline-4">
+<h4 id="Headings"><span class="section-number-4">6.5.1</span> Headings</h4>
 <div class="outline-text-4" id="text-6-5-1">
+</div><ol class="org-ol"><li><a id="Excluding%20and%20including"></a>Excluding and including<br /><div class="outline-text-5" id="text-6-5-1-1">
+<p>
+To <i>exclude</i> certain headings from being exported, use a <code>:noexport:</code> tag on them, like:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-org"><span style="color: #a94058fc37c0; background-color: #073642; font-weight: bold; text-decoration: overline;">* Heading 1</span>
+
+This heading will be exported.
+
+<span style="color: #a94058fc37c0; background-color: #073642; font-weight: bold; text-decoration: overline;">* Heading 2                                                        </span><span style="color: #586e75; background-color: #073642; font-weight: bold; text-decoration: overline;">:noexport:</span>
+
+This heading will not.
+</pre>
+</div>
+
+<p>
+To <i>include</i> certain headings (i.e. to exclude all headings by default), use an <code>:export</code> tag, like:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-org"><span style="color: #a94058fc37c0; background-color: #073642; font-weight: bold; text-decoration: overline;">* Heading 1</span>
+
+This heading will not be exported.
+
+<span style="color: #a94058fc37c0; background-color: #073642; font-weight: bold; text-decoration: overline;">* Heading 2                                                          </span><span style="color: #586e75; background-color: #073642; font-weight: bold; text-decoration: overline;">:export:</span>
+
+This heading will be.
+</pre>
+</div>
+
+<p>
+The manual explains these export option keywords:
+</p>
+
+<blockquote>
+<dl class="org-dl">
+<dt><code>SELECT_TAGS</code></dt><dd>The default value is <code>("export")</code>. When a tree is tagged with <code>export</code> (<code>org-export-select-tags</code>), Org selects that tree and its sub-trees for export. Org excludes trees with <code>noexport</code> tags, see below. When selectively exporting files with <code>export</code> tags set, Org does not export any text that appears before the first headline.</dd>
+
+<dt><code>EXCLUDE_TAGS</code></dt><dd>The default value is <code>("noexport")</code>. When a tree is tagged with <code>noexport</code> (<code>org-export-exclude-tags</code>), Org excludes that tree and its sub-trees from export. Entries tagged with <code>noexport</code> are unconditionally excluded from the export, even if they have an <code>export</code> tag. Even if a sub-tree is not exported, Org executes any code blocks contained there.</dd>
+</dl>
+</blockquote>
+</div></li></ol>
+</div>
+
+<div id="outline-container-Properties" class="outline-4">
+<h4 id="Properties"><span class="section-number-4">6.5.2</span> Properties</h4>
+<div class="outline-text-4" id="text-6-5-2">
 <p>
 <span class="timestamp-wrapper"><span class="timestamp">[2020-02-13 Thu 01:31]  </span></span>  To export drawers with specific properties, use this syntax:
 </p>
@@ -842,7 +904,7 @@ Alternatively, to export a single property at a specific place, you can use an O
 </div>
 
 <div id="outline-container-%5B%5Bid%3A5b5140cd-00d2-4f31-8a3d-ff7e2edc9395%5D%5BThemes%5D%5D" class="outline-4">
-<h4 id="%5B%5Bid%3A5b5140cd-00d2-4f31-8a3d-ff7e2edc9395%5D%5BThemes%5D%5D"><span class="section-number-4">6.5.2</span> <a href="#Themes">Themes</a></h4>
+<h4 id="%5B%5Bid%3A5b5140cd-00d2-4f31-8a3d-ff7e2edc9395%5D%5BThemes%5D%5D"><span class="section-number-4">6.5.3</span> <a href="#Themes">Themes</a></h4>
 </div>
 </div>
 
@@ -1025,7 +1087,7 @@ This may be a useful alternative to <code>org-element-parse-buffer</code>.  Also
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Adam Porter</p>
-<p class="date">Created: 2020-02-13 Thu 02:16</p>
+<p class="date">Created: 2020-02-13 Thu 02:31</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

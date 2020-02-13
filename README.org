@@ -527,6 +527,53 @@ Information about various built-in features of Org.  (Related third-party tools 
 [2015-08-29 Sat 14:03] 
 
 ** Exporting                                                     :exporting:
+:PROPERTIES:
+:TOC:      :include descendants :depth 2 :local (depth)
+:END:
+:CONTENTS:
+- [[Headings][Headings]]
+  - [[Excluding and including][Excluding and including]]
+- [[Properties][Properties]]
+- [[%5B%5Bid:5b5140cd-00d2-4f31-8a3d-ff7e2edc9395%5D%5BThemes%5D%5D][Themes]]
+:END:
+
++  [[https://orgmode.org/org.html#Export-Settings][Official documentation]]
+
+*** Headings
+
+**** Excluding and including
+
+To /exclude/ certain headings from being exported, use a =:noexport:= tag on them, like:
+
+#+BEGIN_SRC org
+  ,* Heading 1
+
+  This heading will be exported.
+
+  ,* Heading 2                                                        :noexport:
+
+  This heading will not.
+#+END_SRC
+
+To /include/ certain headings (i.e. to exclude all headings by default), use an =:export= tag, like:
+
+#+BEGIN_SRC org
+  ,* Heading 1
+
+  This heading will not be exported.
+
+  ,* Heading 2                                                          :export:
+
+  This heading will be.
+#+END_SRC
+
+The manual explains these export option keywords:
+
+#+BEGIN_QUOTE
++  =SELECT_TAGS= :: The default value is ~("export")~. When a tree is tagged with ~export~ (=org-export-select-tags=), Org selects that tree and its sub-trees for export. Org excludes trees with ~noexport~ tags, see below. When selectively exporting files with ~export~ tags set, Org does not export any text that appears before the first headline.
+
++ =EXCLUDE_TAGS= :: The default value is ~("noexport")~. When a tree is tagged with ~noexport~ (=org-export-exclude-tags=), Org excludes that tree and its sub-trees from export. Entries tagged with ~noexport~ are unconditionally excluded from the export, even if they have an ~export~ tag. Even if a sub-tree is not exported, Org executes any code blocks contained there.
+#+END_QUOTE
 
 *** Properties
 
