@@ -1,4 +1,5 @@
 #+TITLE: org-almanac
+#+PROPERTY: logging nil
 #+OPTIONS: prop:("author" "published") toc:nil
 
 * Contents
@@ -30,6 +31,7 @@
 - [[Software][Software]]
   - [[Features][Features]]
   - [[Libraries][Libraries]]
+  - [[Tools][Tools]]
 - [[Tasks][Tasks]]
 :END:
 
@@ -92,14 +94,11 @@ Using Org to publish a blog.
 
 + [ ] Link these in [[id:819d2bcb-425b-42c3-9e91-4bffd165e1be][Examples]].
 
-**** TO-READ [[https://ambrevar.xyz/blog-architecture/][Pierre Neidhardt: A blog in pure Org/Lisp]] :website:ATTACH:
+**** TODO [[https://ambrevar.xyz/blog-architecture/][Pierre Neidhardt: A blog in pure Org/Lisp]]       :website:ATTACH:
 :PROPERTIES:
 :ID:       b917cbde-a7e3-45b5-bc42-883f5eb5f444
 :Attachments: https%3A%2F%2Fambrevar.xyz%2Fblog-architecture%2F--EzL0J.zip
 :author:   Pierre Neidhardt
-:END:
-:LOGBOOK:
--  State "TO-READ"    from              [2018-09-03 Mon 02:20]
 :END:
 
 [2018-09-03 Mon 02:17]
@@ -322,6 +321,10 @@ CLOCK: [2019-01-31 Thu 03:33]--[2019-01-31 Thu 03:33] =>  0:00
 :PROPERTIES:
 :ID:       2d289c68-1138-4054-b2b3-845f9151b426
 :END:
+
+**** Tools                                                         :tools:
+
+***** [[*%5B%5Bhttps://github.com/jkitchin/org-ref%5D%5Borg-ref%5D%5D:%20modules%20for%20citations,%20cross-references,%20and%20bibliographies,%20and%20useful%20BibTeX%20tools][org-ref: modules for citations, cross-references, and bibliographies, and useful BibTeX tools]]
 
 * Configs                                                           :configs:
 :PROPERTIES:
@@ -672,6 +675,8 @@ People in the Org community.
   - [[Exporting][Exporting]]
   - [[Lists][Lists]]
 - [[Libraries][Libraries]]
+- [[Tools][Tools]]
+  - [[Citations][Citations]]
 :END:
 
 Org-related third-party software.
@@ -742,6 +747,15 @@ CLOCK: [2020-02-08 Sat 08:28]--[2020-02-08 Sat 08:28] =>  0:00
 :END:
 
 This may be a useful alternative to =org-element-parse-buffer=.  Also see [[https://www.reddit.com/r/orgmode/comments/6t8niz/orgparser_parses_orgfiles_into_structured/][Reddit thread]].
+
+** Tools                                                             :tools:
+
+*** Citations                                                   :citations:
+
+**** TODO [[https://github.com/jkitchin/org-ref][org-ref]]: modules for citations, cross-references, and bibliographies, and useful BibTeX tools :citations:bibliographies:cross_references:
+:PROPERTIES:
+:author:   John Kitchin
+:END:
 
 * Tasks
 :PROPERTIES:
