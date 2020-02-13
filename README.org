@@ -30,6 +30,7 @@
 - [[Software][Software]]
   - [[Features][Features]]
   - [[Libraries][Libraries]]
+- [[Tasks][Tasks]]
 :END:
 
 * Application
@@ -742,6 +743,21 @@ CLOCK: [2020-02-08 Sat 08:28]--[2020-02-08 Sat 08:28] =>  0:00
 
 This may be a useful alternative to =org-element-parse-buffer=.  Also see [[https://www.reddit.com/r/orgmode/comments/6t8niz/orgparser_parses_orgfiles_into_structured/][Reddit thread]].
 
+* Tasks
+:PROPERTIES:
+:TOC:      :depth 0
+:END:
+
+Tasks related to this document.
+
+** TODO Recursive sort function
+
+Should probably support subtree-specific sort functions.
+
+** TODO Sort by timestamp function
+
+Should support timestamps in property values.
+
 * COMMENT Config                                                   :noexport:
 
 ** File-local variables
@@ -757,4 +773,3 @@ This may be a useful alternative to =org-element-parse-buffer=.  Also see [[http
 # org-id-link-to-org-use-id: nil
 # org-export-initial-scope: buffer
 # End:
-
