@@ -322,9 +322,7 @@ CLOCK: [2019-01-31 Thu 03:33]--[2019-01-31 Thu 03:33] =>  0:00
 :ID:       2d289c68-1138-4054-b2b3-845f9151b426
 :END:
 
-**** Tools                                                         :tools:
-
-***** [[*%5B%5Bhttps://github.com/jkitchin/org-ref%5D%5Borg-ref%5D%5D:%20modules%20for%20citations,%20cross-references,%20and%20bibliographies,%20and%20useful%20BibTeX%20tools][org-ref: modules for citations, cross-references, and bibliographies, and useful BibTeX tools]]
+**** [[id:b010ff39-f460-46c2-af8b-5118ffddb229][Tools]]
 
 * Configs                                                           :configs:
 :PROPERTIES:
@@ -751,6 +749,9 @@ This may be a useful alternative to =org-element-parse-buffer=.  Also see [[http
 ** Tools                                                             :tools:
 
 *** Citations                                                   :citations:
+:PROPERTIES:
+:ID:       b010ff39-f460-46c2-af8b-5118ffddb229
+:END:
 
 **** TODO [[https://github.com/jkitchin/org-ref][org-ref]]: modules for citations, cross-references, and bibliographies, and useful BibTeX tools :citations:bibliographies:cross_references:
 :PROPERTIES:
@@ -784,6 +785,6 @@ Should support timestamps in property values.
 # after-save-hook: (lambda nil (org-babel-tangle) (when (org-html-export-to-html) (rename-file "README.html" "index.html" t)))
 # org-export-with-title: t
 # org-export-with-broken-links: mark
-# org-id-link-to-org-use-id: nil
+# org-id-link-to-org-use-id: t
 # org-export-initial-scope: buffer
 # End:
