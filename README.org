@@ -485,10 +485,16 @@ Information about various built-in features of Org.  (Related third-party tools 
 ** Appearance                                                   :appearance:
 :PROPERTIES:
 :ID:       6c7c36b9-4131-4671-a047-8c5e68fd93c9
-:TOC:      :depth 0
+:TOC:      :include descendants :depth 1 :local depth
+:END:
+:CONTENTS:
+- [[Articles][Articles]]
+- [[%5B%5Bid:d56c2c3e-3227-4d1d-899c-447103e9e495%5D%5BThemes%5D%5D][Themes]]
 :END:
 
-*** [[https://lepisma.xyz/2017/10/28/ricing-org-mode/][Abhinav Tushar: Ricing up Org Mode]]                      :ATTACH:themes:
+*** Articles                                                     :articles:
+
+**** [[https://lepisma.xyz/2017/10/28/ricing-org-mode/][Abhinav Tushar: Ricing up Org Mode]]                    :ATTACH:themes:
 :PROPERTIES:
 :author:   Abhinav Tushar
 :ID:       39efe3b6-201c-48d5-90f0-32aba22dd4fd
@@ -500,6 +506,8 @@ Information about various built-in features of Org.  (Related third-party tools 
 *************** END
 
 [2019-09-11 Wed 16:41]  Shows a very customized, minimal and beautiful Emacs/Org config and theme.
+
+*** [[id:d56c2c3e-3227-4d1d-899c-447103e9e495][Themes]]
 
 ** Capture                                                         :capture:
 :PROPERTIES:
@@ -667,17 +675,19 @@ People in the Org community.
 :ID:       83d02c10-af55-4b4b-8025-de7bd7f53364
 :TOC:      :include descendants :depth 2 :local depth
 :END:
+
+Org-related third-party software.
+
 :CONTENTS:
 - [[Features][Features]]
   - [[Agenda][Agenda]]
+  - [[Appearance][Appearance]]
   - [[Exporting][Exporting]]
   - [[Lists][Lists]]
 - [[Libraries][Libraries]]
 - [[Tools][Tools]]
   - [[Citations][Citations]]
 :END:
-
-Org-related third-party software.
 
 ** Features
 
@@ -691,6 +701,18 @@ Organized by related Org features.
 **** [[https://github.com/alphapapa/org-super-agenda][org-super-agenda: Supercharge daily/weekly agenda by grouping items]]
 :PROPERTIES:
 :ID:       5a922670-2f5f-450d-925b-c6f5c04eba10
+:END:
+
+*** Appearance                                                 :appearance:
+
+**** Themes                                                       :themes:
+:PROPERTIES:
+:ID:       d56c2c3e-3227-4d1d-899c-447103e9e495
+:END:
+
+***** [[https://github.com/kunalb/poet][poet]]: An Emacs theme well-suited for modes using variable pitch, particularly org-mode and markdown-mode
+:PROPERTIES:
+:author:   Kunal Bhalla
 :END:
 
 *** Exporting                                                   :exporting:
