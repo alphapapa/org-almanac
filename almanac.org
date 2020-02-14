@@ -21,8 +21,8 @@
   - [[Building][Building]]
   - [[Performance][Performance]]
 - [[Documentation][Documentation]]
-  - [[%5B%5Bhttps://orgmode.org/manual/%5D%5BManual%5D%5D][Manual]]
   - [[Community][Community]]
+  - [[%5B%5Bhttps://orgmode.org/manual/%5D%5BManual%5D%5D][Manual]]
 - [[Features][Features]]
   - [[Agenda][Agenda]]
   - [[Appearance][Appearance]]
@@ -47,32 +47,9 @@
 On applying Org to various tasks.
 
 :CONTENTS:
-- [[Articles][Articles]]
-  - [[%5B%5Bhttps://pank.eu/blog/blog-setup.html%5D%5BRasmus%20Pank%20Roulund:%20Blogging%20with%20Org%5D%5D][Rasmus Pank Roulund: Blogging with Org]]
-  - [[%5B%5Bhttps://ambrevar.xyz/blog-architecture/%5D%5BPierre%20Neidhardt:%20A%20blog%20in%20pure%20Org/Lisp%5D%5D][Pierre Neidhardt: A blog in pure Org/Lisp]]
-  - [[%5B%5Bhttps://ogbe.net/blog/blogging_with_org.html%5D%5BDennis%20Ogbe:%20Blogging%20using%20org-mode%20(and%20nothing%20else)%5D%5D][Dennis Ogbe: Blogging using org-mode (and nothing else)]]
-  - [[%5B%5Bhttps://bastibe.de/2013-11-13-blogging-with-emacs.html%5D%5BBastian%20Bechtold:%20Blogging%20with%20Emacs%5D%5D][Bastian Bechtold: Blogging with Emacs]]
-  - [[%5B%5Bhttps://diego.codes/post/blogging-with-org/%5D%5BDiego%20Vicente:%20Blogging%20with%20Emacs,%20and%20Emacs%20only%5D%5D][Diego Vicente: Blogging with Emacs, and Emacs only]]
-  - [[%5B%5Bhttps://www.john2x.com/blog/blogging-with-orgmode.html%5D%5BJohn%20Louis%20Del%20Rosario:%20Blogging%20with%20Orgmode%5D%5D][John Louis Del Rosario: Blogging with Orgmode]]
-  - [[%5B%5Bhttps://loomcom.com/blog/0110_emacs_blogging_for_fun_and_profit.html%5D%5BSeth%20J.%20Morabito:%20Emacs%20Blogging%20for%20Fun%20and%20Profit%5D%5D][Seth J. Morabito: Emacs Blogging for Fun and Profit]]
-  - [[%5B%5Bhttp://endlessparentheses.com/how-i-blog-one-year-of-posts-in-a-single-org-file.html%5D%5BHow%20I%20blog%20with%20Emacs:%20One%20year%20of%20posts%20in%20a%20single%20org%20file%20%C2%B7%20Endless%20Parentheses%5D%5D][How I blog with Emacs: One year of posts in a single org file · Endless Parentheses]]
-  - [[%5B%5Bhttps://duncan.codes/posts/2019-09-03-migrating-from-jekyll-to-org/%5D%5BMigrating%20from%20Jekyll%20to%20org-mode%20and%20Github%20Actions%5D%5D][Migrating from Jekyll to org-mode and Github Actions]]
-  - [[%5B%5Bhttps://nicolas.petton.fr/blog/blogging-with-org-mode.html%5D%5BNicolas%20Petton:%20Blogging%20with%20org-mode%5D%5D][Nicolas Petton: Blogging with org-mode]]
-  - [[%5B%5Bhttps://writepermission.com/org-blogging-rss-feed.html%5D%5BOrg%20mode%20blogging:%20RSS%20feed%5D%5D][Org mode blogging: RSS feed]]
-  - [[%5B%5Bhttp://juanreyero.com/article/emacs/org-teams.html%5D%5BOrg-mode%20tricks%20for%20team%20management%5D%5D][Org-mode tricks for team management]]
-- [[Code][Code]]
-  - [[%5B%5Bhttps://github.com/itf/org-export-head%5D%5BGitHub%20-%20itf/org-export-head:%20Org%20mode%20to%20blog%20exporter.%20Converts%20each%20header%20to%20a%20different%20file%5D%5D][GitHub - itf/org-export-head: Org mode to blog exporter. Converts each header to a different file]]
-- [[Discussions][Discussions]]
-  - [[%5B%5Bhttps://www.reddit.com/r/orgmode/comments/93nyaw/psa_hugo_users_update_to_hugo_v046_to_get_syntax/e3fmd62/%5D%5B{PSA}%20Hugo%20users:%20Update%20to%20Hugo%20v0.46%20to%20get%20syntax%20highlighted%20Org%20mode%20blocks%20using%20Chroma%20:%20orgmode%5D%5D][{PSA} Hugo users: Update to Hugo v0.46 to get syntax highlighted Org mode blocks using Chroma : orgmode]]
-  - [[%5B%5Bhttps://www.reddit.com/r/emacs/comments/93harh/multipage_sitemaps_for_orgpublish/%5D%5BMulti-page%20sitemaps%20for%20org-publish?%20:%20emacs%5D%5D][Multi-page sitemaps for org-publish? : emacs]]
-  - [[%5B%5Bhttps://lists.gnu.org/archive/html/emacs-orgmode/2019-09/msg00282.html%5D%5B{O}%20blogging%20wih%20org-mode%5D%5D][{O} blogging wih org-mode]]
-- [[Examples][Examples]]
-  - [[%5B%5Bhttps://pank.eu/%5D%5BRasmus%20Pank%20Roulund:%20Coffee%20&%20Coding%20Chronicles%5D%5D][Rasmus Pank Roulund: Coffee & Coding Chronicles]]
-  - [[%5B%5Bhttps://loomcom.com/%5D%5BSeth%20J.%20Morabito:%20Loom%20Communications%5D%5D][Seth J. Morabito: Loom Communications]]
-  - [[%5B%5Bhttps://two-wrongs.com/%5D%5BTwo%20Wrongs%5D%5D][Two Wrongs]]
-  - [[%5B%5Bhttps://scripter.co/%5D%5BA%20Scripter's%20Notes%20(Kaushal%20Modi's%20blog)%5D%5D][A Scripter's Notes (Kaushal Modi's blog)]]
-  - [[%5B%5Bhttp://aziz.tn/blog/2018-07-02-how_do_write_this_website.html%5D%5BMohamed%20Aziz%20Knani's%20blog%5D%5D][Mohamed Aziz Knani's blog]]
-  - [[%5B%5Bhttps://thibaultmarin.github.io/blog/posts/2016-11-13-Personal_website_in_org.html%5D%5BThibault%20Marin:%20Personal%20website%20in%20org%5D%5D][Thibault Marin: Personal website in org]]
+- [[Blogging][Blogging]]
+- [[Project Management][Project Management]]
+- [[Writing][Writing]]
 :END:
 
 ** Blogging                                                       :blogging:
@@ -89,31 +66,35 @@ Using Org to publish a blog.
 
 :CONTENTS:
 - [[Articles][Articles]]
-  - [[%5B%5Bhttps://pank.eu/blog/blog-setup.html%5D%5BRasmus%20Pank%20Roulund:%20Blogging%20with%20Org%5D%5D][Rasmus Pank Roulund: Blogging with Org]]
-  - [[%5B%5Bhttps://ambrevar.xyz/blog-architecture/%5D%5BPierre%20Neidhardt:%20A%20blog%20in%20pure%20Org/Lisp%5D%5D][Pierre Neidhardt: A blog in pure Org/Lisp]]
-  - [[%5B%5Bhttps://ogbe.net/blog/blogging_with_org.html%5D%5BDennis%20Ogbe:%20Blogging%20using%20org-mode%20(and%20nothing%20else)%5D%5D][Dennis Ogbe: Blogging using org-mode (and nothing else)]]
+  - [[%5B%5Bhttp://endlessparentheses.com/how-i-blog-one-year-of-posts-in-a-single-org-file.html%5D%5BArtur%20Malabarba:%20How%20I%20blog%20with%20Emacs:%20One%20year%20of%20posts%20in%20a%20single%20Org%20file%5D%5D][Artur Malabarba: How I blog with Emacs: One year of posts in a single Org file]]
   - [[%5B%5Bhttps://bastibe.de/2013-11-13-blogging-with-emacs.html%5D%5BBastian%20Bechtold:%20Blogging%20with%20Emacs%5D%5D][Bastian Bechtold: Blogging with Emacs]]
+  - [[%5B%5Bhttps://ogbe.net/blog/blogging_with_org.html%5D%5BDennis%20Ogbe:%20Blogging%20using%20org-mode%20(and%20nothing%20else)%5D%5D][Dennis Ogbe: Blogging using org-mode (and nothing else)]]
   - [[%5B%5Bhttps://diego.codes/post/blogging-with-org/%5D%5BDiego%20Vicente:%20Blogging%20with%20Emacs,%20and%20Emacs%20only%5D%5D][Diego Vicente: Blogging with Emacs, and Emacs only]]
+  - [[%5B%5Bhttps://duncan.codes/posts/2019-09-03-migrating-from-jekyll-to-org/%5D%5BDuncan%20Mac-Vicar%20P.:%20Migrating%20from%20Jekyll%20to%20org-mode%20and%20Github%20Actions%5D%5D][Duncan Mac-Vicar P.: Migrating from Jekyll to org-mode and Github Actions]]
   - [[%5B%5Bhttps://www.john2x.com/blog/blogging-with-orgmode.html%5D%5BJohn%20Louis%20Del%20Rosario:%20Blogging%20with%20Orgmode%5D%5D][John Louis Del Rosario: Blogging with Orgmode]]
-  - [[%5B%5Bhttps://loomcom.com/blog/0110_emacs_blogging_for_fun_and_profit.html%5D%5BSeth%20J.%20Morabito:%20Emacs%20Blogging%20for%20Fun%20and%20Profit%5D%5D][Seth J. Morabito: Emacs Blogging for Fun and Profit]]
-  - [[%5B%5Bhttp://endlessparentheses.com/how-i-blog-one-year-of-posts-in-a-single-org-file.html%5D%5BHow%20I%20blog%20with%20Emacs:%20One%20year%20of%20posts%20in%20a%20single%20org%20file%20%C2%B7%20Endless%20Parentheses%5D%5D][How I blog with Emacs: One year of posts in a single org file · Endless Parentheses]]
-  - [[%5B%5Bhttps://duncan.codes/posts/2019-09-03-migrating-from-jekyll-to-org/%5D%5BMigrating%20from%20Jekyll%20to%20org-mode%20and%20Github%20Actions%5D%5D][Migrating from Jekyll to org-mode and Github Actions]]
   - [[%5B%5Bhttps://nicolas.petton.fr/blog/blogging-with-org-mode.html%5D%5BNicolas%20Petton:%20Blogging%20with%20org-mode%5D%5D][Nicolas Petton: Blogging with org-mode]]
-  - [[%5B%5Bhttps://writepermission.com/org-blogging-rss-feed.html%5D%5BOrg%20mode%20blogging:%20RSS%20feed%5D%5D][Org mode blogging: RSS feed]]
-  - [[%5B%5Bhttp://juanreyero.com/article/emacs/org-teams.html%5D%5BOrg-mode%20tricks%20for%20team%20management%5D%5D][Org-mode tricks for team management]]
+  - [[%5B%5Bhttps://ambrevar.xyz/blog-architecture/%5D%5BPierre%20Neidhardt:%20A%20blog%20in%20pure%20Org/Lisp%5D%5D][Pierre Neidhardt: A blog in pure Org/Lisp]]
+  - [[%5B%5Bhttps://pank.eu/blog/blog-setup.html%5D%5BRasmus%20Pank%20Roulund:%20Blogging%20with%20Org%5D%5D][Rasmus Pank Roulund: Blogging with Org]]
+  - [[%5B%5Bhttps://loomcom.com/blog/0110_emacs_blogging_for_fun_and_profit.html%5D%5BSeth%20J.%20Morabito:%20Emacs%20Blogging%20for%20Fun%20and%20Profit%5D%5D][Seth J. Morabito: Emacs Blogging for Fun and Profit]]
+  - [[Toon Claes][Toon Claes]]
 - [[Code][Code]]
   - [[%5B%5Bhttps://github.com/itf/org-export-head%5D%5BGitHub%20-%20itf/org-export-head:%20Org%20mode%20to%20blog%20exporter.%20Converts%20each%20header%20to%20a%20different%20file%5D%5D][GitHub - itf/org-export-head: Org mode to blog exporter. Converts each header to a different file]]
 - [[Discussions][Discussions]]
-  - [[%5B%5Bhttps://www.reddit.com/r/orgmode/comments/93nyaw/psa_hugo_users_update_to_hugo_v046_to_get_syntax/e3fmd62/%5D%5B{PSA}%20Hugo%20users:%20Update%20to%20Hugo%20v0.46%20to%20get%20syntax%20highlighted%20Org%20mode%20blocks%20using%20Chroma%20:%20orgmode%5D%5D][{PSA} Hugo users: Update to Hugo v0.46 to get syntax highlighted Org mode blocks using Chroma : orgmode]]
   - [[%5B%5Bhttps://www.reddit.com/r/emacs/comments/93harh/multipage_sitemaps_for_orgpublish/%5D%5BMulti-page%20sitemaps%20for%20org-publish?%20:%20emacs%5D%5D][Multi-page sitemaps for org-publish? : emacs]]
   - [[%5B%5Bhttps://lists.gnu.org/archive/html/emacs-orgmode/2019-09/msg00282.html%5D%5B{O}%20blogging%20wih%20org-mode%5D%5D][{O} blogging wih org-mode]]
+  - [[%5B%5Bhttps://www.reddit.com/r/orgmode/comments/93nyaw/psa_hugo_users_update_to_hugo_v046_to_get_syntax/e3fmd62/%5D%5B{PSA}%20Hugo%20users:%20Update%20to%20Hugo%20v0.46%20to%20get%20syntax%20highlighted%20Org%20mode%20blocks%20using%20Chroma%20:%20orgmode%5D%5D][{PSA} Hugo users: Update to Hugo v0.46 to get syntax highlighted Org mode blocks using Chroma : orgmode]]
 - [[Examples][Examples]]
+  - [[%5B%5Bhttps://scripter.co/%5D%5BA%20Scripter's%20Notes%20(Kaushal%20Modi's%20blog)%5D%5D][A Scripter's Notes (Kaushal Modi's blog)]]
+  - [[%5B%5Bhttps://endlessparentheses.com/%5D%5BArtur%20Malabarba:%20Endless%20Parentheses%5D%5D][Artur Malabarba: Endless Parentheses]]
+  - [[%5B%5Bhttps://duncan.codes/%5D%5BDuncan%20Mac-Vicar%20P.%5D%5D][Duncan Mac-Vicar P.]]
+  - [[%5B%5Bhttp://juanreyero.com/about/%5D%5BJuan%20Reyero%5D%5D][Juan Reyero]]
+  - [[%5B%5Bhttp://aziz.tn/blog/2018-07-02-how_do_write_this_website.html%5D%5BMohamed%20Aziz%20Knani's%20blog%5D%5D][Mohamed Aziz Knani's blog]]
+  - [[%5B%5Bhttps://nicolas.petton.fr/%5D%5BNicolas%20Petton%5D%5D][Nicolas Petton]]
   - [[%5B%5Bhttps://pank.eu/%5D%5BRasmus%20Pank%20Roulund:%20Coffee%20&%20Coding%20Chronicles%5D%5D][Rasmus Pank Roulund: Coffee & Coding Chronicles]]
   - [[%5B%5Bhttps://loomcom.com/%5D%5BSeth%20J.%20Morabito:%20Loom%20Communications%5D%5D][Seth J. Morabito: Loom Communications]]
-  - [[%5B%5Bhttps://two-wrongs.com/%5D%5BTwo%20Wrongs%5D%5D][Two Wrongs]]
-  - [[%5B%5Bhttps://scripter.co/%5D%5BA%20Scripter's%20Notes%20(Kaushal%20Modi's%20blog)%5D%5D][A Scripter's Notes (Kaushal Modi's blog)]]
-  - [[%5B%5Bhttp://aziz.tn/blog/2018-07-02-how_do_write_this_website.html%5D%5BMohamed%20Aziz%20Knani's%20blog%5D%5D][Mohamed Aziz Knani's blog]]
   - [[%5B%5Bhttps://thibaultmarin.github.io/blog/posts/2016-11-13-Personal_website_in_org.html%5D%5BThibault%20Marin:%20Personal%20website%20in%20org%5D%5D][Thibault Marin: Personal website in org]]
+  - [[%5B%5Bhttps://writepermission.com/%5D%5BToon%20Claes:%20Write%20Permission%5D%5D][Toon Claes: Write Permission]]
+  - [[%5B%5Bhttps://two-wrongs.com/%5D%5BTwo%20Wrongs%5D%5D][Two Wrongs]]
 :END:
 
 *** TODO Articles                                                :articles:
@@ -123,32 +104,12 @@ Using Org to publish a blog.
 
 + [ ] Link these in [[id:819d2bcb-425b-42c3-9e91-4bffd165e1be][Examples]].
 
-**** [[https://pank.eu/blog/blog-setup.html][Rasmus Pank Roulund: Blogging with Org]] :ATTACH:
+**** [[http://endlessparentheses.com/how-i-blog-one-year-of-posts-in-a-single-org-file.html][Artur Malabarba: How I blog with Emacs: One year of posts in a single Org file]] :ATTACH:
 :PROPERTIES:
-:ID:       dbc6f377-99a3-434c-a401-88fca6413f3a
-:author:   Rasmus Pank Roulund
-:published: [2016-03-27 Sun]
-:Attachments: https%3A%2F%2Fpank.eu%2Fblog%2Fblog-setup.html--E02Rct.tar.xz
-:END:
-
-**** TODO [[https://ambrevar.xyz/blog-architecture/][Pierre Neidhardt: A blog in pure Org/Lisp]]       :website:ATTACH:
-:PROPERTIES:
-:ID:       b917cbde-a7e3-45b5-bc42-883f5eb5f444
-:Attachments: https%3A%2F%2Fambrevar.xyz%2Fblog-architecture%2F--EzL0J.zip
-:author:   Pierre Neidhardt
-:END:
-
-[2018-09-03 Mon 02:17]
-
-**** [[https://ogbe.net/blog/blogging_with_org.html][Dennis Ogbe: Blogging using org-mode (and nothing else)]] :ATTACH:
-:PROPERTIES:
-:Attachments: https%3A%2F%2Fogbe.net%2Fblog%2Fblogging_with_org.html--F4bLhg.tar.xz
-:ID:       ebe8c121-7838-412b-b389-c99684095c29
-:author:   Dennis Ogbe
-:published: [2016-02-01 Mon]
-:END:
-:LOGBOOK:
--  State "TODO"       from              [2020-02-13 Thu 01:09]
+:Attachments: http%3A%2F%2Fendlessparentheses.com%2Fhow-i-blog-one-year-of-posts-in-a-single-org-file.html--ur4XL8.tar.xz
+:ID:       aa39dad8-5d0f-43df-be2a-98eac35864cc
+:author:   Artur Malabarba
+:published: [2015-06-26 Fri]
 :END:
 
 **** [[https://bastibe.de/2013-11-13-blogging-with-emacs.html][Bastian Bechtold: Blogging with Emacs]] :ATTACH:
@@ -157,6 +118,17 @@ Using Org to publish a blog.
 :ID:       901a9cbf-4ea0-4734-8104-f771d8f55a5b
 :author:   Bastian Bechtold
 :published: [2013-11-13 Wed]
+:END:
+:LOGBOOK:
+-  State "TODO"       from              [2020-02-13 Thu 01:09]
+:END:
+
+**** [[https://ogbe.net/blog/blogging_with_org.html][Dennis Ogbe: Blogging using org-mode (and nothing else)]] :ATTACH:
+:PROPERTIES:
+:Attachments: https%3A%2F%2Fogbe.net%2Fblog%2Fblogging_with_org.html--F4bLhg.tar.xz
+:ID:       ebe8c121-7838-412b-b389-c99684095c29
+:author:   Dennis Ogbe
+:published: [2016-02-01 Mon]
 :END:
 :LOGBOOK:
 -  State "TODO"       from              [2020-02-13 Thu 01:09]
@@ -173,6 +145,16 @@ Using Org to publish a blog.
 -  State "TODO"       from              [2020-02-13 Thu 01:09]
 :END:
 
+**** [[https://duncan.codes/posts/2019-09-03-migrating-from-jekyll-to-org/][Duncan Mac-Vicar P.: Migrating from Jekyll to org-mode and Github Actions]] :ATTACH:
+:PROPERTIES:
+:Attachments: https%3A%2F%2Fduncan.codes%2Fposts%2F2019-09-03-migrating-from-jekyll-to-org%2F--YjJ9dw.tar.xz
+:ID:       935cd6fc-e50d-4400-ae57-12caf4c46fae
+:author:   Duncan Mac-Vicar P.
+:published: [2019-09-03 Tue]
+:END:
+
+[2019-09-04 Wed 18:54]  
+
 **** [[https://www.john2x.com/blog/blogging-with-orgmode.html][John Louis Del Rosario: Blogging with Orgmode]] :ATTACH:
 :PROPERTIES:
 :Attachments: https%3A%2F%2Fwww.john2x.com%2Fblog%2Fblogging-with-orgmode.html--O7ap32.tar.xz
@@ -182,6 +164,31 @@ Using Org to publish a blog.
 :END:
 :LOGBOOK:
 -  State "TODO"       from              [2020-02-13 Thu 01:09]
+:END:
+
+**** [[https://nicolas.petton.fr/blog/blogging-with-org-mode.html][Nicolas Petton: Blogging with org-mode]]                       :ATTACH:
+:PROPERTIES:
+:Attachments: https%3A%2F%2Fnicolas.petton.fr%2Fblog%2Fblogging-with-org-mode.html--H2EslR.tar.xz
+:ID:       7ece4012-81da-40c5-aab6-440f0c11bad4
+:author:   Nicolas Petton
+:published: [2013-10-15 Tue]
+:END:
+
+**** TODO [[https://ambrevar.xyz/blog-architecture/][Pierre Neidhardt: A blog in pure Org/Lisp]]       :website:ATTACH:
+:PROPERTIES:
+:ID:       b917cbde-a7e3-45b5-bc42-883f5eb5f444
+:Attachments: https%3A%2F%2Fambrevar.xyz%2Fblog-architecture%2F--EzL0J.zip
+:author:   Pierre Neidhardt
+:END:
+
+[2018-09-03 Mon 02:17]
+
+**** [[https://pank.eu/blog/blog-setup.html][Rasmus Pank Roulund: Blogging with Org]] :ATTACH:
+:PROPERTIES:
+:ID:       dbc6f377-99a3-434c-a401-88fca6413f3a
+:author:   Rasmus Pank Roulund
+:published: [2016-03-27 Sun]
+:Attachments: https%3A%2F%2Fpank.eu%2Fblog%2Fblog-setup.html--E02Rct.tar.xz
 :END:
 
 **** [[https://loomcom.com/blog/0110_emacs_blogging_for_fun_and_profit.html][Seth J. Morabito: Emacs Blogging for Fun and Profit]] :ATTACH:
@@ -195,54 +202,29 @@ Using Org to publish a blog.
 -  State "TODO"       from              [2020-02-13 Thu 01:09]
 :END:
 
-**** TODO [[http://endlessparentheses.com/how-i-blog-one-year-of-posts-in-a-single-org-file.html][How I blog with Emacs: One year of posts in a single org file · Endless Parentheses]] :ATTACH:
+**** Toon Claes
 :PROPERTIES:
-:Attachments: http%3A%2F%2Fendlessparentheses.com%2Fhow-i-blog-one-year-of-posts-in-a-single-org-file.html--ur4XL8.tar.xz
-:ID:       aa39dad8-5d0f-43df-be2a-98eac35864cc
-:END:
-:LOGBOOK:
--  State "TODO"       from              [2020-02-13 Thu 01:09]
+:author:   Toon Claes
 :END:
 
-**** TODO [[https://duncan.codes/posts/2019-09-03-migrating-from-jekyll-to-org/][Migrating from Jekyll to org-mode and Github Actions]] :ATTACH:
+Toon's blog has a unique and appealing custom theme.
+
+***** TODO [[https://writepermission.com/org-blogging-clickable-headlines.html][Org mode blogging: Clickable headlines]]
 :PROPERTIES:
-:Attachments: https%3A%2F%2Fduncan.codes%2Fposts%2F2019-09-03-migrating-from-jekyll-to-org%2F--YjJ9dw.tar.xz
-:ID:       935cd6fc-e50d-4400-ae57-12caf4c46fae
-:END:
-:LOGBOOK:
--  State "TODO"       from              [2020-02-13 Thu 01:09]
+:published: [2018-12-13 Thu]
 :END:
 
-[2019-09-04 Wed 18:54]  
-
-**** TODO [[https://nicolas.petton.fr/blog/blogging-with-org-mode.html][Nicolas Petton: Blogging with org-mode]] :ATTACH:
-:PROPERTIES:
-:Attachments: https%3A%2F%2Fnicolas.petton.fr%2Fblog%2Fblogging-with-org-mode.html--H2EslR.tar.xz
-:ID:       7ece4012-81da-40c5-aab6-440f0c11bad4
-:END:
-:LOGBOOK:
--  State "TODO"       from              [2020-02-13 Thu 01:09]
-:END:
-
-**** TODO [[https://writepermission.com/org-blogging-rss-feed.html][Org mode blogging: RSS feed]] :ATTACH:
+***** [[https://writepermission.com/org-blogging-rss-feed.html][Org mode blogging: RSS feed]] :ATTACH:
 :PROPERTIES:
 :Attachments: https%3A%2F%2Fwritepermission.com%2Forg-blogging-rss-feed.html--qVgqZf.tar.xz
 :ID:       f09e94be-9628-4dbe-a638-b6a972af7d25
-:END:
-:LOGBOOK:
--  State "TODO"       from              [2020-02-13 Thu 01:09]
+:published: [2018-12-30 Sun]
 :END:
 
-**** TODO [[http://juanreyero.com/article/emacs/org-teams.html][Org-mode tricks for team management]] :ATTACH:
+***** TODO [[https://writepermission.com/org-blogging-unfurling-links.html][Org mode blogging: Unfurling links]]
 :PROPERTIES:
-:Attachments: http%3A%2F%2Fjuanreyero.com%2Farticle%2Femacs%2Forg-teams.html--MJBfnq.tar.xz
-:ID:       4c4a8249-baf5-47ec-8c36-b4a381095822
+:published: [2018-12-26 Wed]
 :END:
-:LOGBOOK:
--  State "TODO"       from              [2020-02-13 Thu 01:09]
-:END:
-
-[2019-07-24 Wed 18:07]  Talks about =org-secretary.el=.
 
 *** TODO Code                                                        :code:
 :LOGBOOK:
@@ -260,6 +242,14 @@ Using Org to publish a blog.
 :LOGBOOK:
 -  State "TODO"       from              [2020-02-13 Thu 01:43]
 :END:
+
+**** [[https://www.reddit.com/r/emacs/comments/93harh/multipage_sitemaps_for_orgpublish/][Multi-page sitemaps for org-publish? : emacs]] :ATTACH:
+:PROPERTIES:
+:ID:       39024027-a5b0-4e0d-9fc1-c41db5549c8f
+:Attachments: https%3A%2F%2Fwww.reddit.com%2Fr%2Femacs%2Fcomments%2F93harh%2Fmultipage_sitemaps_for_orgpublish%2F--beLTG.zip
+:END:
+
+**** [[https://lists.gnu.org/archive/html/emacs-orgmode/2019-09/msg00282.html][{O} blogging wih org-mode]]
 
 **** [[https://www.reddit.com/r/orgmode/comments/93nyaw/psa_hugo_users_update_to_hugo_v046_to_get_syntax/e3fmd62/][{PSA} Hugo users: Update to Hugo v0.46 to get syntax highlighted Org mode blocks using Chroma : orgmode]] :website:
 
@@ -287,14 +277,6 @@ I am not sure which custom code you are referring to (the subtree-to-file and fi
 
 Or, do you mean how to do the same if not planning to use Hugo?
 
-**** [[https://www.reddit.com/r/emacs/comments/93harh/multipage_sitemaps_for_orgpublish/][Multi-page sitemaps for org-publish? : emacs]] :ATTACH:
-:PROPERTIES:
-:ID:       39024027-a5b0-4e0d-9fc1-c41db5549c8f
-:Attachments: https%3A%2F%2Fwww.reddit.com%2Fr%2Femacs%2Fcomments%2F93harh%2Fmultipage_sitemaps_for_orgpublish%2F--beLTG.zip
-:END:
-
-**** [[https://lists.gnu.org/archive/html/emacs-orgmode/2019-09/msg00282.html][{O} blogging wih org-mode]]
-
 *** TODO Examples                                                :examples:
 :PROPERTIES:
 :ID:       819d2bcb-425b-42c3-9e91-4bffd165e1be
@@ -304,6 +286,33 @@ Or, do you mean how to do the same if not planning to use Hugo?
 :END:
 
 Blogs and personal Web sites published with Org.
+
+**** TODO [[https://scripter.co/][A Scripter's Notes (Kaushal Modi's blog)]]
+
+**** [[https://endlessparentheses.com/][Artur Malabarba: Endless Parentheses]]
+:PROPERTIES:
+:author:   Artur Malabarba
+:END:
+
+**** [[https://duncan.codes/][Duncan Mac-Vicar P.]]
+
+**** [[http://juanreyero.com/about/][Juan Reyero]]
+:PROPERTIES:
+:author:   Juan Reyero
+:END:
+
+#+BEGIN_QUOTE
+Engineer and programmer, with a PhD in Mechanical Engineering and working at Xaar in Cambridge, UK. Before that I worked at Hewlett Packard's research and development lab since 1996. With over 40 US patents filed, at least 12 of them granted and the rest pending. I am currently working on the data pipeline of a 3D printer.
+
+My latest personal project is GreaterSkies, selling personalized star charts as a high-quality PDF. You choose the location, date and time, and my Common Lisp engine will create for you a beautiful chart with thousands of stars and the planets as seen from that place and at that time.
+#+END_QUOTE
+
+**** TODO [[http://aziz.tn/blog/2018-07-02-how_do_write_this_website.html][Mohamed Aziz Knani's blog]]
+
+**** [[https://nicolas.petton.fr/][Nicolas Petton]]
+:PROPERTIES:
+:author:   Nicolas Petton
+:END:
 
 **** [[https://pank.eu/][Rasmus Pank Roulund: Coffee & Coding Chronicles]]
 :PROPERTIES:
@@ -324,17 +333,20 @@ I am a supporter of Free Software I contribute to GNU Emacs and in particularly 
 
 See [[id:39024027-a5b0-4e0d-9fc1-c41db5549c8f][Multi-page sitemaps for org-publish? : emacs]].  Also [[id:e35e3361-dbe1-4a4b-ad8c-9ffc009b334e][Emacs Blogging for Fun and Profit]].
 
-**** [[https://two-wrongs.com/][Two Wrongs]]
-
-**** [[https://scripter.co/][A Scripter's Notes (Kaushal Modi's blog)]]
-
-**** [[http://aziz.tn/blog/2018-07-02-how_do_write_this_website.html][Mohamed Aziz Knani's blog]]
-
-**** [[https://thibaultmarin.github.io/blog/posts/2016-11-13-Personal_website_in_org.html][Thibault Marin: Personal website in org]] :ATTACH:
+**** TODO [[https://thibaultmarin.github.io/blog/posts/2016-11-13-Personal_website_in_org.html][Thibault Marin: Personal website in org]]                 :ATTACH:
 :PROPERTIES:
 :Attachments: https%3A%2F%2Fthibaultmarin.github.io%2Fblog%2Fposts%2F2016-11-13-Personal_website_in_org.html--WeXar7.tar.xz
 :ID:       c004d395-cccf-4585-883d-633f6ce42e79
 :END:
+
+**** [[https://writepermission.com/][Toon Claes: Write Permission]]
+:PROPERTIES:
+:author:   Toon Claes
+:END:
+
+Toon's blog has a unique and appealing custom theme.
+
+**** TODO [[https://two-wrongs.com/][Two Wrongs]]
 
 ** Project Management                                   :project_management:
 
@@ -359,6 +371,16 @@ CLOCK: [2019-01-31 Thu 03:33]--[2019-01-31 Thu 03:33] =>  0:00
 
 [2019-01-31 Thu 03:33]
 
+**** [[http://juanreyero.com/article/emacs/org-teams.html][Juan Reyero: Org-mode tricks for team management]]             :ATTACH:
+:PROPERTIES:
+:Attachments: http%3A%2F%2Fjuanreyero.com%2Farticle%2Femacs%2Forg-teams.html--MJBfnq.tar.xz
+:ID:       4c4a8249-baf5-47ec-8c36-b4a381095822
+:END:
+
+[2019-07-24 Wed 18:07]  Talks about =org-secretary.el=.
+
+***** TODO Add some kind of tag about teams and coordinating with others.
+
 *** Examples
 
 **** [[id:cd12e9d7-8598-4fbe-bab2-57c6929df737][Bernt Hansen: Organize your life in plain text!]]
@@ -381,6 +403,25 @@ Examples of complete Org configurations.
 
 ** [[https://github.com/alphapapa/alpha-org][alpha-org: A powerful Org configuration]]
 
+** [[http://doc.norang.ca/org-mode.html][Bernt Hansen: Organize your life in plain text!]]
+:PROPERTIES:
+:author:   Bernt Hansen
+:ID:       cd12e9d7-8598-4fbe-bab2-57c6929df737
+:END:
+:LOGBOOK:
+-  State "SOMEDAY"    from              [2017-07-29 Sat 01:28]
+:END:
+
+*** TO-WATCH [[http://www.youtube.com/watch?v=II-xYw5VGFM][Video of it and "navi-mode"]] :refile:video:
+:LOGBOOK:
+-  State "TO-WATCH"   from              [2017-07-29 Sat 01:28]
+:END:
+
+*** TO-WATCH [[http://www.youtube.com/watch?v=II-xYw5VGFM][Bernt Hansen's tutorial]] :refile:video:
+:LOGBOOK:
+-  State "TO-WATCH"   from              [2017-07-29 Sat 01:28]
+:END:
+
 ** [[https://justin.abrah.ms/dotfiles/emacs.html][Justin Abrahms]]  :ATTACH:
 :PROPERTIES:
 :Attachments: https%3A%2F%2Fjustin.abrah.ms%2Fdotfiles%2Femacs.html--Tkr5Fv.tar.xz
@@ -400,25 +441,6 @@ Examples of complete Org configurations.
 :END:
 
 + [[https://writequit.org/eos/eos.html][The Emacs Operating System (EOS)]]
-
-** [[http://doc.norang.ca/org-mode.html][Bernt Hansen: Organize your life in plain text!]]
-:PROPERTIES:
-:author:   Bernt Hansen
-:ID:       cd12e9d7-8598-4fbe-bab2-57c6929df737
-:END:
-:LOGBOOK:
--  State "SOMEDAY"    from              [2017-07-29 Sat 01:28]
-:END:
-
-*** TO-WATCH [[http://www.youtube.com/watch?v=II-xYw5VGFM][Video of it and "navi-mode"]] :refile:video:
-:LOGBOOK:
--  State "TO-WATCH"   from              [2017-07-29 Sat 01:28]
-:END:
-
-*** TO-WATCH [[http://www.youtube.com/watch?v=II-xYw5VGFM][Bernt Hansen's tutorial]] :refile:video:
-:LOGBOOK:
--  State "TO-WATCH"   from              [2017-07-29 Sat 01:28]
-:END:
 
 * Development                                                   :development:
 
@@ -452,15 +474,11 @@ Information about Building Org.
 
 Other sources of documentation about Org.
 
-** [[https://orgmode.org/manual/][Manual]]                        :bookmark:
-
-The official Org manual.
-
 ** Community                                                     :community:
 
 Community-provided documentation.
 
-*** [[http://orgmode.org/worg/][Worg]]                           :bookmark:
+*** [#A] [[http://orgmode.org/worg/][Worg]]                                                    :bookmark:
 :PROPERTIES:
 :ID:       90fe0f5b-8ecf-4078-81d1-344c537cdf04
 :END:
@@ -487,6 +505,10 @@ Includes:
 +  [[https://github.com/novoid/org-mode-workshop/blob/master/workshop.org][Workshop presentation]] :: Outline of presentation given by Karl.
 +  [[https://github.com/novoid/org-mode-workshop/blob/master/featureshow/org-mode-teaser.org][Teaser demo]] :: A large document demonstrating many features of Org.
 
+** [[https://orgmode.org/manual/][Manual]]                        :bookmark:
+
+The official Org manual.
+
 * Features                                                         :built_in:
 :PROPERTIES:
 :TOC:      :include descendants :depth 1
@@ -495,10 +517,13 @@ Includes:
 Information about various built-in features of Org.  (Related third-party tools may be linked to in the [[id:83d02c10-af55-4b4b-8025-de7bd7f53364][Software]] section.)
 
 :CONTENTS:
-- [[Headings][Headings]]
-  - [[Excluding and including][Excluding and including]]
-- [[Properties][Properties]]
-- [[%5B%5Bid:5b5140cd-00d2-4f31-8a3d-ff7e2edc9395%5D%5BThemes%5D%5D][Themes]]
+- [[Agenda][Agenda]]
+- [[Appearance][Appearance]]
+- [[Capture][Capture]]
+- [[Clocking][Clocking]]
+- [[Exporting][Exporting]]
+- [[Lists][Lists]]
+- [[Tasks][Tasks]]
 :END:
 
 ** Agenda                                                           :agenda:
@@ -516,6 +541,8 @@ Information about various built-in features of Org.  (Related third-party tools 
 
 [2019-04-07 Sun 18:09]  I think I've seen this before, but I came across it again, and it has some good examples and code.
 
+*** [[id:6a599497-ce37-41b5-8ee4-92d4b2459b0c][Third-party Tools]]
+
 *** Tips                                                             :tips:
 
 **** Include inactive timestamps in agenda log
@@ -524,8 +551,6 @@ Information about various built-in features of Org.  (Related third-party tools 
 :END:
 
 [2016-09-09 Fri 18:51] To include inactive timestamps in the agenda log view, press ~[~.  I'm not sure if I should try to make this the default, or if I should use active timestamps instead.
-
-*** [[id:6a599497-ce37-41b5-8ee4-92d4b2459b0c][Third-party Tools]]
 
 ** Appearance                                                   :appearance:
 :PROPERTIES:
@@ -784,14 +809,14 @@ Prettify headings and plain lists in org-mode. This package is a direct descenda
 :ID:       5b5140cd-00d2-4f31-8a3d-ff7e2edc9395
 :END:
 
-***** [[https://github.com/fniessen/org-html-themes][org-html-themes: Framework including two themes, Bigblow and ReadTheOrg]] :HTML:
-:PROPERTIES:
-:author:   Fabrice Niessen
-:END:
-
 ***** [[https://github.com/alphapapa/org-html-theme-darksun][org-html-theme-darksun: A Solarized Dark version of the Bigblow Org HTML export theme]] :HTML:
 :PROPERTIES:
 :author:   Adam Porter
+:END:
+
+***** [[https://github.com/fniessen/org-html-themes][org-html-themes: Framework including two themes, Bigblow and ReadTheOrg]] :HTML:
+:PROPERTIES:
+:author:   Fabrice Niessen
 :END:
 
 *** Lists                                                           :lists:
@@ -849,6 +874,10 @@ This may be a useful alternative to =org-element-parse-buffer=.  Also see [[http
 
 Tasks related to this document.
 
+** TODO Move attachments from data dir to parent data dir         :noexport:
+
+[2020-02-13 Thu 18:54]  Org 9.0.5 doesn't correctly inherit =ATTACH_DIR= properties set in =#+PROPERTY= lines.  Newer versions of Org look like they do.  So after I upgrade Org, I'll have to move attachments from this =pub/data= dir to the parent =data= dir.
+
 ** TODO Recursive sort function
 
 Should probably support subtree-specific sort functions.
@@ -856,10 +885,6 @@ Should probably support subtree-specific sort functions.
 ** TODO Sort by timestamp function
 
 Should support timestamps in property values.
-
-** TODO Move attachments from data dir to parent data dir         :noexport:
-
-[2020-02-13 Thu 18:54]  Org 9.0.5 doesn't correctly inherit =ATTACH_DIR= properties set in =#+PROPERTY= lines.  Newer versions of Org look like they do.  So after I upgrade Org, I'll have to move attachments from this =pub/data= dir to the parent =data= dir.
 
 * COMMENT Config                                                   :noexport:
 
