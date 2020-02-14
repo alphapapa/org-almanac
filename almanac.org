@@ -6,7 +6,7 @@
 
 # This file is exported to HTML at [[file:~/src/emacs/org-almanac/index.html]].
 
-* Contents
+* [#A] Contents
 :PROPERTIES:
 :TOC:      :include siblings :depth 2 :ignore this
 :UNNUMBERED: t
@@ -16,10 +16,10 @@
   - [[Blogging][Blogging]]
   - [[Project Management][Project Management]]
   - [[Writing][Writing]]
-- [[Configs][Configs]]
 - [[Development][Development]]
   - [[Building][Building]]
   - [[Performance][Performance]]
+- [[Configs][Configs]]
 - [[Documentation][Documentation]]
   - [[Community][Community]]
   - [[%5B%5Bhttps://orgmode.org/manual/%5D%5BManual%5D%5D][Manual]]
@@ -76,6 +76,7 @@ Using Org to publish a blog.
   - [[%5B%5Bhttps://ambrevar.xyz/blog-architecture/%5D%5BPierre%20Neidhardt:%20A%20blog%20in%20pure%20Org/Lisp%5D%5D][Pierre Neidhardt: A blog in pure Org/Lisp]]
   - [[%5B%5Bhttps://pank.eu/blog/blog-setup.html%5D%5BRasmus%20Pank%20Roulund:%20Blogging%20with%20Org%5D%5D][Rasmus Pank Roulund: Blogging with Org]]
   - [[%5B%5Bhttps://loomcom.com/blog/0110_emacs_blogging_for_fun_and_profit.html%5D%5BSeth%20J.%20Morabito:%20Emacs%20Blogging%20for%20Fun%20and%20Profit%5D%5D][Seth J. Morabito: Emacs Blogging for Fun and Profit]]
+  - [[Stig Brautaset][Stig Brautaset]]
   - [[Toon Claes][Toon Claes]]
 - [[Code][Code]]
   - [[%5B%5Bhttps://github.com/itf/org-export-head%5D%5BGitHub%20-%20itf/org-export-head:%20Org%20mode%20to%20blog%20exporter.%20Converts%20each%20header%20to%20a%20different%20file%5D%5D][GitHub - itf/org-export-head: Org mode to blog exporter. Converts each header to a different file]]
@@ -92,6 +93,7 @@ Using Org to publish a blog.
   - [[%5B%5Bhttps://nicolas.petton.fr/%5D%5BNicolas%20Petton%5D%5D][Nicolas Petton]]
   - [[%5B%5Bhttps://pank.eu/%5D%5BRasmus%20Pank%20Roulund:%20Coffee%20&%20Coding%20Chronicles%5D%5D][Rasmus Pank Roulund: Coffee & Coding Chronicles]]
   - [[%5B%5Bhttps://loomcom.com/%5D%5BSeth%20J.%20Morabito:%20Loom%20Communications%5D%5D][Seth J. Morabito: Loom Communications]]
+  - [[%5B%5Bhttps://www.brautaset.org/index.html%5D%5BStig%20Brautaset%5D%5D][Stig Brautaset]]
   - [[%5B%5Bhttps://thibaultmarin.github.io/blog/posts/2016-11-13-Personal_website_in_org.html%5D%5BThibault%20Marin:%20Personal%20website%20in%20org%5D%5D][Thibault Marin: Personal website in org]]
   - [[%5B%5Bhttps://writepermission.com/%5D%5BToon%20Claes:%20Write%20Permission%5D%5D][Toon Claes: Write Permission]]
   - [[%5B%5Bhttps://two-wrongs.com/%5D%5BTwo%20Wrongs%5D%5D][Two Wrongs]]
@@ -201,6 +203,23 @@ Using Org to publish a blog.
 :LOGBOOK:
 -  State "TODO"       from              [2020-02-13 Thu 01:09]
 :END:
+
+**** Stig Brautaset
+:PROPERTIES:
+:author:   Stig Brautaset
+:END:
+
+***** TODO [[https://github.com/stig/.emacs.d/blob/master/Blogging.org][.emacs.d/Blogging.org at master · stig/.emacs.d · GitHub]]
+
+***** TODO [[https://www.brautaset.org/articles/2017/blogging-with-org-mode.html][Blogging with Org mode]]
+
+***** TODO [[https://www.brautaset.org/articles/2017/blogging-with-org-mode-update.html][Blogging with Org mode—update!]]
+
+***** TODO [[https://www.brautaset.org/articles/2018/org-mode-rss.html][Creating an RSS feed with Org mode]]
+
+***** TODO [[https://www.brautaset.org/articles/2016/how-i-blog-this-week.html][How I Blog (This Week)]]
+
+***** TODO [[https://www.brautaset.org/articles/2018/creating-index-entry-from-post.html][Linking Org mode blog posts into the index page]]
 
 **** Toon Claes
 :PROPERTIES:
@@ -333,6 +352,19 @@ I am a supporter of Free Software I contribute to GNU Emacs and in particularly 
 
 See [[id:39024027-a5b0-4e0d-9fc1-c41db5549c8f][Multi-page sitemaps for org-publish? : emacs]].  Also [[id:e35e3361-dbe1-4a4b-ad8c-9ffc009b334e][Emacs Blogging for Fun and Profit]].
 
+**** [[https://www.brautaset.org/index.html][Stig Brautaset]]
+:PROPERTIES:
+:author:   Stig Brautaset
+:END:
+
+#+BEGIN_QUOTE
+I'm a software engineer based in the north east of England. This is my personal site, and opinions expressed here do not reflect those of my employer.
+
+I'm originally from the west coast of Norway. I studied electronics, and served as a sonar operator on a submarine during compulsory military service, before moving to London to study AI. I graduated from the University of Westminster in 2003, and have been working primarily as a backend software engineer since.
+
+I build this website in Emacs' Org mode, which can publish static HTML files. Those I deploy on Amazon S3 behind a CloudFront distribution and a free SSL certificate.
+#+END_QUOTE
+
 **** TODO [[https://thibaultmarin.github.io/blog/posts/2016-11-13-Personal_website_in_org.html][Thibault Marin: Personal website in org]]                 :ATTACH:
 :PROPERTIES:
 :Attachments: https%3A%2F%2Fthibaultmarin.github.io%2Fblog%2Fposts%2F2016-11-13-Personal_website_in_org.html--WeXar7.tar.xz
@@ -394,54 +426,6 @@ CLOCK: [2019-01-31 Thu 03:33]--[2019-01-31 Thu 03:33] =>  0:00
 
 **** [[id:b010ff39-f460-46c2-af8b-5118ffddb229][Tools]]
 
-* Configs                                                           :configs:
-:PROPERTIES:
-:TOC:      :depth 0
-:END:
-
-Examples of complete Org configurations.
-
-** [[https://github.com/alphapapa/alpha-org][alpha-org: A powerful Org configuration]]
-
-** [[http://doc.norang.ca/org-mode.html][Bernt Hansen: Organize your life in plain text!]]
-:PROPERTIES:
-:author:   Bernt Hansen
-:ID:       cd12e9d7-8598-4fbe-bab2-57c6929df737
-:END:
-:LOGBOOK:
--  State "SOMEDAY"    from              [2017-07-29 Sat 01:28]
-:END:
-
-*** TO-WATCH [[http://www.youtube.com/watch?v=II-xYw5VGFM][Video of it and "navi-mode"]] :refile:video:
-:LOGBOOK:
--  State "TO-WATCH"   from              [2017-07-29 Sat 01:28]
-:END:
-
-*** TO-WATCH [[http://www.youtube.com/watch?v=II-xYw5VGFM][Bernt Hansen's tutorial]] :refile:video:
-:LOGBOOK:
--  State "TO-WATCH"   from              [2017-07-29 Sat 01:28]
-:END:
-
-** [[https://justin.abrah.ms/dotfiles/emacs.html][Justin Abrahms]]  :ATTACH:
-:PROPERTIES:
-:Attachments: https%3A%2F%2Fjustin.abrah.ms%2Fdotfiles%2Femacs.html--Tkr5Fv.tar.xz
-:ID:       a7f7bb0f-c0af-4dfb-8266-2b4b2e201b74
-:author:   Justin Abrahms
-:END:
-:LOGBOOK:
--  Note taken on [2020-02-12 Wed 16:05] \\
-   Originally captured [2015-09-29 Tue 17:59].
-:END:
-
-** [[https://writequit.org/eos/eos-org.html][Lee Hinman: Emacs Operating System (EOS) Org config]] :ATTACH:
-:PROPERTIES:
-:author:   Lee Hinman
-:Attachments: https%3A%2F%2Fwritequit.org%2Feos%2Feos-org.html--uVK3nG.tar.xz
-:ID:       9a4223f5-6464-4824-bedc-a2cf5c5f405e
-:END:
-
-+ [[https://writequit.org/eos/eos.html][The Emacs Operating System (EOS)]]
-
 * Development                                                   :development:
 
 Information about Org development.
@@ -470,6 +454,54 @@ Information about Building Org.
 
 [2019-12-13 Fri 08:49]  
 
+* Configs                                                           :configs:
+:PROPERTIES:
+:TOC:      :depth 0
+:END:
+
+Examples of complete Org configurations.
+
+** [[https://github.com/alphapapa/alpha-org][alpha-org: A powerful Org configuration]]
+
+** [[http://doc.norang.ca/org-mode.html][Bernt Hansen: Organize your life in plain text!]]
+:PROPERTIES:
+:author:   Bernt Hansen
+:ID:       cd12e9d7-8598-4fbe-bab2-57c6929df737
+:END:
+:LOGBOOK:
+-  State "SOMEDAY"    from              [2017-07-29 Sat 01:28]
+:END:
+
+*** TO-WATCH [[http://www.youtube.com/watch?v=II-xYw5VGFM][Bernt Hansen's tutorial]] :refile:video:
+:LOGBOOK:
+-  State "TO-WATCH"   from              [2017-07-29 Sat 01:28]
+:END:
+
+*** TO-WATCH [[http://www.youtube.com/watch?v=II-xYw5VGFM][Video of it and "navi-mode"]] :refile:video:
+:LOGBOOK:
+-  State "TO-WATCH"   from              [2017-07-29 Sat 01:28]
+:END:
+
+** [[https://justin.abrah.ms/dotfiles/emacs.html][Justin Abrahms]]  :ATTACH:
+:PROPERTIES:
+:Attachments: https%3A%2F%2Fjustin.abrah.ms%2Fdotfiles%2Femacs.html--Tkr5Fv.tar.xz
+:ID:       a7f7bb0f-c0af-4dfb-8266-2b4b2e201b74
+:author:   Justin Abrahms
+:END:
+:LOGBOOK:
+-  Note taken on [2020-02-12 Wed 16:05] \\
+   Originally captured [2015-09-29 Tue 17:59].
+:END:
+
+** [[https://writequit.org/eos/eos-org.html][Lee Hinman: Emacs Operating System (EOS) Org config]] :ATTACH:
+:PROPERTIES:
+:author:   Lee Hinman
+:Attachments: https%3A%2F%2Fwritequit.org%2Feos%2Feos-org.html--uVK3nG.tar.xz
+:ID:       9a4223f5-6464-4824-bedc-a2cf5c5f405e
+:END:
+
++ [[https://writequit.org/eos/eos.html][The Emacs Operating System (EOS)]]
+
 * Documentation                                               :documentation:
 
 Other sources of documentation about Org.
@@ -477,16 +509,6 @@ Other sources of documentation about Org.
 ** Community                                                     :community:
 
 Community-provided documentation.
-
-*** [#A] [[http://orgmode.org/worg/][Worg]]                                                    :bookmark:
-:PROPERTIES:
-:ID:       90fe0f5b-8ecf-4078-81d1-344c537cdf04
-:END:
-:LOGBOOK:
-CLOCK: [2015-08-29 Sat 15:02]--[2015-08-29 Sat 15:04] =>  0:02
-:END:
-
-[2015-08-29 Sat 15:02] There's a lot of good stuff here.
 
 *** [[https://github.com/novoid/org-mode-workshop][Karl Voit: org-mode-workshop]]
 :PROPERTIES:
@@ -504,6 +526,16 @@ Includes:
 
 +  [[https://github.com/novoid/org-mode-workshop/blob/master/workshop.org][Workshop presentation]] :: Outline of presentation given by Karl.
 +  [[https://github.com/novoid/org-mode-workshop/blob/master/featureshow/org-mode-teaser.org][Teaser demo]] :: A large document demonstrating many features of Org.
+
+*** [#A] [[http://orgmode.org/worg/][Worg]]                                                    :bookmark:
+:PROPERTIES:
+:ID:       90fe0f5b-8ecf-4078-81d1-344c537cdf04
+:END:
+:LOGBOOK:
+CLOCK: [2015-08-29 Sat 15:02]--[2015-08-29 Sat 15:04] =>  0:02
+:END:
+
+[2015-08-29 Sat 15:02] There's a lot of good stuff here.
 
 ** [[https://orgmode.org/manual/][Manual]]                        :bookmark:
 
@@ -969,7 +1001,7 @@ Should support timestamps in property values.
 # eval: (require 'org-make-toc)
 # eval: (unpackaged/org-export-html-with-useful-ids-mode 1)
 # org-make-toc-link-type-fn: org-make-toc--link-entry-org
-# before-save-hook: ((lambda () (unpackaged/org-fix-blank-lines t)) org-make-toc)
+# before-save-hook: ((lambda () (unpackaged/org-fix-blank-lines t)) (lambda () (save-excursion (goto-char (point-min)) (ap/org-sort-entries-recursive-multi '(?a ?p)))) org-make-toc)
 # after-save-hook: (lambda nil (copy-file "org.org" "~/src/emacs/org-almanac/almanac.org" t) (when (org-html-export-to-html) (rename-file "org.html" "~/src/emacs/org-almanac/index.html" t)))
 # org-export-with-title: t
 # org-export-with-broken-links: mark
