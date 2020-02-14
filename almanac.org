@@ -529,9 +529,20 @@ Information about various built-in features of Org.  (Related third-party tools 
 ** Agenda                                                           :agenda:
 :PROPERTIES:
 :ID:       f8f18682-8caf-448d-b096-96356e8eb7e9
+:TOC:      :include descendants :depth 2 :local (depth)
+:END:
+:CONTENTS:
+- [[Articles][Articles]]
+- [[%5B%5Bid:6a599497-ce37-41b5-8ee4-92d4b2459b0c%5D%5BThird-party%20Tools%5D%5D][Third-party Tools]]
+- [[Tips][Tips]]
+  - [[Exclude and include tags in custom Agenda commands][Exclude and include tags in custom Agenda commands]]
+  - [[Include inactive timestamps in agenda log][Include inactive timestamps in agenda log]]
 :END:
 
 *** Articles                                                     :articles:
+:PROPERTIES:
+:TOC:      :depth 0
+:END:
 
 **** [[https://blog.aaronbieber.com/2016/09/24/an-agenda-for-life-with-org-mode.html][Aaron Bieber: An Agenda for Life With Org Mode]] :website:ATTACH:
 :PROPERTIES:
@@ -544,6 +555,70 @@ Information about various built-in features of Org.  (Related third-party tools 
 *** [[id:6a599497-ce37-41b5-8ee4-92d4b2459b0c][Third-party Tools]]
 
 *** Tips                                                             :tips:
+
+**** Exclude and include tags in custom Agenda commands
+
+Commands like =org-tags-view= naturally offer the ability to control which tags are used to filter items, but such filtering is less obvious when using daily/weekly Agenda commands.  However, doing so is straightforward using the variable =org-agenda-tag-filter=.  For example, Org user Stig Brautaset offers [[https://lists.gnu.org/archive/html/emacs-orgmode/2020-02/msg00533.html][this example]]:
+
+#+BEGIN_SRC elisp
+  (setq org-agenda-custom-commands
+        '(("w" "Work Agenda"
+           ((agenda "" ((org-agenda-span 'day)))
+            (todo "TODO"
+                  ((org-agenda-max-entries 5)
+                   (org-agenda-todo-ignore-scheduled 'all)
+                   (org-agenda-todo-ignore-deadlines 'all)
+                   (org-agenda-todo-ignore-timestamp 'all))))
+           ((org-agenda-tag-filter '("-@home" "-MAYBE"))))
+          ("h" "Home Agenda"
+           ((agenda "")
+            (todo "TODO"
+                  ((org-agenda-max-entries 5)
+                   (org-agenda-todo-ignore-scheduled 'all)
+                   (org-agenda-todo-ignore-deadlines 'all)
+                   (org-agenda-todo-ignore-timestamp 'all))))
+           ((org-agenda-tag-filter '("-@work" "-MAYBE"))))
+          ("m" "Maybe"
+           ((todo "PROJ")
+            (tags-todo "-PROJ/TODO"))
+           ((org-agenda-tag-filter '("MAYBE"))))
+          ("P" "Projects" tags-todo "-MAYBE/PROJ"))))
+#+END_SRC
+
+Alternatives include:
+
++  Using [[https://github.com/alphapapa/org-ql][org-ql]] to build Agenda-like views using queries, like:
+
+#+BEGIN_SRC elisp
+  (org-ql-search (org-agenda-files)
+    '(and (or (deadline auto)
+              (scheduled :to today)
+              (ts-active :on today))
+          (not (or (todo "MAYBE")
+                   (tags "@home")))))
+#+END_SRC
+
++  Using [[https://github.com/alphapapa/org-super-agenda][org-super-agenda]] to group and/or discard certain items, like:
+
+#+BEGIN_SRC elisp
+  (setq org-agenda-custom-commands
+        '(("w" "Work Agenda"
+           ((agenda "" ((org-agenda-span 'day)))
+            (todo "TODO"
+                  ((org-agenda-max-entries 5)
+                   (org-agenda-todo-ignore-scheduled 'all)
+                   (org-agenda-todo-ignore-deadlines 'all)
+                   (org-agenda-todo-ignore-timestamp 'all))))
+           ((org-super-agenda-groups '((:discard (:tags "@home" :todo "MAYBE"))))))
+          ("h" "Home Agenda"
+           ((agenda "")
+            (todo "TODO"
+                  ((org-agenda-max-entries 5)
+                   (org-agenda-todo-ignore-scheduled 'all)
+                   (org-agenda-todo-ignore-deadlines 'all)
+                   (org-agenda-todo-ignore-timestamp 'all))))
+           ((org-super-agenda-groups '((:discard (:tags "@work" :todo "MAYBE")))))))))
+#+END_SRC
 
 **** Include inactive timestamps in agenda log
 :PROPERTIES:

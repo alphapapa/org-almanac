@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-02-13 Thu 21:33 -->
+<!-- 2020-02-14 Fri 16:02 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>org-almanac</title>
@@ -842,12 +842,23 @@ Information about various built-in features of Org.  (Related third-party tools 
 <div id="outline-container-Agenda" class="outline-3">
 <h3 id="Agenda"><a id="ID-f8f18682-8caf-448d-b096-96356e8eb7e9"></a><span class="section-number-3">5.1</span> Agenda&#xa0;&#xa0;&#xa0;<span class="tag"><span class="agenda">agenda</span></span></h3>
 <div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li><a href="#Articles">Articles</a></li>
+<li><a href="#%5B%5Bid%3A6a599497-ce37-41b5-8ee4-92d4b2459b0c%5D%5BThird-party%20Tools%5D%5D">Third-party Tools</a></li>
+<li><a href="#Tips">Tips</a>
+<ul class="org-ul">
+<li><a href="#Exclude%20and%20include%20tags%20in%20custom%20Agenda%20commands">Exclude and include tags in custom Agenda commands</a></li>
+<li><a href="#Include%20inactive%20timestamps%20in%20agenda%20log">Include inactive timestamps in agenda log</a></li>
+</ul></li>
+</ul>
 </div>
 
 <div id="outline-container-Agenda--Articles" class="outline-4">
 <h4 id="Agenda--Articles"><span class="section-number-4">5.1.1</span> Articles&#xa0;&#xa0;&#xa0;<span class="tag"><span class="articles">articles</span></span></h4>
 <div class="outline-text-4" id="text-5-1-1">
-</div><ol class="org-ol"><li><a id="%5B%5Bhttps%3A%2F%2Fblog.aaronbieber.com%2F2016%2F09%2F24%2Fan-agenda-for-life-with-org-mode.html%5D%5BAaron%20Bieber%3A%20An%20Agenda%20for%20Life%20With%20Org%20Mode%5D%5D"></a><a id="ID-ce6907dd-1267-44ed-803d-9e488907d5d9"></a><a href="https://blog.aaronbieber.com/2016/09/24/an-agenda-for-life-with-org-mode.html">Aaron Bieber: An Agenda for Life With Org Mode</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="website">website</span>&#xa0;<span class="ATTACH">ATTACH</span></span><br /><div class="outline-text-5" id="text-5-1-1-1">
+</div>
+
+<ol class="org-ol"><li><a id="%5B%5Bhttps%3A%2F%2Fblog.aaronbieber.com%2F2016%2F09%2F24%2Fan-agenda-for-life-with-org-mode.html%5D%5BAaron%20Bieber%3A%20An%20Agenda%20for%20Life%20With%20Org%20Mode%5D%5D"></a><a id="ID-ce6907dd-1267-44ed-803d-9e488907d5d9"></a><a href="https://blog.aaronbieber.com/2016/09/24/an-agenda-for-life-with-org-mode.html">Aaron Bieber: An Agenda for Life With Org Mode</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="website">website</span>&#xa0;<span class="ATTACH">ATTACH</span></span><br /><div class="outline-text-5" id="text-5-1-1-1">
 <p>
 <span class="timestamp-wrapper"><span class="timestamp">[2019-04-07 Sun 18:09]  </span></span>  I think I've seen this before, but I came across it again, and it has some good examples and code.
 </p>
@@ -861,7 +872,82 @@ Information about various built-in features of Org.  (Related third-party tools 
 <div id="outline-container-Tips" class="outline-4">
 <h4 id="Tips"><span class="section-number-4">5.1.3</span> Tips&#xa0;&#xa0;&#xa0;<span class="tag"><span class="tips">tips</span></span></h4>
 <div class="outline-text-4" id="text-5-1-3">
-</div><ol class="org-ol"><li><a id="Include%20inactive%20timestamps%20in%20agenda%20log"></a><a id="ID-73c5fb5f-ebed-48bb-a140-de9cca7bf0d6"></a>Include inactive timestamps in agenda log<br /><div class="outline-text-5" id="text-5-1-3-1">
+</div><ol class="org-ol"><li><a id="Exclude%20and%20include%20tags%20in%20custom%20Agenda%20commands"></a>Exclude and include tags in custom Agenda commands<br /><div class="outline-text-5" id="text-5-1-3-1">
+<p>
+Commands like <code>org-tags-view</code> naturally offer the ability to control which tags are used to filter items, but such filtering is less obvious when using daily/weekly Agenda commands.  However, doing so is straightforward using the variable <code>org-agenda-tag-filter</code>.  For example, Org user Stig Brautaset offers <a href="https://lists.gnu.org/archive/html/emacs-orgmode/2020-02/msg00533.html">this example</a>:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-elisp"><span style="color: #a17e11;">(</span><span style="color: #3d85b7; font-weight: bold;">setq</span><span style="color: #3d85b7;"> org-agenda-custom-commands</span>
+<span style="color: #3d85b7;">      '(</span><span style="color: #78880e;">(</span><span style="color: #65bc957591ca;">"w"</span> <span style="color: #65bc957591ca;">"Work Agenda"</span>
+         <span style="color: #3d8b85;">(</span><span style="color: #a17e11;">(</span><span style="color: #3d85b7;">agenda </span><span style="color: #73139976b41e;">""</span> <span style="color: #3d85b7;">(</span><span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-span 'day</span><span style="color: #78880e;">)</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span>
+          <span style="color: #a17e11;">(</span><span style="color: #3d85b7;">todo </span><span style="color: #73139976b41e;">"</span><span style="color: #859900;">TODO</span><span style="color: #73139976b41e;">"</span>
+                <span style="color: #3d85b7;">(</span><span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-max-entries 5</span><span style="color: #78880e;">)</span>
+                 <span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-todo-ignore-scheduled 'all</span><span style="color: #78880e;">)</span>
+                 <span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-todo-ignore-deadlines 'all</span><span style="color: #78880e;">)</span>
+                 <span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-todo-ignore-timestamp 'all</span><span style="color: #78880e;">)</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span><span style="color: #3d8b85;">)</span>
+         <span style="color: #3d8b85;">(</span><span style="color: #a17e11;">(</span><span style="color: #3d85b7;">org-agenda-tag-filter '(</span><span style="color: #921da24c26e6;">"-@home"</span> <span style="color: #921da24c26e6;">"-MAYBE"</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span><span style="color: #3d8b85;">)</span><span style="color: #78880e;">)</span>
+        <span style="color: #78880e;">(</span><span style="color: #65bc957591ca;">"h"</span> <span style="color: #65bc957591ca;">"Home Agenda"</span>
+         <span style="color: #3d8b85;">(</span><span style="color: #a17e11;">(</span><span style="color: #3d85b7;">agenda </span><span style="color: #73139976b41e;">""</span><span style="color: #a17e11;">)</span>
+          <span style="color: #a17e11;">(</span><span style="color: #3d85b7;">todo </span><span style="color: #73139976b41e;">"</span><span style="color: #859900;">TODO</span><span style="color: #73139976b41e;">"</span>
+                <span style="color: #3d85b7;">(</span><span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-max-entries 5</span><span style="color: #78880e;">)</span>
+                 <span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-todo-ignore-scheduled 'all</span><span style="color: #78880e;">)</span>
+                 <span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-todo-ignore-deadlines 'all</span><span style="color: #78880e;">)</span>
+                 <span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-todo-ignore-timestamp 'all</span><span style="color: #78880e;">)</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span><span style="color: #3d8b85;">)</span>
+         <span style="color: #3d8b85;">(</span><span style="color: #a17e11;">(</span><span style="color: #3d85b7;">org-agenda-tag-filter '(</span><span style="color: #921da24c26e6;">"-@work"</span> <span style="color: #921da24c26e6;">"-MAYBE"</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span><span style="color: #3d8b85;">)</span><span style="color: #78880e;">)</span>
+        <span style="color: #78880e;">(</span><span style="color: #65bc957591ca;">"m"</span> <span style="color: #65bc957591ca;">"Maybe"</span>
+         <span style="color: #3d8b85;">(</span><span style="color: #a17e11;">(</span><span style="color: #3d85b7;">todo </span><span style="color: #73139976b41e;">"PROJ"</span><span style="color: #a17e11;">)</span>
+          <span style="color: #a17e11;">(</span><span style="color: #3d85b7;">tags-todo </span><span style="color: #73139976b41e;">"-PROJ/TODO"</span><span style="color: #a17e11;">)</span><span style="color: #3d8b85;">)</span>
+         <span style="color: #3d8b85;">(</span><span style="color: #a17e11;">(</span><span style="color: #3d85b7;">org-agenda-tag-filter '(</span><span style="color: #921da24c26e6;">"</span><span style="color: #6c71c4;">MAYBE</span><span style="color: #921da24c26e6;">"</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span><span style="color: #3d8b85;">)</span><span style="color: #78880e;">)</span>
+        <span style="color: #78880e;">(</span><span style="color: #65bc957591ca;">"P"</span> <span style="color: #65bc957591ca;">"Projects"</span> <span style="color: #3d8b85;">tags-todo </span><span style="color: #65bc957591ca;">"-MAYBE/PROJ"</span><span style="color: #78880e;">)</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span>)
+</pre>
+</div>
+
+<p>
+Alternatives include:
+</p>
+
+<ul class="org-ul">
+<li>Using <a href="https://github.com/alphapapa/org-ql">org-ql</a> to build Agenda-like views using queries, like:</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-elisp"><span style="color: #a17e11;">(</span><span style="color: #3d85b7; text-decoration: underline;">org-ql-search</span><span style="color: #3d85b7;"> (</span><span style="color: #78880e; text-decoration: underline;">org-agenda-files</span><span style="color: #3d85b7;">)</span>
+  <span style="color: #3d85b7;">'(</span><span style="color: #78880e; font-weight: bold;">and</span><span style="color: #78880e;"> (</span><span style="color: #3d8b85; font-weight: bold;">or</span><span style="color: #3d8b85;"> (</span><span style="color: #a17e11;">deadline auto</span><span style="color: #3d8b85;">)</span>
+            <span style="color: #3d8b85;">(</span><span style="color: #a17e11;">scheduled </span><span style="color: #a17e11; font-weight: bold;">:to</span><span style="color: #a17e11;"> today</span><span style="color: #3d8b85;">)</span>
+            <span style="color: #3d8b85;">(</span><span style="color: #a17e11;">ts-active </span><span style="color: #a17e11; font-weight: bold;">:on</span><span style="color: #a17e11;"> today</span><span style="color: #3d8b85;">)</span><span style="color: #78880e;">)</span>
+        <span style="color: #78880e;">(</span><span style="color: #cb4b16; font-weight: bold;">not</span><span style="color: #3d8b85;"> (</span><span style="color: #a17e11; font-weight: bold;">or</span><span style="color: #a17e11;"> (</span><span style="color: #3d85b7;">todo </span><span style="color: #73139976b41e;">"</span><span style="color: #6c71c4;">MAYBE</span><span style="color: #73139976b41e;">"</span><span style="color: #a17e11;">)</span>
+                 <span style="color: #a17e11;">(</span><span style="color: #3d85b7;">tags </span><span style="color: #73139976b41e;">"@home"</span><span style="color: #a17e11;">)</span><span style="color: #3d8b85;">)</span><span style="color: #78880e;">)</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span>
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>Using <a href="https://github.com/alphapapa/org-super-agenda">org-super-agenda</a> to group and/or discard certain items, like:</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-elisp"><span style="color: #a17e11;">(</span><span style="color: #3d85b7; font-weight: bold;">setq</span><span style="color: #3d85b7;"> org-agenda-custom-commands</span>
+<span style="color: #3d85b7;">      '(</span><span style="color: #78880e;">(</span><span style="color: #65bc957591ca;">"w"</span> <span style="color: #65bc957591ca;">"Work Agenda"</span>
+         <span style="color: #3d8b85;">(</span><span style="color: #a17e11;">(</span><span style="color: #3d85b7;">agenda </span><span style="color: #73139976b41e;">""</span> <span style="color: #3d85b7;">(</span><span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-span 'day</span><span style="color: #78880e;">)</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span>
+          <span style="color: #a17e11;">(</span><span style="color: #3d85b7;">todo </span><span style="color: #73139976b41e;">"</span><span style="color: #859900;">TODO</span><span style="color: #73139976b41e;">"</span>
+                <span style="color: #3d85b7;">(</span><span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-max-entries 5</span><span style="color: #78880e;">)</span>
+                 <span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-todo-ignore-scheduled 'all</span><span style="color: #78880e;">)</span>
+                 <span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-todo-ignore-deadlines 'all</span><span style="color: #78880e;">)</span>
+                 <span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-todo-ignore-timestamp 'all</span><span style="color: #78880e;">)</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span><span style="color: #3d8b85;">)</span>
+         <span style="color: #3d8b85;">(</span><span style="color: #a17e11;">(</span><span style="color: #3d85b7;">org-super-agenda-groups '(</span><span style="color: #78880e;">(</span><span style="color: #3d8b85; font-weight: bold;">:discard</span><span style="color: #3d8b85;"> (</span><span style="color: #a38528; font-weight: bold;">:tags</span><span style="color: #a38528;"> </span><span style="color: #b2b099864b81;">"@home"</span> <span style="color: #a38528; font-weight: bold;">:todo</span><span style="color: #a38528;"> </span><span style="color: #b2b099864b81;">"</span><span style="color: #6c71c4;">MAYBE</span><span style="color: #b2b099864b81;">"</span><span style="color: #3d8b85;">)</span><span style="color: #78880e;">)</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span><span style="color: #3d8b85;">)</span><span style="color: #78880e;">)</span>
+        <span style="color: #78880e;">(</span><span style="color: #65bc957591ca;">"h"</span> <span style="color: #65bc957591ca;">"Home Agenda"</span>
+         <span style="color: #3d8b85;">(</span><span style="color: #a17e11;">(</span><span style="color: #3d85b7;">agenda </span><span style="color: #73139976b41e;">""</span><span style="color: #a17e11;">)</span>
+          <span style="color: #a17e11;">(</span><span style="color: #3d85b7;">todo </span><span style="color: #73139976b41e;">"</span><span style="color: #859900;">TODO</span><span style="color: #73139976b41e;">"</span>
+                <span style="color: #3d85b7;">(</span><span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-max-entries 5</span><span style="color: #78880e;">)</span>
+                 <span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-todo-ignore-scheduled 'all</span><span style="color: #78880e;">)</span>
+                 <span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-todo-ignore-deadlines 'all</span><span style="color: #78880e;">)</span>
+                 <span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-todo-ignore-timestamp 'all</span><span style="color: #78880e;">)</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span><span style="color: #3d8b85;">)</span>
+         <span style="color: #3d8b85;">(</span><span style="color: #a17e11;">(</span><span style="color: #3d85b7;">org-super-agenda-groups '(</span><span style="color: #78880e;">(</span><span style="color: #3d8b85; font-weight: bold;">:discard</span><span style="color: #3d8b85;"> (</span><span style="color: #a38528; font-weight: bold;">:tags</span><span style="color: #a38528;"> </span><span style="color: #b2b099864b81;">"@work"</span> <span style="color: #a38528; font-weight: bold;">:todo</span><span style="color: #a38528;"> </span><span style="color: #b2b099864b81;">"</span><span style="color: #6c71c4;">MAYBE</span><span style="color: #b2b099864b81;">"</span><span style="color: #3d8b85;">)</span><span style="color: #78880e;">)</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span><span style="color: #3d8b85;">)</span><span style="color: #78880e;">)</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span>)
+</pre>
+</div>
+</div></li>
+
+<li><a id="Include%20inactive%20timestamps%20in%20agenda%20log"></a><a id="ID-73c5fb5f-ebed-48bb-a140-de9cca7bf0d6"></a>Include inactive timestamps in agenda log<br /><div class="outline-text-5" id="text-5-1-3-2">
 <p>
 <span class="timestamp-wrapper"><span class="timestamp">[2016-09-09 Fri 18:51] </span></span> To include inactive timestamps in the agenda log view, press <code>[</code>.  I'm not sure if I should try to make this the default, or if I should use active timestamps instead.
 </p>
@@ -1290,7 +1376,7 @@ Should support timestamps in property values.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Adam Porter</p>
-<p class="date">Created: 2020-02-13 Thu 21:33</p>
+<p class="date">Created: 2020-02-14 Fri 16:02</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
