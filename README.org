@@ -1,1 +1,3 @@
-The =index.html= file is generated from [[file:~/org/pub/org.org][~/org/pub/org.org]].
+View the almanac in a browser at: https://alphapapa.github.io/org-almanac/
+
+The =almanac.org= file may be viewed in Emacs directly.  It may also be viewed from the GitHub repo pages, but some of the links won't work properly, because it's not currently possible to make links that work in both the GitHub renderer and Org's exporter.
