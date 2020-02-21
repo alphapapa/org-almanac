@@ -613,7 +613,7 @@ Commands like =org-tags-view= naturally offer the ability to control which tags 
           ("m" "Maybe"
            ((todo "PROJ")
             (tags-todo "-PROJ/TODO"))
-           ((org-agenda-tag-filter '("MAYBE"))))
+           ((org-agenda-tag-filter '("+MAYBE"))))
           ("P" "Projects" tags-todo "-MAYBE/PROJ"))))
 #+END_SRC
 
