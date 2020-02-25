@@ -14,6 +14,7 @@
 :CONTENTS:
 - [[Application][Application]]
   - [[Blogging][Blogging]]
+  - [[Database][Database]]
   - [[Project Management][Project Management]]
   - [[Writing][Writing]]
 - [[Development][Development]]
@@ -48,6 +49,7 @@ On applying Org to various tasks.
 
 :CONTENTS:
 - [[Blogging][Blogging]]
+- [[Database][Database]]
 - [[Project Management][Project Management]]
 - [[Writing][Writing]]
 :END:
@@ -379,6 +381,100 @@ I build this website in Emacs' Org mode, which can publish static HTML files. Th
 Toon's blog has a unique and appealing custom theme.
 
 **** TODO [[https://two-wrongs.com/][Two Wrongs]]
+
+** Database                                                       :database:
+
+Using Org files like a database.
+
+*** Tools                                                           :tools:
+
+**** [[https://orgmode.org/worg/org-contrib/org-collector.html][org-collector]]
+
+=org-collector= is a library in =org-contrib= that collects headline properties into tables with optional pre-processing.  Here's a simple example from its documentation:
+
+Given the following Org buffer:
+
+#+BEGIN_SRC org
+  ,* Spending
+
+  ,** December
+     :PROPERTIES:
+     :ID:       december
+     :END:
+
+  ,*** Week 1
+
+  ,**** Grocery Store [2008-12-01 Mon]
+       :PROPERTIES:
+       :amount:   56.77
+       :type:     food
+       :END:
+
+  ,**** Athletic club [2008-12-02 Tue]
+       :PROPERTIES:
+       :amount:   75.00
+       :type:     health
+       :END:
+
+  ,*** Week 2
+
+  ,**** Restaurant [2008-12-08 Mon]
+       :PROPERTIES:
+       :amount:   30.67
+       :type:     food
+       :END:
+
+#+END_SRC
+
+A report could be generated like so:
+
+#+BEGIN_SRC org
+  ,#+BEGIN: propview :id "december" :conds ((string= TYPE "food")) :cols (ITEM AMOUNT)
+  | "ITEM"                           | "amount" |
+  |----------------------------------+----------|
+  | "Grocery Store [2008-12-01 Mon]" |    56.77 |
+  | "Restaurant [2008-12-08 Mon]"    |    30.67 |
+  |----------------------------------+----------|
+  |                                  |          |
+  ,#+END:
+#+END_SRC
+
+**** [[https://github.com/alphapapa/org-ql][org-ql]]                                                    :libraries:
+
+=org-ql= provides a query language for Org files. It offers two syntax styles: Lisp-like sexps and search engine-like keywords.
+
+It includes three libraries: The =org-ql= library is flexible and may be used as a backend for other tools. The libraries =org-ql-search= and =helm-org-ql= provide interactive search commands and saved views.
+
+Here are a few examples of the Lisp-side of the library.  See the examples and screenshots on its home page for more information.
+
+#+BEGIN_SRC elisp
+  ;; Show an agenda-like view, similar to a “traditional” Org Agenda
+  ;; with Log Mode turned on.
+  (org-ql-search (org-agenda-files)
+    '(or (and (not (done))
+              (or (habit)
+                  (deadline auto)
+                  (scheduled :to today)
+                  (ts-active :on today)))
+         (closed :on today))
+    :sort '(date priority todo))
+
+  ;; Show entries that have any timestamp within the past week. Group by
+  ;; date using org-super-agenda with the :auto-ts group.
+  (org-ql-search (org-agenda-files)
+    '(ts :from -7 :to today)
+    :title "Recent Items"
+    :sort '(date priority todo)
+    :super-groups '((:auto-ts t)))
+
+  ;; If you kept a database of music in an Org file, you could run a
+  ;; query like this to find tracks composed by Chopin that do not have
+  ;; their key recorded in the database.
+  (org-ql-search "~/org/music.org"
+    '(and (property "genre" "classical")
+          (property "composer" "Chopin")
+          (not (property "key"))))
+#+END_SRC
 
 ** Project Management                                   :project_management:
 
@@ -988,6 +1084,12 @@ Tasks related to this document.
 ** TODO Recursive sort function
 
 Should probably support subtree-specific sort functions.
+
+** Resources to add
+
+*** [[https://www.youtube.com/watch?v=0g9BcZvQbXU][Consistent Technical Documents Using Emacs and Org Mode - YouTube]]
+
+This is an excellent demonstration of using Org and Org Babel to produce technical documentation.
 
 ** TODO Sort by timestamp function
 
