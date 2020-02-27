@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-02-24 Mon 19:30 -->
+<!-- 2020-02-26 Wed 22:09 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>org-almanac</title>
@@ -245,6 +245,7 @@ for the JavaScript code in this tag.
 <li><a href="#Blogging">Blogging</a></li>
 <li><a href="#Database">Database</a></li>
 <li><a href="#Project%20Management">Project Management</a></li>
+<li><a href="#Web%20Publishing">Web Publishing</a></li>
 <li><a href="#Writing">Writing</a></li>
 </ul></li>
 <li><a href="#Development">Development</a>
@@ -291,6 +292,7 @@ On applying Org to various tasks.
 <li><a href="#Blogging">Blogging</a></li>
 <li><a href="#Database">Database</a></li>
 <li><a href="#Project%20Management">Project Management</a></li>
+<li><a href="#Web%20Publishing">Web Publishing</a></li>
 <li><a href="#Writing">Writing</a></li>
 </ul>
 </div>
@@ -705,14 +707,14 @@ A report could be generated like so:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-org"><span style="color: #586e75; background-color: #0c1e24;">#+BEGIN: propview :id "december" :conds ((string= TYPE "food")) :cols (ITEM AMOUNT)</span>
+<pre class="src src-org"><span style="color: #586e75; background-color: #0c1e24; font-weight: bold; font-style: italic;">#+BEGIN: propview :id "december" :conds ((string= TYPE "food")) :cols (ITEM AMOUNT)</span>
 <span style="color: #859900;">| "ITEM"                           | "amount" |</span>
 <span style="color: #859900;">|----------------------------------+----------|</span>
 <span style="color: #859900;">| "Grocery Store </span><span style="color: #268bd2; text-decoration: underline;">[2008-12-01 Mon]</span><span style="color: #859900;">" |    56.77 |</span>
 <span style="color: #859900;">| "Restaurant </span><span style="color: #268bd2; text-decoration: underline;">[2008-12-08 Mon]</span><span style="color: #859900;">"    |    30.67 |</span>
 <span style="color: #859900;">|----------------------------------+----------|</span>
 <span style="color: #859900;">|                                  |          |</span>
-<span style="color: #586e75; background-color: #0c1e24;">#+END:</span>
+<span style="color: #586e75; background-color: #0c1e24; font-weight: bold; font-style: italic;">#+END:</span>
 </pre>
 </div>
 </div></li>
@@ -733,30 +735,30 @@ Here are a few examples of the Lisp-side of the library.  See the examples and s
 <div class="org-src-container">
 <pre class="src src-elisp"><span style="color: #586e75;">;; </span><span style="color: #586e75;">Show an agenda-like view, similar to a &#8220;traditional&#8221; Org Agenda</span>
 <span style="color: #586e75;">;; </span><span style="color: #586e75;">with Log Mode turned on.</span>
-<span style="color: #f3a35f;">(</span><span style="color: #2c95fb; text-decoration: underline;">org-ql-search</span><span style="color: #2c95fb;"> (</span><span style="color: #4cba7d; text-decoration: underline;">org-agenda-files</span><span style="color: #2c95fb;">)</span>
-  <span style="color: #2c95fb;">'(</span><span style="color: #4cba7d; font-weight: bold;">or</span><span style="color: #4cba7d;"> (</span><span style="color: #f0b787; font-weight: bold;">and</span><span style="color: #f0b787;"> (</span><span style="color: #cb4b16; font-weight: bold;">not</span><span style="color: #58a8f5;"> (</span><span style="color: #6fbd92;">done</span><span style="color: #58a8f5;">)</span><span style="color: #f0b787;">)</span>
-            <span style="color: #f0b787;">(</span><span style="color: #58a8f5; font-weight: bold;">or</span><span style="color: #58a8f5;"> (</span><span style="color: #6fbd92;">habit</span><span style="color: #58a8f5;">)</span>
-                <span style="color: #58a8f5;">(</span><span style="color: #6fbd92;">deadline auto</span><span style="color: #58a8f5;">)</span>
-                <span style="color: #58a8f5;">(</span><span style="color: #6fbd92;">scheduled </span><span style="color: #6fbd92; font-weight: bold;">:to</span><span style="color: #6fbd92;"> today</span><span style="color: #58a8f5;">)</span>
-                <span style="color: #58a8f5;">(</span><span style="color: #6fbd92;">ts-active </span><span style="color: #6fbd92; font-weight: bold;">:on</span><span style="color: #6fbd92;"> today</span><span style="color: #58a8f5;">)</span><span style="color: #f0b787;">)</span><span style="color: #4cba7d;">)</span>
-       <span style="color: #4cba7d;">(</span><span style="color: #f0b787;">closed </span><span style="color: #f0b787; font-weight: bold;">:on</span><span style="color: #f0b787;"> today</span><span style="color: #4cba7d;">)</span><span style="color: #2c95fb;">)</span>
-  <span style="color: #2c95fb; font-weight: bold;">:sort</span><span style="color: #2c95fb;"> '(</span><span style="color: #4cba7d;">date priority todo</span><span style="color: #2c95fb;">)</span><span style="color: #f3a35f;">)</span>
+<span style="color: #a17e11;">(</span><span style="color: #3d85b7; text-decoration: underline;">org-ql-search</span><span style="color: #3d85b7;"> (</span><span style="color: #78880e; text-decoration: underline;">org-agenda-files</span><span style="color: #3d85b7;">)</span>
+  <span style="color: #3d85b7;">'(</span><span style="color: #78880e; font-weight: bold;">or</span><span style="color: #78880e;"> (</span><span style="color: #3d8b85; font-weight: bold;">and</span><span style="color: #3d8b85;"> (</span><span style="color: #cb4b16; font-weight: bold;">not</span><span style="color: #a17e11;"> (</span><span style="color: #3d85b7;">done</span><span style="color: #a17e11;">)</span><span style="color: #3d8b85;">)</span>
+            <span style="color: #3d8b85;">(</span><span style="color: #a17e11; font-weight: bold;">or</span><span style="color: #a17e11;"> (</span><span style="color: #3d85b7;">habit</span><span style="color: #a17e11;">)</span>
+                <span style="color: #a17e11;">(</span><span style="color: #3d85b7;">deadline auto</span><span style="color: #a17e11;">)</span>
+                <span style="color: #a17e11;">(</span><span style="color: #3d85b7;">scheduled </span><span style="color: #3d85b7; font-weight: bold;">:to</span><span style="color: #3d85b7;"> today</span><span style="color: #a17e11;">)</span>
+                <span style="color: #a17e11;">(</span><span style="color: #3d85b7;">ts-active </span><span style="color: #3d85b7; font-weight: bold;">:on</span><span style="color: #3d85b7;"> today</span><span style="color: #a17e11;">)</span><span style="color: #3d8b85;">)</span><span style="color: #78880e;">)</span>
+       <span style="color: #78880e;">(</span><span style="color: #3d8b85;">closed </span><span style="color: #3d8b85; font-weight: bold;">:on</span><span style="color: #3d8b85;"> today</span><span style="color: #78880e;">)</span><span style="color: #3d85b7;">)</span>
+  <span style="color: #3d85b7; font-weight: bold;">:sort</span><span style="color: #3d85b7;"> '(</span><span style="color: #78880e;">date priority todo</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span>
 
 <span style="color: #586e75;">;; </span><span style="color: #586e75;">Show entries that have any timestamp within the past week. Group by</span>
 <span style="color: #586e75;">;; </span><span style="color: #586e75;">date using org-super-agenda with the :auto-ts group.</span>
-<span style="color: #f3a35f;">(</span><span style="color: #2c95fb; text-decoration: underline;">org-ql-search</span><span style="color: #2c95fb;"> (</span><span style="color: #4cba7d; text-decoration: underline;">org-agenda-files</span><span style="color: #2c95fb;">)</span>
-  <span style="color: #2c95fb;">'(</span><span style="color: #4cba7d;">ts </span><span style="color: #4cba7d; font-weight: bold;">:from</span><span style="color: #4cba7d;"> -7 </span><span style="color: #4cba7d; font-weight: bold;">:to</span><span style="color: #4cba7d;"> today</span><span style="color: #2c95fb;">)</span>
-  <span style="color: #2c95fb; font-weight: bold;">:title</span><span style="color: #2c95fb;"> </span><span style="color: #95ffca7ffd7f;">"Recent Items"</span>
-  <span style="color: #2c95fb; font-weight: bold;">:sort</span><span style="color: #2c95fb;"> '(</span><span style="color: #4cba7d;">date priority todo</span><span style="color: #2c95fb;">)</span>
-  <span style="color: #2c95fb; font-weight: bold;">:super-groups</span><span style="color: #2c95fb;"> '(</span><span style="color: #4cba7d;">(</span><span style="color: #f0b787; font-weight: bold;">:auto-ts</span><span style="color: #f0b787;"> t</span><span style="color: #4cba7d;">)</span><span style="color: #2c95fb;">)</span><span style="color: #f3a35f;">)</span>
+<span style="color: #a17e11;">(</span><span style="color: #3d85b7; text-decoration: underline;">org-ql-search</span><span style="color: #3d85b7;"> (</span><span style="color: #78880e; text-decoration: underline;">org-agenda-files</span><span style="color: #3d85b7;">)</span>
+  <span style="color: #3d85b7;">'(</span><span style="color: #78880e;">ts </span><span style="color: #78880e; font-weight: bold;">:from</span><span style="color: #78880e;"> -7 </span><span style="color: #78880e; font-weight: bold;">:to</span><span style="color: #78880e;"> today</span><span style="color: #3d85b7;">)</span>
+  <span style="color: #3d85b7; font-weight: bold;">:title</span><span style="color: #3d85b7;"> </span><span style="color: #73139976b41e;">"Recent Items"</span>
+  <span style="color: #3d85b7; font-weight: bold;">:sort</span><span style="color: #3d85b7;"> '(</span><span style="color: #78880e;">date priority todo</span><span style="color: #3d85b7;">)</span>
+  <span style="color: #3d85b7; font-weight: bold;">:super-groups</span><span style="color: #3d85b7;"> '(</span><span style="color: #78880e;">(</span><span style="color: #3d8b85; font-weight: bold;">:auto-ts</span><span style="color: #3d8b85;"> t</span><span style="color: #78880e;">)</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span>
 
 <span style="color: #586e75;">;; </span><span style="color: #586e75;">If you kept a database of music in an Org file, you could run a</span>
 <span style="color: #586e75;">;; </span><span style="color: #586e75;">query like this to find tracks composed by Chopin that do not have</span>
 <span style="color: #586e75;">;; </span><span style="color: #586e75;">their key recorded in the database.</span>
-<span style="color: #f3a35f;">(</span><span style="color: #2c95fb; text-decoration: underline;">org-ql-search</span><span style="color: #2c95fb;"> </span><span style="color: #95ffca7ffd7f;">"~/org/music.org"</span>
-  <span style="color: #2c95fb;">'(</span><span style="color: #4cba7d; font-weight: bold;">and</span><span style="color: #4cba7d;"> (</span><span style="color: #f0b787;">property </span><span style="color: #f7ffdb7fc37f;">"genre"</span> <span style="color: #f7ffdb7fc37f;">"classical"</span><span style="color: #4cba7d;">)</span>
-        <span style="color: #4cba7d;">(</span><span style="color: #f0b787;">property </span><span style="color: #f7ffdb7fc37f;">"composer"</span> <span style="color: #f7ffdb7fc37f;">"Chopin"</span><span style="color: #4cba7d;">)</span>
-        <span style="color: #4cba7d;">(</span><span style="color: #cb4b16; font-weight: bold;">not</span><span style="color: #f0b787;"> (</span><span style="color: #58a8f5;">property </span><span style="color: #abffd3fffa7f;">"key"</span><span style="color: #f0b787;">)</span><span style="color: #4cba7d;">)</span><span style="color: #2c95fb;">)</span><span style="color: #f3a35f;">)</span>
+<span style="color: #a17e11;">(</span><span style="color: #3d85b7; text-decoration: underline;">org-ql-search</span><span style="color: #3d85b7;"> </span><span style="color: #73139976b41e;">"~/org/music.org"</span>
+  <span style="color: #3d85b7;">'(</span><span style="color: #78880e; font-weight: bold;">and</span><span style="color: #78880e;"> (</span><span style="color: #3d8b85;">property </span><span style="color: #65bc957591ca;">"genre"</span> <span style="color: #65bc957591ca;">"classical"</span><span style="color: #78880e;">)</span>
+        <span style="color: #78880e;">(</span><span style="color: #3d8b85;">property </span><span style="color: #65bc957591ca;">"composer"</span> <span style="color: #65bc957591ca;">"Chopin"</span><span style="color: #78880e;">)</span>
+        <span style="color: #78880e;">(</span><span style="color: #cb4b16; font-weight: bold;">not</span><span style="color: #3d8b85;"> (</span><span style="color: #a17e11;">property </span><span style="color: #b86396762cce;">"key"</span><span style="color: #3d8b85;">)</span><span style="color: #78880e;">)</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span>
 </pre>
 </div>
 </div></li></ol>
@@ -800,12 +802,63 @@ author: Howard Abrams
 </div>
 </div>
 
-<div id="outline-container-Writing" class="outline-3">
-<h3 id="Writing"><span class="section-number-3">1.4</span> Writing&#xa0;&#xa0;&#xa0;<span class="tag"><span class="writing">writing</span></span></h3>
+<div id="outline-container-Web%20Publishing" class="outline-3">
+<h3 id="Web%20Publishing"><span class="section-number-3">1.4</span> Web Publishing&#xa0;&#xa0;&#xa0;<span class="tag"><span class="web_publishing">web_publishing</span></span></h3>
 <div class="outline-text-3" id="text-1-4">
-</div><div id="outline-container-Writing--Citations" class="outline-4">
-<h4 id="Writing--Citations"><a id="ID-2d289c68-1138-4054-b2b3-845f9151b426"></a><span class="section-number-4">1.4.1</span> Citations&#xa0;&#xa0;&#xa0;<span class="tag"><span class="citations">citations</span></span></h4>
+<p>
+On publishing Web sites with Org.
+</p>
+
+<p>
+See also: <a href="#Blogging">Blogging</a>.
+</p>
+</div>
+
+<div id="outline-container-Web%20Publishing--Articles" class="outline-4">
+<h4 id="Web%20Publishing--Articles"><span class="section-number-4">1.4.1</span> Articles&#xa0;&#xa0;&#xa0;<span class="tag"><span class="articles">articles</span></span></h4>
 <div class="outline-text-4" id="text-1-4-1">
+</div><ol class="org-ol"><li><a id="%5B%5Bhttps%3A%2F%2Fgileschamberlin.wordpress.com%2F2020%2F02%2F25%2Fwriting-a-new-org-mode-exporter-back-end%2F%5D%5BWriting%20a%20new%20org-mode%20exporter%20back-end%20%E2%80%93%20Imperfect%20Software%5D%5D"></a><a id="ID-689bb9d5-4ea0-4770-bff8-b5f443844179"></a><a href="https://gileschamberlin.wordpress.com/2020/02/25/writing-a-new-org-mode-exporter-back-end/">Writing a new org-mode exporter back-end – Imperfect Software</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ATTACH">ATTACH</span></span><br /><div class="outline-text-5" id="text-1-4-1-1">
+<pre class="example">
+author: Giles Chamberlin
+</pre>
+
+<blockquote>
+<p>
+I’ve been maintaining a simple static website for my jujutsu club since 1985. For most of that time it was simply hand coded HTML and CSS. I’ve wanted to update the site for a while to give it a more modern look, and to handle mobile devices better. I also wanted to move away from hand-coding the HTML and so was interested by org-mode’s HTML export capacity.
+</p>
+
+<p>
+The HTML exporter backend that ships with org-mode didn’t produce the structure I was looking for, and I found myself spending an age fighting the CSS to try to produce the appearance I was after in a range of browsers.
+</p>
+</blockquote>
+
+<ul class="org-ul">
+<li><a href="http://jujutsu.org.uk/">Jujutsu in Warborough</a> (the site mentioned in the article)</li>
+</ul>
+</div></li></ol>
+</div>
+
+<div id="outline-container-Web%20Publishing--Examples" class="outline-4">
+<h4 id="Web%20Publishing--Examples"><span class="section-number-4">1.4.2</span> Examples&#xa0;&#xa0;&#xa0;<span class="tag"><span class="examples">examples</span></span></h4>
+<div class="outline-text-4" id="text-1-4-2">
+</div><ol class="org-ol"><li><a id="%5B%5Bhttp%3A%2F%2Fjujutsu.org.uk%2F%5D%5BJujutsu%20in%20Warborough%5D%5D"></a><a href="http://jujutsu.org.uk/">Jujutsu in Warborough</a><br /><div class="outline-text-5" id="text-1-4-2-1">
+<pre class="example">
+author: Giles Chamberlin
+</pre>
+
+<ul class="org-ul">
+<li><a href="#%5B%5Bhttps%3A%2F%2Fgileschamberlin.wordpress.com%2F2020%2F02%2F25%2Fwriting-a-new-org-mode-exporter-back-end%2F%5D%5BWriting%20a%20new%20org-mode%20exporter%20back-end%20%E2%80%93%20Imperfect%20Software%5D%5D">Writing a new org-mode exporter back-end – Imperfect Software</a></li>
+</ul>
+</div></li></ol>
+</div>
+</div>
+
+<div id="outline-container-Writing" class="outline-3">
+<h3 id="Writing"><span class="section-number-3">1.5</span> Writing&#xa0;&#xa0;&#xa0;<span class="tag"><span class="writing">writing</span></span></h3>
+<div class="outline-text-3" id="text-1-5">
+</div><div id="outline-container-Writing--Citations" class="outline-4">
+<h4 id="Writing--Citations"><a id="ID-2d289c68-1138-4054-b2b3-845f9151b426"></a><span class="section-number-4">1.5.1</span> Citations&#xa0;&#xa0;&#xa0;<span class="tag"><span class="citations">citations</span></span></h4>
+<div class="outline-text-4" id="text-1-5-1">
 </div>
 
 <ol class="org-ol"><li><a id="%5B%5Bid%3Ab010ff39-f460-46c2-af8b-5118ffddb229%5D%5BTools%5D%5D"></a><a href="#Citations">Tools</a><br /></li></ol>
@@ -1035,28 +1088,28 @@ Commands like <code>org-tags-view</code> naturally offer the ability to control 
 </p>
 
 <div class="org-src-container">
-<pre class="src src-elisp"><span style="color: #f3a35f;">(</span><span style="color: #2c95fb; font-weight: bold;">setq</span><span style="color: #2c95fb;"> org-agenda-custom-commands</span>
-<span style="color: #2c95fb;">      '(</span><span style="color: #4cba7d;">(</span><span style="color: #f7ffdb7fc37f;">"w"</span> <span style="color: #f7ffdb7fc37f;">"Work Agenda"</span>
-         <span style="color: #f0b787;">(</span><span style="color: #58a8f5;">(</span><span style="color: #6fbd92;">agenda </span><span style="color: #b77fde7fc8ff;">""</span> <span style="color: #6fbd92;">(</span><span style="color: #f0ccad;">(</span><span style="color: #82baf2;">org-agenda-span 'day</span><span style="color: #f0ccad;">)</span><span style="color: #6fbd92;">)</span><span style="color: #58a8f5;">)</span>
-          <span style="color: #58a8f5;">(</span><span style="color: #6fbd92;">todo </span><span style="color: #b77fde7fc8ff;">"</span><span style="color: #859900;">TODO</span><span style="color: #b77fde7fc8ff;">"</span>
-                <span style="color: #6fbd92;">(</span><span style="color: #f0ccad;">(</span><span style="color: #82baf2;">org-agenda-max-entries 5</span><span style="color: #f0ccad;">)</span>
-                 <span style="color: #f0ccad;">(</span><span style="color: #82baf2;">org-agenda-todo-ignore-scheduled 'all</span><span style="color: #f0ccad;">)</span>
-                 <span style="color: #f0ccad;">(</span><span style="color: #82baf2;">org-agenda-todo-ignore-deadlines 'all</span><span style="color: #f0ccad;">)</span>
-                 <span style="color: #f0ccad;">(</span><span style="color: #82baf2;">org-agenda-todo-ignore-timestamp 'all</span><span style="color: #f0ccad;">)</span><span style="color: #6fbd92;">)</span><span style="color: #58a8f5;">)</span><span style="color: #f0b787;">)</span>
-         <span style="color: #f0b787;">(</span><span style="color: #58a8f5;">(</span><span style="color: #6fbd92;">org-agenda-tag-filter '(</span><span style="color: #f7ffe5ffd67f;">"-@home"</span> <span style="color: #f7ffe5ffd67f;">"-MAYBE"</span><span style="color: #6fbd92;">)</span><span style="color: #58a8f5;">)</span><span style="color: #f0b787;">)</span><span style="color: #4cba7d;">)</span>
-        <span style="color: #4cba7d;">(</span><span style="color: #f7ffdb7fc37f;">"h"</span> <span style="color: #f7ffdb7fc37f;">"Home Agenda"</span>
-         <span style="color: #f0b787;">(</span><span style="color: #58a8f5;">(</span><span style="color: #6fbd92;">agenda </span><span style="color: #b77fde7fc8ff;">""</span><span style="color: #58a8f5;">)</span>
-          <span style="color: #58a8f5;">(</span><span style="color: #6fbd92;">todo </span><span style="color: #b77fde7fc8ff;">"</span><span style="color: #859900;">TODO</span><span style="color: #b77fde7fc8ff;">"</span>
-                <span style="color: #6fbd92;">(</span><span style="color: #f0ccad;">(</span><span style="color: #82baf2;">org-agenda-max-entries 5</span><span style="color: #f0ccad;">)</span>
-                 <span style="color: #f0ccad;">(</span><span style="color: #82baf2;">org-agenda-todo-ignore-scheduled 'all</span><span style="color: #f0ccad;">)</span>
-                 <span style="color: #f0ccad;">(</span><span style="color: #82baf2;">org-agenda-todo-ignore-deadlines 'all</span><span style="color: #f0ccad;">)</span>
-                 <span style="color: #f0ccad;">(</span><span style="color: #82baf2;">org-agenda-todo-ignore-timestamp 'all</span><span style="color: #f0ccad;">)</span><span style="color: #6fbd92;">)</span><span style="color: #58a8f5;">)</span><span style="color: #f0b787;">)</span>
-         <span style="color: #f0b787;">(</span><span style="color: #58a8f5;">(</span><span style="color: #6fbd92;">org-agenda-tag-filter '(</span><span style="color: #f7ffe5ffd67f;">"-@work"</span> <span style="color: #f7ffe5ffd67f;">"-MAYBE"</span><span style="color: #6fbd92;">)</span><span style="color: #58a8f5;">)</span><span style="color: #f0b787;">)</span><span style="color: #4cba7d;">)</span>
-        <span style="color: #4cba7d;">(</span><span style="color: #f7ffdb7fc37f;">"m"</span> <span style="color: #f7ffdb7fc37f;">"Maybe"</span>
-         <span style="color: #f0b787;">(</span><span style="color: #58a8f5;">(</span><span style="color: #6fbd92;">todo </span><span style="color: #b77fde7fc8ff;">"PROJ"</span><span style="color: #58a8f5;">)</span>
-          <span style="color: #58a8f5;">(</span><span style="color: #6fbd92;">tags-todo </span><span style="color: #b77fde7fc8ff;">"-PROJ/TODO"</span><span style="color: #58a8f5;">)</span><span style="color: #f0b787;">)</span>
-         <span style="color: #f0b787;">(</span><span style="color: #58a8f5;">(</span><span style="color: #6fbd92;">org-agenda-tag-filter '(</span><span style="color: #f7ffe5ffd67f;">"+MAYBE"</span><span style="color: #6fbd92;">)</span><span style="color: #58a8f5;">)</span><span style="color: #f0b787;">)</span><span style="color: #4cba7d;">)</span>
-        <span style="color: #4cba7d;">(</span><span style="color: #f7ffdb7fc37f;">"P"</span> <span style="color: #f7ffdb7fc37f;">"Projects"</span> <span style="color: #f0b787;">tags-todo </span><span style="color: #f7ffdb7fc37f;">"-MAYBE/PROJ"</span><span style="color: #4cba7d;">)</span><span style="color: #2c95fb;">)</span><span style="color: #f3a35f;">)</span>)
+<pre class="src src-elisp"><span style="color: #a17e11;">(</span><span style="color: #3d85b7; font-weight: bold;">setq</span><span style="color: #3d85b7;"> org-agenda-custom-commands</span>
+<span style="color: #3d85b7;">      '(</span><span style="color: #78880e;">(</span><span style="color: #65bc957591ca;">"w"</span> <span style="color: #65bc957591ca;">"Work Agenda"</span>
+         <span style="color: #3d8b85;">(</span><span style="color: #a17e11;">(</span><span style="color: #3d85b7;">agenda </span><span style="color: #73139976b41e;">""</span> <span style="color: #3d85b7;">(</span><span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-span 'day</span><span style="color: #78880e;">)</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span>
+          <span style="color: #a17e11;">(</span><span style="color: #3d85b7;">todo </span><span style="color: #73139976b41e;">"</span><span style="color: #859900;">TODO</span><span style="color: #73139976b41e;">"</span>
+                <span style="color: #3d85b7;">(</span><span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-max-entries 5</span><span style="color: #78880e;">)</span>
+                 <span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-todo-ignore-scheduled 'all</span><span style="color: #78880e;">)</span>
+                 <span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-todo-ignore-deadlines 'all</span><span style="color: #78880e;">)</span>
+                 <span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-todo-ignore-timestamp 'all</span><span style="color: #78880e;">)</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span><span style="color: #3d8b85;">)</span>
+         <span style="color: #3d8b85;">(</span><span style="color: #a17e11;">(</span><span style="color: #3d85b7;">org-agenda-tag-filter '(</span><span style="color: #921da24c26e6;">"-@home"</span> <span style="color: #921da24c26e6;">"-MAYBE"</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span><span style="color: #3d8b85;">)</span><span style="color: #78880e;">)</span>
+        <span style="color: #78880e;">(</span><span style="color: #65bc957591ca;">"h"</span> <span style="color: #65bc957591ca;">"Home Agenda"</span>
+         <span style="color: #3d8b85;">(</span><span style="color: #a17e11;">(</span><span style="color: #3d85b7;">agenda </span><span style="color: #73139976b41e;">""</span><span style="color: #a17e11;">)</span>
+          <span style="color: #a17e11;">(</span><span style="color: #3d85b7;">todo </span><span style="color: #73139976b41e;">"</span><span style="color: #859900;">TODO</span><span style="color: #73139976b41e;">"</span>
+                <span style="color: #3d85b7;">(</span><span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-max-entries 5</span><span style="color: #78880e;">)</span>
+                 <span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-todo-ignore-scheduled 'all</span><span style="color: #78880e;">)</span>
+                 <span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-todo-ignore-deadlines 'all</span><span style="color: #78880e;">)</span>
+                 <span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-todo-ignore-timestamp 'all</span><span style="color: #78880e;">)</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span><span style="color: #3d8b85;">)</span>
+         <span style="color: #3d8b85;">(</span><span style="color: #a17e11;">(</span><span style="color: #3d85b7;">org-agenda-tag-filter '(</span><span style="color: #921da24c26e6;">"-@work"</span> <span style="color: #921da24c26e6;">"-MAYBE"</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span><span style="color: #3d8b85;">)</span><span style="color: #78880e;">)</span>
+        <span style="color: #78880e;">(</span><span style="color: #65bc957591ca;">"m"</span> <span style="color: #65bc957591ca;">"Maybe"</span>
+         <span style="color: #3d8b85;">(</span><span style="color: #a17e11;">(</span><span style="color: #3d85b7;">todo </span><span style="color: #73139976b41e;">"PROJ"</span><span style="color: #a17e11;">)</span>
+          <span style="color: #a17e11;">(</span><span style="color: #3d85b7;">tags-todo </span><span style="color: #73139976b41e;">"-PROJ/TODO"</span><span style="color: #a17e11;">)</span><span style="color: #3d8b85;">)</span>
+         <span style="color: #3d8b85;">(</span><span style="color: #a17e11;">(</span><span style="color: #3d85b7;">org-agenda-tag-filter '(</span><span style="color: #921da24c26e6;">"+MAYBE"</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span><span style="color: #3d8b85;">)</span><span style="color: #78880e;">)</span>
+        <span style="color: #78880e;">(</span><span style="color: #65bc957591ca;">"P"</span> <span style="color: #65bc957591ca;">"Projects"</span> <span style="color: #3d8b85;">tags-todo </span><span style="color: #65bc957591ca;">"-MAYBE/PROJ"</span><span style="color: #78880e;">)</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span>)
 </pre>
 </div>
 
@@ -1069,12 +1122,12 @@ Alternatives include:
 </ul>
 
 <div class="org-src-container">
-<pre class="src src-elisp"><span style="color: #f3a35f;">(</span><span style="color: #2c95fb; text-decoration: underline;">org-ql-search</span><span style="color: #2c95fb;"> (</span><span style="color: #4cba7d; text-decoration: underline;">org-agenda-files</span><span style="color: #2c95fb;">)</span>
-  <span style="color: #2c95fb;">'(</span><span style="color: #4cba7d; font-weight: bold;">and</span><span style="color: #4cba7d;"> (</span><span style="color: #f0b787; font-weight: bold;">or</span><span style="color: #f0b787;"> (</span><span style="color: #58a8f5;">deadline auto</span><span style="color: #f0b787;">)</span>
-            <span style="color: #f0b787;">(</span><span style="color: #58a8f5;">scheduled </span><span style="color: #58a8f5; font-weight: bold;">:to</span><span style="color: #58a8f5;"> today</span><span style="color: #f0b787;">)</span>
-            <span style="color: #f0b787;">(</span><span style="color: #58a8f5;">ts-active </span><span style="color: #58a8f5; font-weight: bold;">:on</span><span style="color: #58a8f5;"> today</span><span style="color: #f0b787;">)</span><span style="color: #4cba7d;">)</span>
-        <span style="color: #4cba7d;">(</span><span style="color: #cb4b16; font-weight: bold;">not</span><span style="color: #f0b787;"> (</span><span style="color: #58a8f5; font-weight: bold;">or</span><span style="color: #58a8f5;"> (</span><span style="color: #6fbd92;">todo </span><span style="color: #b77fde7fc8ff;">"</span><span style="color: #6c71c4;">MAYBE</span><span style="color: #b77fde7fc8ff;">"</span><span style="color: #58a8f5;">)</span>
-                 <span style="color: #58a8f5;">(</span><span style="color: #6fbd92;">tags </span><span style="color: #b77fde7fc8ff;">"@home"</span><span style="color: #58a8f5;">)</span><span style="color: #f0b787;">)</span><span style="color: #4cba7d;">)</span><span style="color: #2c95fb;">)</span><span style="color: #f3a35f;">)</span>
+<pre class="src src-elisp"><span style="color: #a17e11;">(</span><span style="color: #3d85b7; text-decoration: underline;">org-ql-search</span><span style="color: #3d85b7;"> (</span><span style="color: #78880e; text-decoration: underline;">org-agenda-files</span><span style="color: #3d85b7;">)</span>
+  <span style="color: #3d85b7;">'(</span><span style="color: #78880e; font-weight: bold;">and</span><span style="color: #78880e;"> (</span><span style="color: #3d8b85; font-weight: bold;">or</span><span style="color: #3d8b85;"> (</span><span style="color: #a17e11;">deadline auto</span><span style="color: #3d8b85;">)</span>
+            <span style="color: #3d8b85;">(</span><span style="color: #a17e11;">scheduled </span><span style="color: #a17e11; font-weight: bold;">:to</span><span style="color: #a17e11;"> today</span><span style="color: #3d8b85;">)</span>
+            <span style="color: #3d8b85;">(</span><span style="color: #a17e11;">ts-active </span><span style="color: #a17e11; font-weight: bold;">:on</span><span style="color: #a17e11;"> today</span><span style="color: #3d8b85;">)</span><span style="color: #78880e;">)</span>
+        <span style="color: #78880e;">(</span><span style="color: #cb4b16; font-weight: bold;">not</span><span style="color: #3d8b85;"> (</span><span style="color: #a17e11; font-weight: bold;">or</span><span style="color: #a17e11;"> (</span><span style="color: #3d85b7;">todo </span><span style="color: #73139976b41e;">"</span><span style="color: #6c71c4;">MAYBE</span><span style="color: #73139976b41e;">"</span><span style="color: #a17e11;">)</span>
+                 <span style="color: #a17e11;">(</span><span style="color: #3d85b7;">tags </span><span style="color: #73139976b41e;">"@home"</span><span style="color: #a17e11;">)</span><span style="color: #3d8b85;">)</span><span style="color: #78880e;">)</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span>
 </pre>
 </div>
 
@@ -1083,23 +1136,23 @@ Alternatives include:
 </ul>
 
 <div class="org-src-container">
-<pre class="src src-elisp"><span style="color: #f3a35f;">(</span><span style="color: #2c95fb; font-weight: bold;">setq</span><span style="color: #2c95fb;"> org-agenda-custom-commands</span>
-<span style="color: #2c95fb;">      '(</span><span style="color: #4cba7d;">(</span><span style="color: #f7ffdb7fc37f;">"w"</span> <span style="color: #f7ffdb7fc37f;">"Work Agenda"</span>
-         <span style="color: #f0b787;">(</span><span style="color: #58a8f5;">(</span><span style="color: #6fbd92;">agenda </span><span style="color: #b77fde7fc8ff;">""</span> <span style="color: #6fbd92;">(</span><span style="color: #f0ccad;">(</span><span style="color: #82baf2;">org-agenda-span 'day</span><span style="color: #f0ccad;">)</span><span style="color: #6fbd92;">)</span><span style="color: #58a8f5;">)</span>
-          <span style="color: #58a8f5;">(</span><span style="color: #6fbd92;">todo </span><span style="color: #b77fde7fc8ff;">"</span><span style="color: #859900;">TODO</span><span style="color: #b77fde7fc8ff;">"</span>
-                <span style="color: #6fbd92;">(</span><span style="color: #f0ccad;">(</span><span style="color: #82baf2;">org-agenda-max-entries 5</span><span style="color: #f0ccad;">)</span>
-                 <span style="color: #f0ccad;">(</span><span style="color: #82baf2;">org-agenda-todo-ignore-scheduled 'all</span><span style="color: #f0ccad;">)</span>
-                 <span style="color: #f0ccad;">(</span><span style="color: #82baf2;">org-agenda-todo-ignore-deadlines 'all</span><span style="color: #f0ccad;">)</span>
-                 <span style="color: #f0ccad;">(</span><span style="color: #82baf2;">org-agenda-todo-ignore-timestamp 'all</span><span style="color: #f0ccad;">)</span><span style="color: #6fbd92;">)</span><span style="color: #58a8f5;">)</span><span style="color: #f0b787;">)</span>
-         <span style="color: #f0b787;">(</span><span style="color: #58a8f5;">(</span><span style="color: #6fbd92;">org-super-agenda-groups '(</span><span style="color: #f0ccad;">(</span><span style="color: #82baf2; font-weight: bold;">:discard</span><span style="color: #82baf2;"> (</span><span style="color: #90c2a6; font-weight: bold;">:tags</span><span style="color: #90c2a6;"> </span><span style="color: #c7ffe0ffd2ff;">"@home"</span> <span style="color: #90c2a6; font-weight: bold;">:todo</span><span style="color: #90c2a6;"> </span><span style="color: #c7ffe0ffd2ff;">"</span><span style="color: #6c71c4;">MAYBE</span><span style="color: #c7ffe0ffd2ff;">"</span><span style="color: #82baf2;">)</span><span style="color: #f0ccad;">)</span><span style="color: #6fbd92;">)</span><span style="color: #58a8f5;">)</span><span style="color: #f0b787;">)</span><span style="color: #4cba7d;">)</span>
-        <span style="color: #4cba7d;">(</span><span style="color: #f7ffdb7fc37f;">"h"</span> <span style="color: #f7ffdb7fc37f;">"Home Agenda"</span>
-         <span style="color: #f0b787;">(</span><span style="color: #58a8f5;">(</span><span style="color: #6fbd92;">agenda </span><span style="color: #b77fde7fc8ff;">""</span><span style="color: #58a8f5;">)</span>
-          <span style="color: #58a8f5;">(</span><span style="color: #6fbd92;">todo </span><span style="color: #b77fde7fc8ff;">"</span><span style="color: #859900;">TODO</span><span style="color: #b77fde7fc8ff;">"</span>
-                <span style="color: #6fbd92;">(</span><span style="color: #f0ccad;">(</span><span style="color: #82baf2;">org-agenda-max-entries 5</span><span style="color: #f0ccad;">)</span>
-                 <span style="color: #f0ccad;">(</span><span style="color: #82baf2;">org-agenda-todo-ignore-scheduled 'all</span><span style="color: #f0ccad;">)</span>
-                 <span style="color: #f0ccad;">(</span><span style="color: #82baf2;">org-agenda-todo-ignore-deadlines 'all</span><span style="color: #f0ccad;">)</span>
-                 <span style="color: #f0ccad;">(</span><span style="color: #82baf2;">org-agenda-todo-ignore-timestamp 'all</span><span style="color: #f0ccad;">)</span><span style="color: #6fbd92;">)</span><span style="color: #58a8f5;">)</span><span style="color: #f0b787;">)</span>
-         <span style="color: #f0b787;">(</span><span style="color: #58a8f5;">(</span><span style="color: #6fbd92;">org-super-agenda-groups '(</span><span style="color: #f0ccad;">(</span><span style="color: #82baf2; font-weight: bold;">:discard</span><span style="color: #82baf2;"> (</span><span style="color: #90c2a6; font-weight: bold;">:tags</span><span style="color: #90c2a6;"> </span><span style="color: #c7ffe0ffd2ff;">"@work"</span> <span style="color: #90c2a6; font-weight: bold;">:todo</span><span style="color: #90c2a6;"> </span><span style="color: #c7ffe0ffd2ff;">"</span><span style="color: #6c71c4;">MAYBE</span><span style="color: #c7ffe0ffd2ff;">"</span><span style="color: #82baf2;">)</span><span style="color: #f0ccad;">)</span><span style="color: #6fbd92;">)</span><span style="color: #58a8f5;">)</span><span style="color: #f0b787;">)</span><span style="color: #4cba7d;">)</span><span style="color: #2c95fb;">)</span><span style="color: #f3a35f;">)</span>)
+<pre class="src src-elisp"><span style="color: #a17e11;">(</span><span style="color: #3d85b7; font-weight: bold;">setq</span><span style="color: #3d85b7;"> org-agenda-custom-commands</span>
+<span style="color: #3d85b7;">      '(</span><span style="color: #78880e;">(</span><span style="color: #65bc957591ca;">"w"</span> <span style="color: #65bc957591ca;">"Work Agenda"</span>
+         <span style="color: #3d8b85;">(</span><span style="color: #a17e11;">(</span><span style="color: #3d85b7;">agenda </span><span style="color: #73139976b41e;">""</span> <span style="color: #3d85b7;">(</span><span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-span 'day</span><span style="color: #78880e;">)</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span>
+          <span style="color: #a17e11;">(</span><span style="color: #3d85b7;">todo </span><span style="color: #73139976b41e;">"</span><span style="color: #859900;">TODO</span><span style="color: #73139976b41e;">"</span>
+                <span style="color: #3d85b7;">(</span><span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-max-entries 5</span><span style="color: #78880e;">)</span>
+                 <span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-todo-ignore-scheduled 'all</span><span style="color: #78880e;">)</span>
+                 <span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-todo-ignore-deadlines 'all</span><span style="color: #78880e;">)</span>
+                 <span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-todo-ignore-timestamp 'all</span><span style="color: #78880e;">)</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span><span style="color: #3d8b85;">)</span>
+         <span style="color: #3d8b85;">(</span><span style="color: #a17e11;">(</span><span style="color: #3d85b7;">org-super-agenda-groups '(</span><span style="color: #78880e;">(</span><span style="color: #3d8b85; font-weight: bold;">:discard</span><span style="color: #3d8b85;"> (</span><span style="color: #a38528; font-weight: bold;">:tags</span><span style="color: #a38528;"> </span><span style="color: #b2b099864b81;">"@home"</span> <span style="color: #a38528; font-weight: bold;">:todo</span><span style="color: #a38528;"> </span><span style="color: #b2b099864b81;">"</span><span style="color: #6c71c4;">MAYBE</span><span style="color: #b2b099864b81;">"</span><span style="color: #3d8b85;">)</span><span style="color: #78880e;">)</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span><span style="color: #3d8b85;">)</span><span style="color: #78880e;">)</span>
+        <span style="color: #78880e;">(</span><span style="color: #65bc957591ca;">"h"</span> <span style="color: #65bc957591ca;">"Home Agenda"</span>
+         <span style="color: #3d8b85;">(</span><span style="color: #a17e11;">(</span><span style="color: #3d85b7;">agenda </span><span style="color: #73139976b41e;">""</span><span style="color: #a17e11;">)</span>
+          <span style="color: #a17e11;">(</span><span style="color: #3d85b7;">todo </span><span style="color: #73139976b41e;">"</span><span style="color: #859900;">TODO</span><span style="color: #73139976b41e;">"</span>
+                <span style="color: #3d85b7;">(</span><span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-max-entries 5</span><span style="color: #78880e;">)</span>
+                 <span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-todo-ignore-scheduled 'all</span><span style="color: #78880e;">)</span>
+                 <span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-todo-ignore-deadlines 'all</span><span style="color: #78880e;">)</span>
+                 <span style="color: #78880e;">(</span><span style="color: #3d8b85;">org-agenda-todo-ignore-timestamp 'all</span><span style="color: #78880e;">)</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span><span style="color: #3d8b85;">)</span>
+         <span style="color: #3d8b85;">(</span><span style="color: #a17e11;">(</span><span style="color: #3d85b7;">org-super-agenda-groups '(</span><span style="color: #78880e;">(</span><span style="color: #3d8b85; font-weight: bold;">:discard</span><span style="color: #3d8b85;"> (</span><span style="color: #a38528; font-weight: bold;">:tags</span><span style="color: #a38528;"> </span><span style="color: #b2b099864b81;">"@work"</span> <span style="color: #a38528; font-weight: bold;">:todo</span><span style="color: #a38528;"> </span><span style="color: #b2b099864b81;">"</span><span style="color: #6c71c4;">MAYBE</span><span style="color: #b2b099864b81;">"</span><span style="color: #3d8b85;">)</span><span style="color: #78880e;">)</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span><span style="color: #3d8b85;">)</span><span style="color: #78880e;">)</span><span style="color: #3d85b7;">)</span><span style="color: #a17e11;">)</span>)
 </pre>
 </div>
 </div></li>
@@ -1252,7 +1305,7 @@ The manual explains these export option keywords:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-org"><span style="color: #586e75; background-color: #0c1e24;">#+OPTIONS: prop:("property1" "property2")</span>
+<pre class="src src-org"><span style="color: #586e75; background-color: #0c1e24; font-weight: bold; font-style: italic;">#+OPTIONS: prop:("property1" "property2")</span>
 
 <span style="color: #a94058fc37c0; background-color: #073642; font-weight: bold; text-decoration: overline;">* Subtree</span>
 <span style="color: #586e75; font-size: 90%; font-weight: bold;">:PROPERTIES:</span>
@@ -1334,7 +1387,7 @@ If you use TODO-state logging by default but want to disable it for a file, add 
 </p>
 
 <div class="org-src-container">
-<pre class="src src-org"><span style="color: #586e75; background-color: #0c1e24;">#+PROPERTY: LOGGING nil</span>
+<pre class="src src-org"><span style="color: #586e75; background-color: #0c1e24; font-weight: bold; font-style: italic;">#+PROPERTY: LOGGING nil</span>
 </pre>
 </div>
 <p>
@@ -1546,7 +1599,7 @@ Should support timestamps in property values.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Adam Porter</p>
-<p class="date">Created: 2020-02-24 Mon 19:30</p>
+<p class="date">Created: 2020-02-26 Wed 22:09</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

@@ -16,6 +16,7 @@
   - [[Blogging][Blogging]]
   - [[Database][Database]]
   - [[Project Management][Project Management]]
+  - [[Web Publishing][Web Publishing]]
   - [[Writing][Writing]]
 - [[Development][Development]]
   - [[Building][Building]]
@@ -51,6 +52,7 @@ On applying Org to various tasks.
 - [[Blogging][Blogging]]
 - [[Database][Database]]
 - [[Project Management][Project Management]]
+- [[Web Publishing][Web Publishing]]
 - [[Writing][Writing]]
 :END:
 
@@ -512,6 +514,38 @@ CLOCK: [2019-01-31 Thu 03:33]--[2019-01-31 Thu 03:33] =>  0:00
 *** Examples
 
 **** [[id:cd12e9d7-8598-4fbe-bab2-57c6929df737][Bernt Hansen: Organize your life in plain text!]]
+
+** Web Publishing                                           :web_publishing:
+
+On publishing Web sites with Org.
+
+See also: [[id:32dc57d5-6810-44a5-9887-4f7813b02880][Blogging]].
+
+*** Articles                                                     :articles:
+
+**** [[https://gileschamberlin.wordpress.com/2020/02/25/writing-a-new-org-mode-exporter-back-end/][Writing a new org-mode exporter back-end – Imperfect Software]] :ATTACH:
+:PROPERTIES:
+:Attachments: https%3A%2F%2Fgileschamberlin.wordpress.com%2F2020%2F02%2F25%2Fwriting-a-new-org-mode-exporter-back-end%2F--rVX3P3.tar.xz
+:ID:       689bb9d5-4ea0-4770-bff8-b5f443844179
+:author:   Giles Chamberlin
+:END:
+
+#+BEGIN_QUOTE
+I’ve been maintaining a simple static website for my jujutsu club since 1985. For most of that time it was simply hand coded HTML and CSS. I’ve wanted to update the site for a while to give it a more modern look, and to handle mobile devices better. I also wanted to move away from hand-coding the HTML and so was interested by org-mode’s HTML export capacity.
+
+The HTML exporter backend that ships with org-mode didn’t produce the structure I was looking for, and I found myself spending an age fighting the CSS to try to produce the appearance I was after in a range of browsers.
+#+END_QUOTE
+
++  [[http://jujutsu.org.uk/][Jujutsu in Warborough]] (the site mentioned in the article)
+
+*** Examples                                                     :examples:
+
+**** [[http://jujutsu.org.uk/][Jujutsu in Warborough]]
+:PROPERTIES:
+:author:   Giles Chamberlin
+:END:
+
++ [[id:689bb9d5-4ea0-4770-bff8-b5f443844179][Writing a new org-mode exporter back-end – Imperfect Software]]
 
 ** Writing                                                         :writing:
 
