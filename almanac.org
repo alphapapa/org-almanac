@@ -571,6 +571,18 @@ The HTML exporter backend that ships with org-mode didn’t produce the structur
 
 **** [[id:b010ff39-f460-46c2-af8b-5118ffddb229][Tools]]
 
+*** Discussions                                               :discussions:
+
+**** [[https://www.reddit.com/r/orgmode/comments/fvckhr/research_work_flow/fmhzxmq/][u/Dysyre on using Org to write and research a novel]]
+
+[2020-04-06 Mon 08:06]
+
+#+BEGIN_QUOTE
+Major tasks, such as research, go in a plain list under TODO. They are hyperlinked to the relevant part of the text with #+NAME: comments. For minor stuff, I just use a comment with an arbitrary prefix (tt), so I can easily I-search (C-s, I think. I use evil) for it. I could automate things with capture, but I haven't gotten around to setting it up.
+
+I use priority tags to measure how far a scene is in production, since they are separate from TODO keywords. Any motifs, items, characters, etc. that need to be tracked, I create a tag/property for. I can then use C-c / together with indirect buffers to filter the information.
+#+END_QUOTE
+
 * Development                                                   :development:
 
 Information about Org development.
