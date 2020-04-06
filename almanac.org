@@ -16,6 +16,7 @@
   - [[Blogging][Blogging]]
   - [[Database][Database]]
   - [[Project Management][Project Management]]
+  - [[Research][Research]]
   - [[Web Publishing][Web Publishing]]
   - [[Writing][Writing]]
 - [[Development][Development]]
@@ -52,6 +53,7 @@ On applying Org to various tasks.
 - [[Blogging][Blogging]]
 - [[Database][Database]]
 - [[Project Management][Project Management]]
+- [[Research][Research]]
 - [[Web Publishing][Web Publishing]]
 - [[Writing][Writing]]
 :END:
@@ -514,6 +516,19 @@ CLOCK: [2019-01-31 Thu 03:33]--[2019-01-31 Thu 03:33] =>  0:00
 *** Examples
 
 **** [[id:cd12e9d7-8598-4fbe-bab2-57c6929df737][Bernt Hansen: Organize your life in plain text!]]
+
+** Research                                                       :research:
+:PROPERTIES:
+:ID:       83ad9f9c-692f-48f0-94fb-e4ab8836a9d0
+:END:
+
+Using Org for research.
+
+*** Discussions                                               :discussions:
+
+**** [[https://www.reddit.com/r/orgmode/comments/fvckhr/research_work_flow/][Research work flow : Reddit r/orgmode]]
+
+[2020-04-06 Mon 06:20]  Using Org for reproducible research, writing and translating fiction, and managing references.
 
 ** Web Publishing                                           :web_publishing:
 
