@@ -17,6 +17,7 @@
   - [[Database][Database]]
   - [[Project Management][Project Management]]
   - [[Research][Research]]
+  - [[Studying][Studying]]
   - [[Web Publishing][Web Publishing]]
   - [[Writing][Writing]]
 - [[Development][Development]]
@@ -45,6 +46,7 @@
 * Application
 :PROPERTIES:
 :TOC:      :include descendants :depth 1 :local depth
+:ID:       472b843b-7332-4770-8af4-5d36b9ace536
 :END:
 
 On applying Org to various tasks.
@@ -54,6 +56,7 @@ On applying Org to various tasks.
 - [[Database][Database]]
 - [[Project Management][Project Management]]
 - [[Research][Research]]
+- [[Studying][Studying]]
 - [[Web Publishing][Web Publishing]]
 - [[Writing][Writing]]
 :END:
@@ -529,6 +532,16 @@ Using Org for research.
 **** [[https://www.reddit.com/r/orgmode/comments/fvckhr/research_work_flow/][Research work flow : Reddit r/orgmode]]
 
 [2020-04-06 Mon 06:20]  Using Org for reproducible research, writing and translating fiction, and managing references.
+
+** Studying                                                       :studying:
+
+On using Org to study various material.
+
+*** Discussions                                               :discussions:
+
+**** [[https://www.reddit.com/r/orgmode/comments/fwmkr8/how_can_i_use_orgmode_in_a_better_way_to_plan_my/][How can I use orgmode in a better way to plan my self study courses? : orgmode]] :Reddit:
+
+[2020-04-08 Wed 10:26]  Some anecdotes, links to videos and other guides, and tips.
 
 ** Web Publishing                                           :web_publishing:
 
