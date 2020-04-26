@@ -483,7 +483,9 @@ Here are a few examples of the Lisp-side of the library.  See the examples and s
           (not (property "key"))))
 #+END_SRC
 
-** Project Management                                   :project_management:
+** Project Management                               :project_management:PIM:
+
+On using Org as a Personal Information Manager to manage projects and one's personal life.
 
 *** Articles                                                     :articles:
 
@@ -493,6 +495,27 @@ Here are a few examples of the Lisp-side of the library.  See the examples and s
 :ID:       58bab4c9-998f-498c-832a-c88f89ca20b9
 :author:   Charles Cave
 :END:
+
+**** [[http://cachestocaches.com/2020/3/my-organized-life/][Gregory J. Stein: A Guide to My Organizational Workflow: How to Streamline Your Life]] :website:Emacs:Org:ATTACH:
+:PROPERTIES:
+:Attachments: http%3A%2F%2Fcachestocaches.com%2F2020%2F3%2Fmy-organized-life%2F--2hDjVP.tar.xz
+:ID:       c5766d44-86f7-4bfc-b2ed-85d496ad6f12
+:author:   Gregory J. Stein
+:published: [2020-03-22 Sun]
+:END:
+:LOGBOOK:
+CLOCK: [2020-04-26 Sun 01:23]--[2020-04-26 Sun 01:23] =>  0:00
+:END:
+
+[2020-04-26 Sun 01:23]
+
+#+BEGIN_QUOTE
+Five years ago, my life exploded in complexity. I had just started a new position in a new field. I was planning my wedding. And my inability to say NO to anyone and everyone had culminated in my serving on the board of three graduate student organizations. Inevitably, cracks began to form, and my finite brain started to lose track of tasks. My calendar was sufficient to ensure that I wouldn't miss meetings, but I would often only prepare for those meetings at the eleventh hour. My productivity and the quality of my work both suffered. Something needed to change.
+
+This guide is devoted to a discussion of the organizational system that I have honed in the time since.Many of the ideas presented here derive from the Getting Things Done methodology, but adapted and expanded to meet my personal needs. With it, I have found that my time is spent more wisely. Better organization means that I can consciously devote effort where it is needed early on, as opposed to scrambling to keep up, and deliver higher quality work without expending more energy.
+
+You too can streamline your process. This guide is meant to serve as an example of how you might reorganize your workflow and find order through the chaos of your busy life. Yet different lifestyles have different demands: what works for me may not work as well for you. As such, I do not expect that you will replicate this system in its entirety. Instead, I hope you will take inspiration from my system and use elements of it to build a workflow that works for you.
+#+END_QUOTE
 
 **** [[http://howardism.org/Technical/Emacs/getting-more-boxes-done.html][Howard Abrams: Getting Boxes Done, the Code]] :website:ATTACH:
 :PROPERTIES:
