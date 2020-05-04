@@ -1188,6 +1188,10 @@ Should probably support subtree-specific sort functions.
 
 This is an excellent demonstration of using Org and Org Babel to produce technical documentation.
 
+*** [[https://www.reddit.com/r/orgmode/comments/gcnum4/using_orgmode_to_keep_track_of_events/][Using org-mode to keep track of events (particularly birthdays) : orgmode]]
+
+Shows 4 specific ways Org can be used to track birthdays, etc.
+
 ** TODO Sort by timestamp function
 
 Should support timestamps in property values.
