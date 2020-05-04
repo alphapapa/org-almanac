@@ -1188,6 +1188,12 @@ Should probably support subtree-specific sort functions.
 
 This is an excellent demonstration of using Org and Org Babel to produce technical documentation.
 
+*** [[https://karl-voit.at/2020/05/03/current-org-files/][UOMF: My Current Org Mode Files and Heading Structure]]
+
+Karl Voit describes his entire Org system.
+
++ [[https://www.reddit.com/r/emacs/comments/gcsazi/my_current_org_mode_files_and_heading_structure/][Reddit discussion]]
+
 *** [[https://www.reddit.com/r/orgmode/comments/gcnum4/using_orgmode_to_keep_track_of_events/][Using org-mode to keep track of events (particularly birthdays) : orgmode]]
 
 Shows 4 specific ways Org can be used to track birthdays, etc.
