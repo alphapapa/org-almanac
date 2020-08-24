@@ -566,6 +566,14 @@ On using Org to study various material.
 
 [2020-04-08 Wed 10:26]  Some anecdotes, links to videos and other guides, and tips.
 
+*** Tools                                                           :tools:
+
+**** [[https://github.com/l3kn/org-fc][Org Flashcards (org-fc): Spaced Repetition System]]
+
+#+BEGIN_QUOTE
+Org-fc is a spaced-repetition system for Emacs' org-mode.  It allows you to mark headlines in a file as "flashcards", turning pieces of knowledge you want to learn into a question-answer test.  These cards are reviewed at regular interval. After each review, a Repetition Spacing Algorithm is used to calculate the next interval based on how well you remembered the contents of the card.
+#+END_QUOTE
+
 ** Web Publishing                                           :web_publishing:
 
 On publishing Web sites with Org.
