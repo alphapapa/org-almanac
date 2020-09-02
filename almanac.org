@@ -15,6 +15,7 @@
 - [[Application][Application]]
   - [[Blogging][Blogging]]
   - [[Database][Database]]
+  - [[Fitness][Fitness]]
   - [[Project Management][Project Management]]
   - [[Research][Research]]
   - [[Studying][Studying]]
@@ -54,6 +55,7 @@ On applying Org to various tasks.
 :CONTENTS:
 - [[Blogging][Blogging]]
 - [[Database][Database]]
+- [[Fitness][Fitness]]
 - [[Project Management][Project Management]]
 - [[Research][Research]]
 - [[Studying][Studying]]
@@ -482,6 +484,14 @@ Here are a few examples of the Lisp-side of the library.  See the examples and s
           (property "composer" "Chopin")
           (not (property "key"))))
 #+END_SRC
+
+** Fitness                                                         :fitness:
+
+*** Discussions                                               :discussions:
+
+**** [[https://www.reddit.com/r/orgmode/comments/i2d75e/tracking_my_diet_with_emacs_and_orgmode/][Tracking my diet with Emacs and org-mode : orgmode]]
+
+**** [[https://www.reddit.com/r/orgmode/comments/i1z6np/ann_orgcaloriesel_a_package_to_log_your_calorific/][{ANN} Org-Calories.el, a package to log your calorific intake and outake {ALPHA} : orgmode]]
 
 ** Project Management                               :project_management:PIM:
 
