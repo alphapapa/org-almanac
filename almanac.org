@@ -14,6 +14,7 @@
 :CONTENTS:
 - [[Application][Application]]
   - [[Blogging][Blogging]]
+  - [[Bookmarking][Bookmarking]]
   - [[Database][Database]]
   - [[Fitness][Fitness]]
   - [[Project Management][Project Management]]
@@ -54,6 +55,7 @@ On applying Org to various tasks.
 
 :CONTENTS:
 - [[Blogging][Blogging]]
+- [[Bookmarking][Bookmarking]]
 - [[Database][Database]]
 - [[Fitness][Fitness]]
 - [[Project Management][Project Management]]
@@ -390,6 +392,25 @@ I build this website in Emacs' Org mode, which can publish static HTML files. Th
 Toon's blog has a unique and appealing custom theme.
 
 **** TODO [[https://two-wrongs.com/][Two Wrongs]]
+
+** Bookmarking                                                 :bookmarking:
+
+On using Org to bookmark Web sites.
+
+*** Articles                                                     :articles:
+
+**** [[https://karl-voit.at/2014/08/10/bookmarks-with-orgmode/][Karl Voit: UOMF: Managing web bookmarks with Org Mode]] :ATTACH:
+:PROPERTIES:
+:author:   Karl Voit
+:published:   [2014-08-10 Sun]
+:updated:   [2019-09-25 Wed]
+:Attachments: https%3A%2F%2Fkarl-voit.at%2F2014%2F08%2F10%2Fbookmarks-with-orgmode%2F--o6P1UX.tar.xz
+:ID:       b39872fc-73a5-4937-a5e8-653ce0b24023
+:END:
+
+*** Discussions                                               :discussions:
+
+**** [[https://www.reddit.com/r/orgmode/comments/iqp0mf/organizing_web_bookmarks_with_orgmode/][Organizing web bookmarks with Org-mode? : orgmode]]
 
 ** Database                                                       :database:
 
