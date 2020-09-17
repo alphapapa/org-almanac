@@ -29,6 +29,7 @@
 - [[Documentation][Documentation]]
   - [[Community][Community]]
   - [[%5B%5Bhttps://orgmode.org/manual/%5D%5BManual%5D%5D][Manual]]
+  - [[Tutorials][Tutorials]]
 - [[Features][Features]]
   - [[Agenda][Agenda]]
   - [[Appearance][Appearance]]
@@ -42,6 +43,8 @@
   - [[Features][Features]]
   - [[Libraries][Libraries]]
   - [[Tools][Tools]]
+- [[Videos][Videos]]
+  - [[Tutorials][Tutorials]]
 - [[Tasks][Tasks]]
 :END:
 
@@ -773,6 +776,10 @@ CLOCK: [2015-08-29 Sat 15:02]--[2015-08-29 Sat 15:04] =>  0:02
 
 The official Org manual.
 
+** Tutorials
+
+*** [[id:536f010e-593f-4f28-b8bd-ae36f4a52db1][Videos]]
+
 * Features                                                         :built_in:
 :PROPERTIES:
 :TOC:      :include descendants :depth 1
@@ -1205,6 +1212,24 @@ This may be a useful alternative to =org-element-parse-buffer=.  Also see [[http
 :PROPERTIES:
 :author:   John Kitchin
 :END:
+
+* Videos                                                             :videos:
+
+Videos about Org.
+
+** Tutorials                                                      :tutorial:
+:PROPERTIES:
+:ID:       536f010e-593f-4f28-b8bd-ae36f4a52db1
+:END:
+
+Video tutorials.
+
+*** [[https://www.youtube.com/playlist?list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE][Rainer König: Org-mode tutorials]]
+:PROPERTIES:
+:author:   Rainer König
+:END:
+
+Rainer's series of 39 videos explains Org features and application in a straightforward, detailed way.
 
 * Tasks
 :PROPERTIES:
