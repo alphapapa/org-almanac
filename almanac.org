@@ -661,6 +661,14 @@ Major tasks, such as research, go in a plain list under TODO. They are hyperlink
 I use priority tags to measure how far a scene is in production, since they are separate from TODO keywords. Any motifs, items, characters, etc. that need to be tracked, I create a tag/property for. I can then use C-c / together with indirect buffers to filter the information.
 #+END_QUOTE
 
+*** Tools                                                           :tools:
+
+**** [[http://github.com/rnkn/binder][Binder: minor mode facilitating multi-file writing projects]]
+
+#+BEGIN_QUOTE
+Binder is global minor mode (and associated major modes) to facilitate working on a writing project in multiple files.  It is heavily inspired by the binder feature in the macOS writing app Scrivener.  The rationale behind working this way is to split a large writing project into much smaller pieces.
+#+END_QUOTE
+
 * Development                                                   :development:
 
 Information about Org development.
