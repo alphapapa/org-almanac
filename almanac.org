@@ -396,6 +396,9 @@ Toon's blog has a unique and appealing custom theme.
 
 **** TODO [[https://two-wrongs.com/][Two Wrongs]]
 
+**** [[https://ag91.github.io/][Where parallels cross]]
+
+Blog published with the inactive project [[https://github.com/sillykelvin/org-page][org-page]].
 ** Bookmarking                                                 :bookmarking:
 
 On using Org to bookmark Web sites.
