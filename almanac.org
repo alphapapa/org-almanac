@@ -17,6 +17,7 @@
   - [[Bookmarking][Bookmarking]]
   - [[Database][Database]]
   - [[Fitness][Fitness]]
+  - [[Meta][Meta]]
   - [[Project Management][Project Management]]
   - [[Research][Research]]
   - [[Studying][Studying]]
@@ -61,6 +62,7 @@ On applying Org to various tasks.
 - [[Bookmarking][Bookmarking]]
 - [[Database][Database]]
 - [[Fitness][Fitness]]
+- [[Meta][Meta]]
 - [[Project Management][Project Management]]
 - [[Research][Research]]
 - [[Studying][Studying]]
@@ -516,6 +518,16 @@ Here are a few examples of the Lisp-side of the library.  See the examples and s
 **** [[https://www.reddit.com/r/orgmode/comments/i2d75e/tracking_my_diet_with_emacs_and_orgmode/][Tracking my diet with Emacs and org-mode : orgmode]]
 
 **** [[https://www.reddit.com/r/orgmode/comments/i1z6np/ann_orgcaloriesel_a_package_to_log_your_calorific/][{ANN} Org-Calories.el, a package to log your calorific intake and outake {ALPHA} : orgmode]]
+
+** Meta                                                                :meta:
+
+On applying Org to various tasks (as opposed to a specific task).
+
+*** Discussions                                                 :discussions:
+
+Discussions about applying Org to various tasks.
+
++ [[https://www.reddit.com/r/emacs/comments/jjxatm/whats_your_job_whats_your_daily_emacs_workflow/][What's your job? What's your daily emacs workflow? : r/emacs]]
 
 ** Project Management                               :project_management:PIM:
 
@@ -1259,6 +1271,8 @@ Should probably support subtree-specific sort functions.
 *** [[https://www.youtube.com/watch?v=0g9BcZvQbXU][Consistent Technical Documents Using Emacs and Org Mode - YouTube]]
 
 This is an excellent demonstration of using Org and Org Babel to produce technical documentation.
+
+*** [[https://www.labri.fr/perso/nrougier/GTD/index.html][Get Things Done with Emacs]]
 
 *** [[https://karl-voit.at/2020/05/03/current-org-files/][UOMF: My Current Org Mode Files and Heading Structure]]
 
