@@ -585,9 +585,19 @@ CLOCK: [2019-01-31 Thu 03:33]--[2019-01-31 Thu 03:33] =>  0:00
 
 ***** TODO Add some kind of tag about teams and coordinating with others.
 
-*** Examples
+*** Examples                                                     :examples:
 
 **** [[id:cd12e9d7-8598-4fbe-bab2-57c6929df737][Bernt Hansen: Organize your life in plain text!]]
+
+**** [[https://www.reddit.com/r/emacs/comments/jmpsdl/continuous_professional_development_record_in/][Continuous Professional Development Record in Emacs]] :ATTACH:discussions:
+:PROPERTIES:
+:Attachments: cpd.org
+:ID:       71428924-28ca-4014-bd90-a12c056e8662
+:END:
+
+falloutphil shows how he uses Org documents to track and report on his Continuous Professional Development (CPD) activities in a structured, efficient way.
+
++ [[https://raw.githubusercontent.com/falloutphil/Misc/master/cpd.org][His cpd.org file]]
 
 ** Research                                                       :research:
 :PROPERTIES:
