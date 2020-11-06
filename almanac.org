@@ -1284,6 +1284,8 @@ This is an excellent demonstration of using Org and Org Babel to produce technic
 
 *** [[https://www.labri.fr/perso/nrougier/GTD/index.html][Get Things Done with Emacs]]
 
+*** [[https://bofh.org.uk/2019/02/25/baking-with-emacs/][Running a bakery on Emacs and PostgreSQL // Just a Summary]]
+
 *** [[https://karl-voit.at/2020/05/03/current-org-files/][UOMF: My Current Org Mode Files and Heading Structure]]
 
 Karl Voit describes his entire Org system.
