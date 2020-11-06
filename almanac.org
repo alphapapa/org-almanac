@@ -20,6 +20,7 @@
   - [[Meta][Meta]]
   - [[Project Management][Project Management]]
   - [[Research][Research]]
+  - [[Software][Software]]
   - [[Studying][Studying]]
   - [[Web Publishing][Web Publishing]]
   - [[Writing][Writing]]
@@ -65,6 +66,7 @@ On applying Org to various tasks.
 - [[Meta][Meta]]
 - [[Project Management][Project Management]]
 - [[Research][Research]]
+- [[Software][Software]]
 - [[Studying][Studying]]
 - [[Web Publishing][Web Publishing]]
 - [[Writing][Writing]]
@@ -611,6 +613,24 @@ Using Org for research.
 **** [[https://www.reddit.com/r/orgmode/comments/fvckhr/research_work_flow/][Research work flow : Reddit r/orgmode]]
 
 [2020-04-06 Mon 06:20]  Using Org for reproducible research, writing and translating fiction, and managing references.
+
+** Software                                                       :software:
+
+On using Org to write and publish usable software applications (really!).
+
+*** Tools                                                           :tools:
+
+**** [[https://github.com/tgbugs/orgstrap][orgstrap: Bootstrap an Org file using file local variables]]
+
+#+BEGIN_QUOTE
+orgstrap is a specification and tooling for bootstrapping Org files.
+
+It allows Org files to describe their own requirements, and define their own functionality, making them self-contained standalone computational artifacts dependent only on Emacs or other implementations of the Org Babel protocol in the future.
+
+This file bootstraps itself to provide the functionality needed to use orgstrap in any Org file.
+
+orgstrap works with all versions of Emacs since 24.4 and all versions of Org since 8.2.10.
+#+END_QUOTE
 
 ** Studying                                                       :studying:
 
