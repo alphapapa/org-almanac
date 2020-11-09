@@ -24,10 +24,10 @@
   - [[Studying][Studying]]
   - [[Web Publishing][Web Publishing]]
   - [[Writing][Writing]]
+- [[Configs][Configs]]
 - [[Development][Development]]
   - [[Building][Building]]
   - [[Performance][Performance]]
-- [[Configs][Configs]]
 - [[Documentation][Documentation]]
   - [[Community][Community]]
   - [[%5B%5Bhttps://orgmode.org/manual/%5D%5BManual%5D%5D][Manual]]
@@ -45,9 +45,9 @@
   - [[Features][Features]]
   - [[Libraries][Libraries]]
   - [[Tools][Tools]]
+- [[Tasks][Tasks]]
 - [[Videos][Videos]]
   - [[Tutorials][Tutorials]]
-- [[Tasks][Tasks]]
 :END:
 
 * Application
@@ -709,34 +709,6 @@ I use priority tags to measure how far a scene is in production, since they are 
 Binder is global minor mode (and associated major modes) to facilitate working on a writing project in multiple files.  It is heavily inspired by the binder feature in the macOS writing app Scrivener.  The rationale behind working this way is to split a large writing project into much smaller pieces.
 #+END_QUOTE
 
-* Development                                                   :development:
-
-Information about Org development.
-
-** Building                                                       :building:
-
-Information about Building Org.
-
-*** Articles                                                     :articles:
-
-**** [[https://scripter.co/building-org-development-version/][Kaushal Modi: Building Org Development version]] :website:ATTACH:
-:PROPERTIES:
-:ID:       18b2d867-1cab-41fa-869a-48a866063f55
-:author:   Kaushal Modi
-:Attachments: https%3A%2F%2Fscripter.co%2Fbuilding-org-development-version%2F--dEexlf.tar.xz
-:END:
-
-[2017-09-01 Fri 22:30] Kaushal Modi shared this on the Org list.
-
-** Performance                                                 :performance:
-
-*** [[https://lists.gnu.org/archive/html/bug-gnu-emacs/2019-04/msg01390.html][Eli Zaretskii: How overlays affect performance]] :discussions:overlays:
-:PROPERTIES:
-:ID:       2b206328-65b7-45e5-99b7-0bad7c13f161
-:END:
-
-[2019-12-13 Fri 08:49]  
-
 * Configs                                                           :configs:
 :PROPERTIES:
 :TOC:      :depth 0
@@ -785,6 +757,34 @@ Examples of complete Org configurations.
 
 + [[https://writequit.org/eos/eos.html][The Emacs Operating System (EOS)]]
 
+* Development                                                   :development:
+
+Information about Org development.
+
+** Building                                                       :building:
+
+Information about Building Org.
+
+*** Articles                                                     :articles:
+
+**** [[https://scripter.co/building-org-development-version/][Kaushal Modi: Building Org Development version]] :website:ATTACH:
+:PROPERTIES:
+:ID:       18b2d867-1cab-41fa-869a-48a866063f55
+:author:   Kaushal Modi
+:Attachments: https%3A%2F%2Fscripter.co%2Fbuilding-org-development-version%2F--dEexlf.tar.xz
+:END:
+
+[2017-09-01 Fri 22:30] Kaushal Modi shared this on the Org list.
+
+** Performance                                                 :performance:
+
+*** [[https://lists.gnu.org/archive/html/bug-gnu-emacs/2019-04/msg01390.html][Eli Zaretskii: How overlays affect performance]] :discussions:overlays:
+:PROPERTIES:
+:ID:       2b206328-65b7-45e5-99b7-0bad7c13f161
+:END:
+
+[2019-12-13 Fri 08:49]  
+
 * Documentation                                               :documentation:
 
 Other sources of documentation about Org.
@@ -792,6 +792,16 @@ Other sources of documentation about Org.
 ** Community                                                     :community:
 
 Community-provided documentation.
+
+*** [#A] [[http://orgmode.org/worg/][Worg]]                                                    :bookmark:
+:PROPERTIES:
+:ID:       90fe0f5b-8ecf-4078-81d1-344c537cdf04
+:END:
+:LOGBOOK:
+CLOCK: [2015-08-29 Sat 15:02]--[2015-08-29 Sat 15:04] =>  0:02
+:END:
+
+[2015-08-29 Sat 15:02] There's a lot of good stuff here.
 
 *** [[https://github.com/novoid/org-mode-workshop][Karl Voit: org-mode-workshop]]
 :PROPERTIES:
@@ -809,16 +819,6 @@ Includes:
 
 +  [[https://github.com/novoid/org-mode-workshop/blob/master/workshop.org][Workshop presentation]] :: Outline of presentation given by Karl.
 +  [[https://github.com/novoid/org-mode-workshop/blob/master/featureshow/org-mode-teaser.org][Teaser demo]] :: A large document demonstrating many features of Org.
-
-*** [#A] [[http://orgmode.org/worg/][Worg]]                                                    :bookmark:
-:PROPERTIES:
-:ID:       90fe0f5b-8ecf-4078-81d1-344c537cdf04
-:END:
-:LOGBOOK:
-CLOCK: [2015-08-29 Sat 15:02]--[2015-08-29 Sat 15:04] =>  0:02
-:END:
-
-[2015-08-29 Sat 15:02] There's a lot of good stuff here.
 
 ** [[https://orgmode.org/manual/][Manual]]                        :bookmark:
 
@@ -1261,24 +1261,6 @@ This may be a useful alternative to =org-element-parse-buffer=.  Also see [[http
 :author:   John Kitchin
 :END:
 
-* Videos                                                             :videos:
-
-Videos about Org.
-
-** Tutorials                                                      :tutorial:
-:PROPERTIES:
-:ID:       536f010e-593f-4f28-b8bd-ae36f4a52db1
-:END:
-
-Video tutorials.
-
-*** [[https://www.youtube.com/playlist?list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE][Rainer König: Org-mode tutorials]]
-:PROPERTIES:
-:author:   Rainer König
-:END:
-
-Rainer's series of 39 videos explains Org features and application in a straightforward, detailed way.
-
 * Tasks
 :PROPERTIES:
 :TOC:      :depth 0
@@ -1318,7 +1300,58 @@ Shows 4 specific ways Org can be used to track birthdays, etc.
 
 Should support timestamps in property values.
 
-* COMMENT Config                                                   :noexport:
+** TODO Issue tracker
+
+[2020-11-09 Mon 01:15]  Found this "recipe" laying around in an "org-cookbook" file I started and then forgot about: [[id:6074e74c-ede5-4c2e-9833-4ab7efa13397][Issue tracker]].  There's an image attachment that I could add here, too.
+
+#+BEGIN_SRC org
+  /Originally [[https://www.reddit.com/r/orgmode/comments/biqhjc/using_orgmode_as_a_quickanddirty_issue_tracker/][posted]] on Reddit by [[https://www.reddit.com/user/argtri][argtri]]./
+
+  1.  Create file =issues.org=.
+  2.  Add settings to file:
+
+  ,#+BEGIN_SRC org
+    ,,#+AUTHOR: Your Name
+    ,,#+STARTUP:indent
+    ,,#+OPTIONS: num:nil toc:nil
+    ,,#+TODO: ONCE(o) EPISODIC ONGOING POTENTIAL | RESOLVED IMPROVED UNRESOLVABLE TOLERATED INACTIVE
+    ,,#+TODO: MALFUNCTION DAMAGE | REPAIRED REPLACED DISCARDED
+    ,,#+TITLE: Issue Tracker
+  ,#+END_SRC
+
+  3.  Add template to ~org-capture-templates~:
+
+  ,#+BEGIN_SRC elisp
+    ("i" "issue" entry
+     (file+olp+datetree "~ /org/issues.org")
+     "* ONCE %?" :time-prompt t)
+  ,#+END_SRC
+
+  Example:
+
+  [[images/issue-tracker.png]]
+
+#+END_SRC
+
+* Videos                                                             :videos:
+
+Videos about Org.
+
+** Tutorials                                                      :tutorial:
+:PROPERTIES:
+:ID:       536f010e-593f-4f28-b8bd-ae36f4a52db1
+:END:
+
+Video tutorials.
+
+*** [[https://www.youtube.com/playlist?list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE][Rainer König: Org-mode tutorials]]
+:PROPERTIES:
+:author:   Rainer König
+:END:
+
+Rainer's series of 39 videos explains Org features and application in a straightforward, detailed way.
+
+* [#C] COMMENT Config                                              :noexport:
 
 ** File-local variables
 
@@ -1334,3 +1367,4 @@ Should support timestamps in property values.
 # org-export-initial-scope: buffer
 # eval: (real-auto-save-mode -1)
 # End:
+
