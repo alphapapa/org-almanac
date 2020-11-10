@@ -18,6 +18,7 @@
   - [[Database][Database]]
   - [[Fitness][Fitness]]
   - [[Meta][Meta]]
+  - [[Games][Games]]
   - [[Project Management][Project Management]]
   - [[Research][Research]]
   - [[Software][Software]]
@@ -64,6 +65,7 @@ On applying Org to various tasks.
 - [[Database][Database]]
 - [[Fitness][Fitness]]
 - [[Meta][Meta]]
+- [[Games][Games]]
 - [[Project Management][Project Management]]
 - [[Research][Research]]
 - [[Software][Software]]
@@ -530,6 +532,28 @@ On applying Org to various tasks (as opposed to a specific task).
 Discussions about applying Org to various tasks.
 
 + [[https://www.reddit.com/r/emacs/comments/jjxatm/whats_your_job_whats_your_daily_emacs_workflow/][What's your job? What's your daily emacs workflow? : r/emacs]]
+
+** Games                                                             :games:
+
+Including using Org to run role-playing games (RPGs).
+
+*** Articles                                                     :articles:
+
+**** [[https://takeonrules.com/2020/11/09/using-emacs-while-running-online-games/][Using Emacs While Running Online Games // Take on Rules]] :ATTACH:
+:PROPERTIES:
+:author:   Jeremy Friesen
+:published: [2020-11-09 Mon]
+:Attachments: https%3A%2F%2Fwww.reddit.com%2Fr%2Femacs%2Fcomments%2Fjr7n56%2Fusing_emacs_while_running_online_games_take_on%2F--RII16i.tar.xz
+:ID:       2c4c7b3e-e77d-48b0-8eee-5ceb588be664
+:END:
+
+#+BEGIN_QUOTE
+On Sunday mornings, I’ve been facilitating a Stars without Number campaign. You can read about it in my New Vistas in the Thel Sector series.
+
+While I prefer in-person gaming, I’m coming around to having access to my work tools while running a game.
+#+END_QUOTE
+
+Jeremy explains how he use Org for running his RPGs, including exporting notes for publishing, using Org Roam to maintain a wiki, and some custom Emacs functions that bring in data from other utilities he's written.
 
 ** Project Management                               :project_management:PIM:
 
@@ -1352,6 +1376,9 @@ Video tutorials.
 Rainer's series of 39 videos explains Org features and application in a straightforward, detailed way.
 
 * [#C] COMMENT Config                                              :noexport:
+:PROPERTIES:
+:TOC:      :ignore (this descendants)
+:END:
 
 ** File-local variables
 
