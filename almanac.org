@@ -638,6 +638,17 @@ Using Org for research.
 
 [2020-04-06 Mon 06:20]  Using Org for reproducible research, writing and translating fiction, and managing references.
 
+*** Tools                                                           :tools:
+
+**** [[https://github.com/cpitclaudel/esh][esh: Use Emacs to highlight source code listings in LaTeX and HTML documents!]] :LaTeX:exporting:HTML:
+:PROPERTIES:
+:author:   Clément Pit-Claudel
+:END:
+
+#+BEGIN_QUOTE
+This programs processes TeX source files, adding syntax-highlighting to the contents of specially-delimited environments and macros. 
+#+END_QUOTE
+
 ** Software                                                       :software:
 
 On using Org to write and publish usable software applications (really!).
