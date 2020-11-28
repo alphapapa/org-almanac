@@ -19,6 +19,7 @@
   - [[Fitness][Fitness]]
   - [[Meta][Meta]]
   - [[Games][Games]]
+  - [[Presentations][Presentations]]
   - [[Project Management][Project Management]]
   - [[Research][Research]]
   - [[Software][Software]]
@@ -66,6 +67,7 @@ On applying Org to various tasks.
 - [[Fitness][Fitness]]
 - [[Meta][Meta]]
 - [[Games][Games]]
+- [[Presentations][Presentations]]
 - [[Project Management][Project Management]]
 - [[Research][Research]]
 - [[Software][Software]]
@@ -554,6 +556,32 @@ While I prefer in-person gaming, I’m coming around to having access to my work
 #+END_QUOTE
 
 Jeremy explains how he use Org for running his RPGs, including exporting notes for publishing, using Org Roam to maintain a wiki, and some custom Emacs functions that bring in data from other utilities he's written.
+
+** Presentations                                             :presentations:
+
+On using Org to give presentations (e.g. PowerPoint-style).
+
+*** Tools                                                           :tools:
+
+**** [[https://github.com/takaxp/org-tree-slide][org-tree-slide]]
+:PROPERTIES:
+:author:   Takaaki ISHIKAWA
+:END:
+
+#+BEGIN_QUOTE
+The main purpose of this elisp is to handle each tree in an org buffer as a slide by simple narrowing. This emacs lisp is a minor mode for Emacs Org-mode.
+
+Main features:
+
+-  Live editable presentation
+-  Fast switching of narrowing/widen
+-  TODO pursuit with narrowing
+-  Displaying the current number of slides in mode line
+-  CONTENT view during a presentation
+-  Slide-in effect
+-  Slide header from org file’s header
+-  Countdown timer
+#+END_QUOTE
 
 ** Project Management                               :project_management:PIM:
 
