@@ -110,6 +110,7 @@ Using Org to publish a blog.
   - [[%5B%5Bhttps://www.reddit.com/r/orgmode/comments/93nyaw/psa_hugo_users_update_to_hugo_v046_to_get_syntax/e3fmd62/%5D%5B{PSA}%20Hugo%20users:%20Update%20to%20Hugo%20v0.46%20to%20get%20syntax%20highlighted%20Org%20mode%20blocks%20using%20Chroma%20:%20orgmode%5D%5D][{PSA} Hugo users: Update to Hugo v0.46 to get syntax highlighted Org mode blocks using Chroma : orgmode]]
 - [[Examples][Examples]]
   - [[%5B%5Bhttps://scripter.co/%5D%5BA%20Scripter's%20Notes%20(Kaushal%20Modi's%20blog)%5D%5D][A Scripter's Notes (Kaushal Modi's blog)]]
+  - [[%5B%5Bhttps://ag91.github.io/%5D%5BAndrea%20Giugliano:%20Where%20parallels%20cross%5D%5D][Andrea Giugliano: Where parallels cross]]
   - [[%5B%5Bhttps://endlessparentheses.com/%5D%5BArtur%20Malabarba:%20Endless%20Parentheses%5D%5D][Artur Malabarba: Endless Parentheses]]
   - [[%5B%5Bhttps://duncan.codes/%5D%5BDuncan%20Mac-Vicar%20P.%5D%5D][Duncan Mac-Vicar P.]]
   - [[%5B%5Bhttp://juanreyero.com/about/%5D%5BJuan%20Reyero%5D%5D][Juan Reyero]]
@@ -332,6 +333,19 @@ Blogs and personal Web sites published with Org.
 
 **** TODO [[https://scripter.co/][A Scripter's Notes (Kaushal Modi's blog)]]
 
+**** [[https://ag91.github.io/][Andrea Giugliano: Where parallels cross]]
+:PROPERTIES:
+:author:   Andrea Giugliano
+:END:
+
+Blog published with the inactive project [[https://github.com/sillykelvin/org-page][org-page]].
+
+#+BEGIN_QUOTE
+Yesterday (or today?) a student, today a software engineer, the day after just a fragment of life.
+
+I am pulled by curiosity and since I have learned a few useful things, why not to share them?
+#+END_QUOTE
+
 **** [[https://endlessparentheses.com/][Artur Malabarba: Endless Parentheses]]
 :PROPERTIES:
 :author:   Artur Malabarba
@@ -516,6 +530,8 @@ Here are a few examples of the Lisp-side of the library.  See the examples and s
           (property "composer" "Chopin")
           (not (property "key"))))
 #+END_SRC
+
+***** TODO org-ql dynamic block demo
 
 ** Fitness                                                         :fitness:
 
