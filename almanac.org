@@ -1357,6 +1357,8 @@ Should probably support subtree-specific sort functions.
 
 ** Resources to add
 
+*** [[https://daryl.wakatara.com/a-better-gtd-and-crm-flow-for-emacs-org-mode/][Daryl Manning | A better GTD and CRM flow for emacs org-mode]]
+
 *** [[https://github.com/alhassy/org-special-block-extras][GitHub - alhassy/org-special-block-extras: A number of new custom blocks and link types for Emacs' Org-mode ^_^]]
 
 *** [[https://www.youtube.com/watch?v=0g9BcZvQbXU][Consistent Technical Documents Using Emacs and Org Mode - YouTube]]
