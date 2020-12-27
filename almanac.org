@@ -15,6 +15,7 @@
 - [[Application][Application]]
   - [[Blogging][Blogging]]
   - [[Bookmarking][Bookmarking]]
+  - [[Business][Business]]
   - [[Database][Database]]
   - [[Fitness][Fitness]]
   - [[Meta][Meta]]
@@ -63,6 +64,7 @@ On applying Org to various tasks.
 :CONTENTS:
 - [[Blogging][Blogging]]
 - [[Bookmarking][Bookmarking]]
+- [[Business][Business]]
 - [[Database][Database]]
 - [[Fitness][Fitness]]
 - [[Meta][Meta]]
@@ -436,6 +438,28 @@ On using Org to bookmark Web sites.
 *** Discussions                                               :discussions:
 
 **** [[https://www.reddit.com/r/orgmode/comments/iqp0mf/organizing_web_bookmarks_with_orgmode/][Organizing web bookmarks with Org-mode? : orgmode]]
+
+** Business                                                       :business:
+
+On using Org to run a business.
+
+*** Articles                                                     :articles:
+
+**** [[https://bofh.org.uk/2019/02/25/baking-with-emacs/][Running a bakery on Emacs and PostgreSQL]]
+:PROPERTIES:
+:published: [2019-02-25 Mon]
+:author:   Piers Cawley
+:END:
+
+Piers shows how he uses Org captures, Babel, and some custom code to help run his bakery.
+
+#+BEGIN_QUOTE
+Just over a year ago now, I finally opened the bakery I’d been dreaming of for years. It’s been a big change in my life, from spending all my time sat in front of a computer, to spending most of it making actual stuff. And stuff that makes people happy, at that. It’s been a huge change, but I can’t think of a single job change that’s ever made me as happy as this one.
+
+One of the big changes that came with going pro was that suddenly I was having to work out how much stuff I needed to mix to fill the orders I needed. On the face of it, this is really simple, just work out how much dough you need, then work out what quantities to mix to make that much dough. Easy. You can do it with a pencil and paper. Or, in traditional bakers' fashion, by scrawling with your finger on a floured work bench.
+
+And that’s how I coped for a few weeks early on. But I kept making mistakes, which makes for an inconsistent product (bread is very forgiving, you have to work quite hard to make something that isn’t bread, but consistency matters). I needed to automate.
+#+END_QUOTE
 
 ** Database                                                       :database:
 
