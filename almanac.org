@@ -1257,7 +1257,7 @@ Org-related third-party software.
   - [[Lists][Lists]]
 - [[Libraries][Libraries]]
 - [[Miscellaneous][Miscellaneous]]
-  - [[%5B%5Bhttps://github.com/200ok-ch/org-parser%5D%5Borg-parser:%20a%20Clojure-based%20parser%20for%20the%20Org%20mode%20markup%20language%5D%5D][org-parser: a Clojure-based parser for the Org mode markup language]]
+  - [[Parsing][Parsing]]
 - [[Tools][Tools]]
   - [[Citations][Citations]]
 :END:
@@ -1355,9 +1355,19 @@ CLOCK: [2020-02-08 Sat 08:28]--[2020-02-08 Sat 08:28] =>  0:00
 
 This may be a useful alternative to =org-element-parse-buffer=.  Also see [[https://www.reddit.com/r/orgmode/comments/6t8niz/orgparser_parses_orgfiles_into_structured/][Reddit thread]].
 
-** Miscellaneous
+** Miscellaneous                                             :miscellaneous:
 
-*** [[https://github.com/200ok-ch/org-parser][org-parser: a Clojure-based parser for the Org mode markup language]]
+*** Parsing                                                       :parsing:
+
+Related to parsing Org files.
+
+**** [[https://github.com/tgbugs/laundry][laundry: Org mode for Racket]]                          :Scheme:Racket:
+
+#+BEGIN_QUOTE
+An attempt to specify a formal grammar for Org syntax.  It is implemented using Racket’s ~#lang brag~.
+#+END_QUOTE
+
+**** [[https://github.com/200ok-ch/org-parser][org-parser: a Clojure-based parser for the Org mode markup language]] :Clojure:
 
 #+BEGIN_QUOTE
 It documents the syntax in a standard and machine readable notation (EBNF). And the reference implementation is done in a way that it runs on the established virtual machines of Java and JavaScript. Hence, org-parser can be used from all programming languages running on those virtual machines. org-parser provides a higher-level data structure that is easy to consume for an application working with Org mode data. Even if your application is not running on the Java or JavaScript virtual machines, you can embed org-parser as a command-line application. Lastly, org-parser brings a strong test suite to document the reference implementation in yet another unambiguous way.
