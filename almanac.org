@@ -1367,6 +1367,20 @@ Related to parsing Org files.
 This node.js module implements an org-mode file format parser.
 #+END_QUOTE
 
+**** [[https://github.com/Ferada/cl-org-mode-parser][cl-org-mode-parser: Parsing org-mode files]]         :Lisp:Common_Lisp:
+
+#+BEGIN_QUOTE
+There are actually a lot of other packages for the same purpose. The aim of this one is to parse org-mode files via a SAX-like event interface into e.g. CLOS-based documents and to offer some options with regards to parsed elements, interning of tags and similar things.
+
+The parser is currently line- and regex-based, however it might be feasible to use a parser generator instead. For that the syntax description at worg is canonical and should probably be used.
+#+END_QUOTE
+
+**** [[https://common-lisp.net/project/cl-org-mode/][CL-ORG-MODE : A Parser of org-mode outlines]]        :Lisp:Common_Lisp:
+
+#+BEGIN_QUOTE
+/abstract/: CL-ORG-MODE is a parser for org-mode files that uses an extensible CLOS-based recursive descent parser to create a tree of org-mode nodes. Also included is a (primitive) system for literate programming using org-mode.
+#+END_QUOTE
+
 **** [[https://github.com/tgbugs/laundry][laundry: Org mode for Racket]]                          :Scheme:Racket:
 
 #+BEGIN_QUOTE
