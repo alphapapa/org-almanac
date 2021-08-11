@@ -1369,6 +1369,12 @@ This node.js module implements an org-mode file format parser.
 
 +  A fork, updated more recently: [[https://gitlab.com/raisethisbarn/org-mode-parse][Raise / org-mode-parse · GitLab]]
 
+**** [[https://github.com/amake/org_parser][org_parser: An org-mode parser for Dart]]                        :Dart:
+
+#+BEGIN_QUOTE
+This package allows you to parse raw Org Mode documents into a structured in-memory representation.  This parser was developed for an application that is halfway between pretty-printing and evaluating/interpreting, so in many cases the parsed structure does not split out constituent parts as thoroughly as needed for some applications.
+#+END_QUOTE
+
 **** [[https://github.com/orgapp/orgajs][orgajs: parse org-mode content into AST]]                  :JavaScript:
 
 #+BEGIN_QUOTE
