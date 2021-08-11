@@ -1367,6 +1367,53 @@ Related to parsing Org files.
 This node.js module implements an org-mode file format parser.
 #+END_QUOTE
 
++  A fork, updated more recently: [[https://gitlab.com/raisethisbarn/org-mode-parse][Raise / org-mode-parse · GitLab]]
+
+**** [[https://github.com/orgapp/orgajs][orgajs: parse org-mode content into AST]]                  :JavaScript:
+
+#+BEGIN_QUOTE
+Orga is a flexible org-mode syntax parser. It parses org content into AST (Abstract Syntax Tree 🌲).
+#+END_QUOTE
+
++  [[https://www.reddit.com/r/orgmode/comments/7wjmwr/orga_the_ultimate_orgmode_parser_in_javascript/][Reddit discussion (2018)]]
+
+**** [[https://github.com/fosskers/org-mode][fosskers/org-mode: Haskell parser for Emacs org-mode files]]          :Haskell:
+
+#+BEGIN_QUOTE
+The org-mode suite of libraries allow one to parse text in Emacs Org Mode format and manipulate it into other useful types.
+#+END_QUOTE
+
+**** [[https://github.com/karlicoss/orgparse][orgparse: Python module for reading Emacs org-mode files]]     :Python:
+
+**** [[https://github.com/perlancar/perl-Org-Parser][perl-Org-Parser]]                                                :Perl:
+
++  [[https://metacpan.org/pod/Org::Parser][Org::Parser - Parse Org documents - metacpan.org]]
+
+**** [[https://github.com/niklasfasching/go-org][go-org: Org mode parser with HTML & pretty-printed Org rendering and static site generator]] :Go:
+
+#+BEGIN_QUOTE
++ the goal for the html export is to produce sensible html output, not to exactly reproduce the output of org-html-export.
++ the goal for the parser is to support a reasonable subset of Org mode. Org mode is huge and I like to follow the 80/20 rule.
+#+END_QUOTE
+
+**** [[https://github.com/mooz/org-js][org-js: A parser and converter for org-mode notation]]     :JavaScript:
+
+#+BEGIN_QUOTE
+Parser and converter for org-mode notation written in JavaScript.  For working example, see [[http://mooz.github.com/org-js/editor/][http://mooz.github.com/org-js/editor/]].
+#+END_QUOTE
+
+**** [[https://github.com/org-rs/org-rs][org-rs: org-mode parser rewrite in Rust]]                        :Rust:
+
+#+BEGIN_QUOTE
+Org is probably the best and most complete plain text organizational system known to mankind. It has countless applications like authoring, publishing, task and time tracking, journal, blog, agenda, wiki etc...
+
+Unfortunately Org was originally developed for Emacs and therefore available only inside Emacs. It is a huge limiting factor for Org's development and popularization. Because of that it is not as popular outside of Emacs community as it should be.
+
+Many attempts were made to fix this. It all starts with a parser. But because Org's syntax is not trivial and in fact most of it is context-sensitive with only a few context-free elements, it is quite easy to get it wrong. Some Org parsers have chosen to focus on a restricted subset of Org's syntax like org-ruby or pandoc. More ambitious projects try to cover all features but since Org does not have a formal specification1 they rely on observed Org's behavior in Emacs or author's intuition. As a result they rarely get finished.
+
+But the absence of a good a spec and the complexity of the grammar are not show stoppers. Why reinventing the wheel when we can just copy it! This project takes the only surefire way to get it right - use the original elisp parser implementation as a blueprint!
+#+END_QUOTE
+
 **** [[https://github.com/Ferada/cl-org-mode-parser][cl-org-mode-parser: Parsing org-mode files]]         :Lisp:Common_Lisp:
 
 #+BEGIN_QUOTE
