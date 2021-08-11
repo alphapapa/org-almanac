@@ -1361,6 +1361,12 @@ This may be a useful alternative to =org-element-parse-buffer=.  Also see [[http
 
 Related to parsing Org files.
 
+**** [[https://github.com/daitangio/org-mode-parser][org-mode-parser: An Org mode parser for Node.js]] :JavaScript:
+
+#+BEGIN_QUOTE
+This node.js module implements an org-mode file format parser.
+#+END_QUOTE
+
 **** [[https://github.com/tgbugs/laundry][laundry: Org mode for Racket]]                          :Scheme:Racket:
 
 #+BEGIN_QUOTE
