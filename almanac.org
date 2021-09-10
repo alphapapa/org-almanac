@@ -106,7 +106,8 @@ Using Org to publish a blog.
   - [[Stig Brautaset][Stig Brautaset]]
   - [[Toon Claes][Toon Claes]]
 - [[Code][Code]]
-  - [[%5B%5Bhttps://github.com/itf/org-export-head%5D%5BGitHub%20-%20itf/org-export-head:%20Org%20mode%20to%20blog%20exporter.%20Converts%20each%20header%20to%20a%20different%20file%5D%5D][GitHub - itf/org-export-head: Org mode to blog exporter. Converts each header to a different file]]
+  - [[%5B%5Bhttps://github.com/jphmrst/defblog%5D%5Bdefblog:%20A%20web%20site/blog%20builder,%20implemented%20as%20a%20wrapper%20around%20org-project%5D%5D][defblog: A web site/blog builder, implemented as a wrapper around org-project]]
+  - [[%5B%5Bhttps://github.com/itf/org-export-head%5D%5Borg-export-head:%20Org%20mode%20to%20blog%20exporter.%20Converts%20each%20header%20to%20a%20different%20file%5D%5D][org-export-head: Org mode to blog exporter. Converts each header to a different file]]
 - [[Discussions][Discussions]]
   - [[%5B%5Bhttps://www.reddit.com/r/emacs/comments/93harh/multipage_sitemaps_for_orgpublish/%5D%5BMulti-page%20sitemaps%20for%20org-publish?%20:%20emacs%5D%5D][Multi-page sitemaps for org-publish? : emacs]]
   - [[%5B%5Bhttps://lists.gnu.org/archive/html/emacs-orgmode/2019-09/msg00282.html%5D%5B{O}%20blogging%20wih%20org-mode%5D%5D][{O} blogging wih org-mode]]
@@ -278,9 +279,21 @@ Toon's blog has a unique and appealing custom theme.
 -  State "TODO"       from              [2020-02-13 Thu 01:43]
 :END:
 
-**** [[https://github.com/itf/org-export-head][GitHub - itf/org-export-head: Org mode to blog exporter. Converts each header to a different file]]
+**** [[https://github.com/jphmrst/defblog][defblog: A web site/blog builder, implemented as a wrapper around org-project]]
+:PROPERTIES:
+:author:   John Maraist
+:END:
+
+#+BEGIN_QUOTE
+Declare a simple structured blog to be published with org-publish. This package offers an all-Emacs solution to maintaining a web site (except for uploading via rsync, which defblog triggers through org-publish).
+#+END_QUOTE
+
++  [[https://www.reddit.com/r/emacs/comments/pl4ad7/defblog_a_wrapper_around_orgpublish_for_web/][Announcement on Reddit]]
+
+**** [[https://github.com/itf/org-export-head][org-export-head: Org mode to blog exporter. Converts each header to a different file]]
 :PROPERTIES:
 :ID:       48caf68d-5b39-4d87-b464-f496c3811dd1
+:author:   Ivan Tadeu Ferreira Antunes Filho
 :END:
 
 + [[https://www.reddit.com/r/emacs/comments/9cslij/single_file_blog_in_org_mode/][Single file Blog in org mode : emacs]]
