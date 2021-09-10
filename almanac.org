@@ -20,6 +20,7 @@
   - [[Fitness][Fitness]]
   - [[Meta][Meta]]
   - [[Games][Games]]
+  - [[Miscellaneous][Miscellaneous]]
   - [[Presentations][Presentations]]
   - [[Project Management][Project Management]]
   - [[Research][Research]]
@@ -70,6 +71,7 @@ On applying Org to various tasks.
 - [[Fitness][Fitness]]
 - [[Meta][Meta]]
 - [[Games][Games]]
+- [[Miscellaneous][Miscellaneous]]
 - [[Presentations][Presentations]]
 - [[Project Management][Project Management]]
 - [[Research][Research]]
@@ -610,6 +612,20 @@ While I prefer in-person gaming, I’m coming around to having access to my work
 #+END_QUOTE
 
 Jeremy explains how he use Org for running his RPGs, including exporting notes for publishing, using Org Roam to maintain a wiki, and some custom Emacs functions that bring in data from other utilities he's written.
+
+** Miscellaneous                                             :miscellaneous:
+
+*** [[https://gitlab.com/tygrdev/org-real][org-real: Keep track of real things as Org links]]
+:PROPERTIES:
+:author:   Tyler Grinn
+:END:
+
+#+BEGIN_QUOTE
+At an abstract level, what this package does is take a one-dimensional description and render it as a three-dimensional ascii drawing. This is similar to how communicating locations of things in real life works: the knowledgeable party forms a one-dimensional sentence that describes a thing and the receiving party forms a three-dimensional image in their mind. This mental image arranges the nouns from the sentence according to the prepositions surrounding them.
+#+END_QUOTE
+
++  [[https://blog.tygr.info/emacs/org-real.html][Announcement]]
+     -  [[https://www.reddit.com/r/orgmode/comments/pl4dpp/im_releasing_the_alpha_version_of_orgreal_today/][I'm releasing the alpha version of org-real today : orgmode]]
 
 ** Presentations                                             :presentations:
 
