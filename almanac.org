@@ -813,6 +813,17 @@ The HTML exporter backend that ships with org-mode didn’t produce the structur
 
 + [[id:689bb9d5-4ea0-4770-bff8-b5f443844179][Writing a new org-mode exporter back-end – Imperfect Software]]
 
+*** Libraries                                                   :libraries:
+
+**** [[https://github.com/vascoferreira25/ox-tailwind][ox-tailwind: Org-Mode HTML export back-end with Tailwind.css classes]]
+:PROPERTIES:
+:author:   Vasco Ferreira
+:END:
+
+#+BEGIN_QUOTE
+This back-end has the purpose of allowing easy customization of the HTML output. Although it is called Tailwind, the only thing that it does is allowing you to customize the classes of the HTML and exporting a more barebones HTML (It does not create as many divs and sections as the normal HTML export back-end). Instead of using Tailwind.css you can just name the classes of the elements and import your own css (or edit ./css/style.css).
+#+END_QUOTE
+
 ** Writing                                                         :writing:
 
 *** Citations                                                   :citations:
