@@ -813,6 +813,12 @@ The HTML exporter backend that ships with org-mode didn’t produce the structur
 
 + [[id:689bb9d5-4ea0-4770-bff8-b5f443844179][Writing a new org-mode exporter back-end – Imperfect Software]]
 
+**** [[https://www.gnuisnotunix.com/recipes/][M-x recipes]]
+
+#+BEGIN_QUOTE
+I've been working on a cookbook using Emacs Org mode, and org-chef to import recipes. I set it up so that I can export to a printable bifold booklet that I can use in the kitchen, and it exports to my website.
+#+END_QUOTE
+
 *** Libraries                                                   :libraries:
 
 **** [[https://github.com/vascoferreira25/ox-tailwind][ox-tailwind: Org-Mode HTML export back-end with Tailwind.css classes]]
@@ -1405,6 +1411,12 @@ Related to parsing Org files.
 
 #+BEGIN_QUOTE
 /abstract/: CL-ORG-MODE is a parser for org-mode files that uses an extensible CLOS-based recursive descent parser to create a tree of org-mode nodes. Also included is a (primitive) system for literate programming using org-mode.
+#+END_QUOTE
+
+**** [[https://gitlab.com/olymk2/cl-org][cl-org: Clojure(script) Org mode parser]]                        :Clojure:
+
+#+BEGIN_QUOTE
+Clojure(script) library that can be used in JS or Java or likely any JVM based language.  This library will parse Org files into a mini-DSL which you can transform easily into Hiccup.  It has a default translation to built-in if you do not require customization.
 #+END_QUOTE
 
 **** [[https://github.com/Ferada/cl-org-mode-parser][cl-org-mode-parser: Parsing org-mode files]]         :Lisp:Common_Lisp:
