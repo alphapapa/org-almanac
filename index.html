@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-10-05 Tue 07:32 -->
+<!-- 2021-10-10 Sun 09:06 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>org-almanac</title>
@@ -345,6 +345,7 @@ Using Org to publish a blog.
 <li><a href="#%5B%5Bhttps%3A%2F%2Floomcom.com%2Fblog%2F0110_emacs_blogging_for_fun_and_profit.html%5D%5BSeth%20J.%20Morabito%3A%20Emacs%20Blogging%20for%20Fun%20and%20Profit%5D%5D">Seth J. Morabito: Emacs Blogging for Fun and Profit</a></li>
 <li><a href="#Stig%20Brautaset">Stig Brautaset</a></li>
 <li><a href="#Toon%20Claes">Toon Claes</a></li>
+<li><a href="#%5B%5Bhttps%3A%2F%2Fblog.tygr.info%2Femacs%2Fblog.html%5D%5BTyler%20Grinn%3A%20How%20this%20blog%20works%5D%5D">Tyler Grinn: How this blog works</a></li>
 </ul></li>
 <li><a href="#Code">Code</a>
 <ul class="org-ul">
@@ -372,6 +373,7 @@ Using Org to publish a blog.
 <li><a href="#%5B%5Bhttps%3A%2F%2Fthibaultmarin.github.io%2Fblog%2Fposts%2F2016-11-13-Personal_website_in_org.html%5D%5BThibault%20Marin%3A%20Personal%20website%20in%20org%5D%5D">Thibault Marin: Personal website in org</a></li>
 <li><a href="#%5B%5Bhttps%3A%2F%2Fwritepermission.com%2F%5D%5BToon%20Claes%3A%20Write%20Permission%5D%5D">Toon Claes: Write Permission</a></li>
 <li><a href="#%5B%5Bhttps%3A%2F%2Ftwo-wrongs.com%2F%5D%5BTwo%20Wrongs%5D%5D">Two Wrongs</a></li>
+<li><a href="#%5B%5Bhttps%3A%2F%2Fblog.tygr.info%2F%5D%5BTyler%20Grinn%5D%5D">Tyler Grinn</a></li>
 </ul></li>
 </ul>
 </div>
@@ -505,7 +507,31 @@ published: [2018-12-30 Sun]
 <pre class="example">
 published: [2018-12-26 Wed]
 </pre>
-</div></li></ol></li></ol>
+</div></li></ol></li>
+
+<li><a id="%5B%5Bhttps%3A%2F%2Fblog.tygr.info%2Femacs%2Fblog.html%5D%5BTyler%20Grinn%3A%20How%20this%20blog%20works%5D%5D"></a><a href="https://blog.tygr.info/emacs/blog.html">Tyler Grinn: How this blog works</a><br /><div class="outline-text-5" id="text-1-1-1-13">
+<pre class="example">
+author: Tyler Grinn
+</pre>
+
+<blockquote>
+<p>
+I write in org mode and export to html. The css is written afterwards instead of modifying the export process. This allows me to use the chrome inspector to quickly optimize an element rather than going through a build-and-test cycle. The element attributes ox adds to each html element are descriptive and unique enough to target quite easily with css selectors.
+</p>
+
+<p>
+I also use the org-info-js script to add keybindings, advanced TOC options, and section folding to the website.
+</p>
+
+<p>
+Dark mode is enabled using dark-mode-toggle and css media queries.
+</p>
+
+<p>
+The built html files are synced to my server using Syncthing and I serve the website using Nginx. All this is done using kubernetes on Digital Ocean. The blog, along with all my org files, is backed up daily using kubernetes VolumeSnapshots.
+</p>
+</blockquote>
+</div></li></ol>
 </div>
 
 <div id="outline-container-Code" class="outline-4">
@@ -714,7 +740,31 @@ Toon's blog has a unique and appealing custom theme.
 </p>
 </div></li>
 
-<li><a id="%5B%5Bhttps%3A%2F%2Ftwo-wrongs.com%2F%5D%5BTwo%20Wrongs%5D%5D"></a><span class="todo TODO">TODO</span> <a href="https://two-wrongs.com/">Two Wrongs</a><br /></li></ol>
+<li><a id="%5B%5Bhttps%3A%2F%2Ftwo-wrongs.com%2F%5D%5BTwo%20Wrongs%5D%5D"></a><span class="todo TODO">TODO</span> <a href="https://two-wrongs.com/">Two Wrongs</a><br /></li>
+
+<li><a id="%5B%5Bhttps%3A%2F%2Fblog.tygr.info%2F%5D%5BTyler%20Grinn%5D%5D"></a><a href="https://blog.tygr.info/">Tyler Grinn</a><br /><div class="outline-text-5" id="text-1-1-4-14">
+<pre class="example">
+author: Tyler Grinn
+</pre>
+
+<blockquote>
+<p>
+I write in org mode and export to html. The css is written afterwards instead of modifying the export process. This allows me to use the chrome inspector to quickly optimize an element rather than going through a build-and-test cycle. The element attributes ox adds to each html element are descriptive and unique enough to target quite easily with css selectors.
+</p>
+
+<p>
+I also use the org-info-js script to add keybindings, advanced TOC options, and section folding to the website.
+</p>
+
+<p>
+Dark mode is enabled using dark-mode-toggle and css media queries.
+</p>
+
+<p>
+The built html files are synced to my server using Syncthing and I serve the website using Nginx. All this is done using kubernetes on Digital Ocean. The blog, along with all my org files, is backed up daily using kubernetes VolumeSnapshots.
+</p>
+</blockquote>
+</div></li></ol>
 </div>
 </div>
 
@@ -2322,7 +2372,7 @@ Rainer's series of 39 videos explains Org features and application in a straight
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Adam Porter</p>
-<p class="date">Created: 2021-10-05 Tue 07:32</p>
+<p class="date">Created: 2021-10-10 Sun 09:06</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

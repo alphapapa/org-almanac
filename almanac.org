@@ -107,6 +107,7 @@ Using Org to publish a blog.
   - [[%5B%5Bhttps://loomcom.com/blog/0110_emacs_blogging_for_fun_and_profit.html%5D%5BSeth%20J.%20Morabito:%20Emacs%20Blogging%20for%20Fun%20and%20Profit%5D%5D][Seth J. Morabito: Emacs Blogging for Fun and Profit]]
   - [[Stig Brautaset][Stig Brautaset]]
   - [[Toon Claes][Toon Claes]]
+  - [[%5B%5Bhttps://blog.tygr.info/emacs/blog.html%5D%5BTyler%20Grinn:%20How%20this%20blog%20works%5D%5D][Tyler Grinn: How this blog works]]
 - [[Code][Code]]
   - [[%5B%5Bhttps://github.com/jphmrst/defblog%5D%5Bdefblog:%20A%20web%20site/blog%20builder,%20implemented%20as%20a%20wrapper%20around%20org-project%5D%5D][defblog: A web site/blog builder, implemented as a wrapper around org-project]]
   - [[%5B%5Bhttps://github.com/itf/org-export-head%5D%5Borg-export-head:%20Org%20mode%20to%20blog%20exporter.%20Converts%20each%20header%20to%20a%20different%20file%5D%5D][org-export-head: Org mode to blog exporter. Converts each header to a different file]]
@@ -128,6 +129,7 @@ Using Org to publish a blog.
   - [[%5B%5Bhttps://thibaultmarin.github.io/blog/posts/2016-11-13-Personal_website_in_org.html%5D%5BThibault%20Marin:%20Personal%20website%20in%20org%5D%5D][Thibault Marin: Personal website in org]]
   - [[%5B%5Bhttps://writepermission.com/%5D%5BToon%20Claes:%20Write%20Permission%5D%5D][Toon Claes: Write Permission]]
   - [[%5B%5Bhttps://two-wrongs.com/%5D%5BTwo%20Wrongs%5D%5D][Two Wrongs]]
+  - [[%5B%5Bhttps://blog.tygr.info/%5D%5BTyler%20Grinn%5D%5D][Tyler Grinn]]
 :END:
 
 *** TODO Articles                                                :articles:
@@ -275,6 +277,21 @@ Toon's blog has a unique and appealing custom theme.
 :PROPERTIES:
 :published: [2018-12-26 Wed]
 :END:
+
+**** [[https://blog.tygr.info/emacs/blog.html][Tyler Grinn: How this blog works]]
+:PROPERTIES:
+:author:   Tyler Grinn
+:END:
+
+#+BEGIN_QUOTE
+I write in org mode and export to html. The css is written afterwards instead of modifying the export process. This allows me to use the chrome inspector to quickly optimize an element rather than going through a build-and-test cycle. The element attributes ox adds to each html element are descriptive and unique enough to target quite easily with css selectors.
+
+I also use the org-info-js script to add keybindings, advanced TOC options, and section folding to the website.
+
+Dark mode is enabled using dark-mode-toggle and css media queries.
+
+The built html files are synced to my server using Syncthing and I serve the website using Nginx. All this is done using kubernetes on Digital Ocean. The blog, along with all my org files, is backed up daily using kubernetes VolumeSnapshots.
+#+END_QUOTE
 
 *** TODO Code                                                        :code:
 :LOGBOOK:
@@ -435,6 +452,21 @@ I build this website in Emacs' Org mode, which can publish static HTML files. Th
 Toon's blog has a unique and appealing custom theme.
 
 **** TODO [[https://two-wrongs.com/][Two Wrongs]]
+
+**** [[https://blog.tygr.info/][Tyler Grinn]]
+:PROPERTIES:
+:author:   Tyler Grinn
+:END:
+
+#+BEGIN_QUOTE
+I write in org mode and export to html. The css is written afterwards instead of modifying the export process. This allows me to use the chrome inspector to quickly optimize an element rather than going through a build-and-test cycle. The element attributes ox adds to each html element are descriptive and unique enough to target quite easily with css selectors.
+
+I also use the org-info-js script to add keybindings, advanced TOC options, and section folding to the website.
+
+Dark mode is enabled using dark-mode-toggle and css media queries.
+
+The built html files are synced to my server using Syncthing and I serve the website using Nginx. All this is done using kubernetes on Digital Ocean. The blog, along with all my org files, is backed up daily using kubernetes VolumeSnapshots.
+#+END_QUOTE
 
 ** Bookmarking                                                 :bookmarking:
 
