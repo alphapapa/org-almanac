@@ -873,6 +873,10 @@ This back-end has the purpose of allowing easy customization of the HTML output.
 
 *** Discussions                                               :discussions:
 
+**** [[https://www.reddit.com/r/emacs/comments/13no4q3/emacswritten_novel_on_the_german_bestseller_list/][Titus Müller on writing a bestselling novel with Org]]
+
+Titus explains how he used Org to write his bestselling novel, /Der letzte Auftrag/, including organizing his work and exchanging versions with the publisher. 
+
 **** [[https://www.reddit.com/r/orgmode/comments/fvckhr/research_work_flow/fmhzxmq/][u/Dysyre on using Org to write and research a novel]]
 
 [2020-04-06 Mon 08:06]
