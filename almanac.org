@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       1066e1aa-552a-487a-b53e-0f6c19af293e
+:END:
 #+TITLE: org-almanac
 #+PROPERTY: logging nil
 #+PROPERTY: ATTACH_DIR ~/org/data
@@ -873,6 +876,21 @@ This back-end has the purpose of allowing easy customization of the HTML output.
 
 *** Discussions                                               :discussions:
 
+**** [[https://lucidmanager.org/tags/emacs/][Emacs Writing Studio]]
+:PROPERTIES:
+:author:   Peter Prevos
+:ID:       2da01239-8d3d-4f92-b4b4-de3a90536d82
+:END:
+
+#+begin_quote
+Emacs Writing Studio is configuration and a series of articles on how authors can use Emacs to publish articles, books, scripts and websites.
+#+end_quote
+
+See also:
+
++  [[id:a0811ad8-46fb-4ae7-8126-5a1cd5e10712][Emacs Writing Studio: (configuration)]]
++  [[https://old.reddit.com/r/emacs/comments/16k2bxe/introducing_emacs_writing_studio/][Introducing Emacs Writing Studio : emacs]]
+
 **** [[https://www.reddit.com/r/emacs/comments/13no4q3/emacswritten_novel_on_the_german_bestseller_list/][Titus Müller on writing a bestselling novel with Org]]
 
 Titus explains how he used Org to write his bestselling novel, /Der letzte Auftrag/, including organizing his work and exchanging versions with the publisher. 
@@ -894,6 +912,25 @@ I use priority tags to measure how far a scene is in production, since they are 
 #+BEGIN_QUOTE
 Binder is global minor mode (and associated major modes) to facilitate working on a writing project in multiple files.  It is heavily inspired by the binder feature in the macOS writing app Scrivener.  The rationale behind working this way is to split a large writing project into much smaller pieces.
 #+END_QUOTE
+
+**** [[https://github.com/pprevos/emacs-writing-studio/][Emacs Writing Studio: configuration for authors]]
+:PROPERTIES:
+:ID:       a0811ad8-46fb-4ae7-8126-5a1cd5e10712
+:author:   Peter Prevos
+:END:
+
++ See also: [[id:2da01239-8d3d-4f92-b4b4-de3a90536d82][Emacs Writing Studio (articles)]]
+
+#+begin_quote
+Emacs Writing Studio is configuration and a series of articles on how authors can use Emacs to publish articles, books, scripts and websites.
+
+This Emacs configuration stays as close as humanly bearable to Vanilla Emacs.
+
+-  Leverages functionality in Emacs 29.1
+-  Standard keyboard shortcuts
+-  No configuration for developing software
+-  Centred around Org mode
+#+end_quote
 
 * Configs                                                           :configs:
 :PROPERTIES:
@@ -1649,6 +1686,9 @@ Rainer's series of 39 videos explains Org features and application in a straight
 :END:
 
 ** File-local variables
+:PROPERTIES:
+:ID:       33e473b2-98e5-4ae5-9902-53db37d04618
+:END:
 
 # Local Variables:
 # eval: (require 'org-make-toc)
